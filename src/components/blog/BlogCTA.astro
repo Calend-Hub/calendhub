@@ -1,0 +1,167 @@
+---
+import fs from 'fs';
+import path from 'path';
+
+// Read the config directly from JSON file for dynamic updates
+let ctaConfig;
+try {
+  const configPath = path.join(process.cwd(), 'public/data/settings/site-config.json');
+  const configData = fs.readFileSync(configPath, 'utf-8');
+  const config = JSON.parse(configData);
+  ctaConfig = config.blogCTA || {
+    enabled: true,
+    title: "Join Our Waitlist - Be One of the First CalendHub Creators",
+    description: "Get exclusive early access to CalendHub's revolutionary AI creation platform. Join the select group of pioneering creators shaping the future of AI-powered content.",
+    buttonText: "Join Waitlist",
+    buttonUrl: "/",
+    secondaryText: "Limited Early Access",
+    showStats: true,
+    stats: [
+      { number: "1,000+", label: "Waitlist Members" },
+      { number: "First 500", label: "Get Priority" },
+      { number: "Early 2025", label: "Launch Date" }
+    ]
+  };
+} catch (e) {
+  console.error('Error loading CTA config:', e);
+  ctaConfig = {
+    enabled: true,
+    title: "Join Our Waitlist - Be One of the First CalendHub Creators",
+    description: "Get exclusive early access to CalendHub's revolutionary AI creation platform. Join the select group of pioneering creators shaping the future of AI-powered content.",
+    buttonText: "Join Waitlist",
+    buttonUrl: "/",
+    secondaryText: "Limited Early Access",
+    showStats: true,
+    stats: [
+      { number: "1,000+", label: "Waitlist Members" },
+      { number: "First 500", label: "Get Priority" },
+      { number: "Early 2025", label: "Launch Date" }
+    ]
+  };
+}
+
+// Don't render if disabled
+if (!ctaConfig.enabled) return null;
+---
+
+<div class="blog-cta-container my-12 lg:my-16">
+  <div class="blog-cta-wrapper bg-gradient-to-br from-surface via-background to-surface border border-border rounded-2xl p-8 lg:p-12 text-center relative overflow-hidden">
+    <!-- Background pattern -->
+    <div class="absolute inset-0 opacity-5">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_70%)]"></div>
+      <div class="absolute top-0 left-0 w-full h-full bg-[linear-gradient(45deg,transparent_30%,rgba(255,255,255,0.05)_50%,transparent_70%)]"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10">
+      <!-- Main title -->
+      <h3 class="text-2xl lg:text-3xl font-bold mb-4 text-text">
+        {ctaConfig.title}
+      </h3>
+
+      <!-- Description -->
+      <p class="text-lg text-text-muted mb-8 max-w-2xl mx-auto leading-relaxed">
+        {ctaConfig.description}
+      </p>
+
+      <!-- Stats (if enabled) -->
+      {ctaConfig.showStats && ctaConfig.stats && (
+        <div class="flex flex-wrap justify-center gap-8 mb-8">
+          {ctaConfig.stats.map((stat) => (
+            <div class="text-center">
+              <div class="text-2xl lg:text-3xl font-bold text-text mb-1">
+                {stat.number}
+              </div>
+              <div class="text-sm text-text-muted font-medium">
+                {stat.label}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a
+          href={ctaConfig.buttonUrl}
+          class="inline-flex items-center justify-center px-8 py-4 bg-text text-background font-semibold rounded-full hover:opacity-90 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl min-w-[200px]"
+        >
+          {ctaConfig.buttonText}
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+            <path d="m9 18 6-6-6-6"/>
+          </svg>
+        </a>
+
+        {ctaConfig.secondaryText && (
+          <div class="text-sm text-text-muted font-medium">
+            {ctaConfig.secondaryText}
+          </div>
+        )}
+      </div>
+
+      <!-- Trust indicators -->
+      <div class="mt-6 flex flex-wrap justify-center items-center gap-6 text-xs text-text-muted">
+        <div class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 12l2 2 4-4"/>
+            <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
+            <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
+            <path d="M3 12h6m6 0h6"/>
+          </svg>
+          No spam, ever
+        </div>
+        <div class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22,4 12,14.01 9,11.01"/>
+          </svg>
+          Instant access
+        </div>
+        <div class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+          Join the community
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .blog-cta-container {
+    @apply container mx-auto px-4;
+  }
+
+  .blog-cta-wrapper {
+    position: relative;
+    background: linear-gradient(135deg,
+      hsl(var(--surface)) 0%,
+      hsl(var(--background)) 50%,
+      hsl(var(--surface)) 100%);
+  }
+
+  .blog-cta-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg,
+      hsl(var(--border)),
+      transparent,
+      hsl(var(--border)));
+    border-radius: inherit;
+    z-index: -1;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .blog-cta-wrapper a {
+      transform: none !important;
+    }
+  }
+</style>

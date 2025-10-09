@@ -1,0 +1,297 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_CONFIG } from '../data/site-config';
+---
+
+<BaseLayout
+  title="About CalendHub - Unified Calendar Management Platform"
+  description="Learn about CalendHub - the intelligent platform that unifies all your calendars, streamlines scheduling, and eliminates meeting chaos with AI-powered automation."
+  breadcrumb={[
+    { name: 'Home', url: '/' },
+    { name: 'About', url: '/about' }
+  ]}
+>
+  <div class="container py-12">
+    <div class="max-w-4xl mx-auto">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">About CalendHub</h1>
+        <p class="text-xl text-text-muted max-w-2xl mx-auto">
+          One calendar to rule them all. Unify your scheduling, eliminate meeting chaos, and reclaim your time with intelligent calendar management.
+        </p>
+      </div>
+
+      <!-- Mission Section -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-semibold mb-6 text-center">Our Mission</h2>
+        <p class="text-text-muted mb-4 text-lg leading-relaxed">
+          CalendHub exists to eliminate the calendar chaos that plagues modern professionals and distributed teams. We believe managing multiple calendars, coordinating across time zones, and scheduling meetings shouldn't consume hours of your week.
+        </p>
+        <p class="text-text-muted text-lg leading-relaxed">
+          Our platform unifies all your calendars into a single, intelligent system that handles the complexity of scheduling automatically, so you can focus on meaningful work instead of calendar management.
+        </p>
+      </div>
+
+      <!-- Problem We Solve -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-semibold mb-8 text-center">The Problem We Solve</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="border border-border rounded-lg p-6">
+            <h3 class="text-xl font-semibold mb-4 text-red-500">Before CalendHub</h3>
+            <div class="space-y-3 text-text-muted">
+              <div class="flex items-start gap-3">
+                <span class="text-red-500 mt-1">✗</span>
+                <span>Checking 3+ different calendars every morning</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-red-500 mt-1">✗</span>
+                <span>8+ messages to schedule a single meeting</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-red-500 mt-1">✗</span>
+                <span>Double-bookings and missed meetings</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-red-500 mt-1">✗</span>
+                <span>Manual time zone calculations</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-red-500 mt-1">✗</span>
+                <span>Back-to-back meeting marathons</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-red-500 mt-1">✗</span>
+                <span>Lost meeting notes and action items</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-border rounded-lg p-6 bg-surface">
+            <h3 class="text-xl font-semibold mb-4 text-green-500">With CalendHub</h3>
+            <div class="space-y-3 text-text-muted">
+              <div class="flex items-start gap-3">
+                <span class="text-green-500 mt-1">✓</span>
+                <span>All calendars unified in one view</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-green-500 mt-1">✓</span>
+                <span>Zero-message scheduling with smart links</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-green-500 mt-1">✓</span>
+                <span>Conflict prevention and sync reliability</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-green-500 mt-1">✓</span>
+                <span>Automatic time zone translation</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-green-500 mt-1">✓</span>
+                <span>Built-in meeting buffers</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-green-500 mt-1">✓</span>
+                <span>AI-powered meeting notes and summaries</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Platform Features -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-semibold mb-8 text-center">What CalendHub Offers</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Core Features</h3>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
+                <span>Unified calendar view across all platforms</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
+                <span>Smart scheduling links with availability</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
+                <span>Automatic time zone management</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
+                <span>Round-robin team scheduling</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
+                <span>Meeting buffer automation</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
+                <span>Video conferencing integration</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Advanced Capabilities</h3>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
+                <span>AI-powered meeting notes and transcription</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
+                <span>Automatic action item extraction</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
+                <span>Calendar analytics and insights</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
+                <span>Project management integration</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
+                <span>Focus time protection</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
+                <span>Smart meeting rescheduling</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Our Vision -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-semibold mb-6 text-center">Our Vision</h2>
+        <p class="text-text-muted text-lg leading-relaxed mb-6">
+          We envision a world where calendar management is invisible. Where scheduling happens automatically, meetings are always productive, and no one wastes time coordinating availability or taking notes.
+        </p>
+        <p class="text-text-muted text-lg leading-relaxed">
+          CalendHub is building intelligent calendar infrastructure that anticipates your needs, optimizes your schedule, and ensures you never miss important commitments while protecting time for deep work.
+        </p>
+      </div>
+
+      <!-- Stats Section -->
+      <div class="mb-12 bg-surface border border-border rounded-lg p-8">
+        <h2 class="text-3xl font-semibold mb-8 text-center">Impact by the Numbers</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="text-4xl font-bold mb-2">10+ hours</div>
+            <div class="text-text-muted">saved per person monthly</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold mb-2">47%</div>
+            <div class="text-text-muted">increase in action item completion</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold mb-2">34%</div>
+            <div class="text-text-muted">reduction in meeting no-shows</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why CalendHub Blog -->
+      <div class="mb-12">
+        <div class="text-center">
+          <h2 class="text-3xl font-semibold mb-6">Why This Blog Exists</h2>
+          <p class="text-text-muted mb-8 max-w-2xl mx-auto text-lg leading-relaxed">
+            Beyond building CalendHub, we're passionate about helping professionals and teams master calendar management, productivity, and remote work. This blog shares practical strategies, best practices, and insights for getting the most out of your calendar.
+          </p>
+          <div class="grid md:grid-cols-3 gap-6 text-left">
+            <div class="border border-border rounded-lg p-6">
+              <h3 class="text-lg font-semibold mb-3">Practical Guides</h3>
+              <p class="text-sm text-text-muted">
+                Step-by-step tutorials on calendar integration, meeting scheduling, and productivity optimization.
+              </p>
+            </div>
+            <div class="border border-border rounded-lg p-6">
+              <h3 class="text-lg font-semibold mb-3">Best Practices</h3>
+              <p class="text-sm text-text-muted">
+                Research-backed strategies for distributed teams, time zone management, and meeting effectiveness.
+              </p>
+            </div>
+            <div class="border border-border rounded-lg p-6">
+              <h3 class="text-lg font-semibold mb-3">Product Updates</h3>
+              <p class="text-sm text-text-muted">
+                Latest features, AI capabilities, and innovations in calendar management technology.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Community & Contact -->
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h2 class="text-2xl font-semibold mb-4">Try CalendHub</h2>
+          <p class="text-text-muted mb-4">
+            Ready to eliminate calendar chaos and reclaim 10+ hours per month? See how CalendHub transforms scheduling for professionals and distributed teams.
+          </p>
+          <div class="space-y-3">
+            <a
+              href="https://app.calendhub.com/signup"
+              target="_blank"
+              class="inline-flex items-center gap-2 px-6 py-3 bg-text text-background rounded-full hover:opacity-80 transition-opacity font-medium"
+            >
+              Start Free Trial
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <p class="text-sm text-text-muted">No credit card required • 14-day free trial</p>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-semibold mb-4">Get In Touch</h2>
+          <p class="text-text-muted mb-4">
+            Questions about CalendHub? Want to suggest a blog topic? Interested in partnerships? We'd love to hear from you.
+          </p>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-text-muted">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22 6 12 13 2 6"></polyline>
+              </svg>
+              <span>contact@calendhub.com</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-text-muted">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              <span>https://calendhub.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CalendHub",
+      "url": "https://calendhub.com",
+      "logo": "https://calendhub.com/favicon.svg",
+      "description": "Unified calendar management platform that eliminates scheduling chaos with AI-powered automation, smart scheduling, and intelligent meeting management.",
+      "sameAs": [
+        "https://twitter.com/CalendHub",
+        "https://www.linkedin.com/company/calendhub/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "contact@calendhub.com",
+        "contactType": "Customer Service"
+      }
+    }
+  </script>
+</BaseLayout>

@@ -1,0 +1,89 @@
+---
+import AdminLayout from '../../layouts/AdminLayout.astro';
+import { getCollection } from 'astro:content';
+import { formatDate } from '../../lib/utils';
+
+// Get all posts
+const allPosts = await getCollection('blog');
+const sortedPosts = allPosts.sort((a, b) => 
+  b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
+);
+
+// Get stats
+const totalPosts = allPosts.length;
+const draftPosts = allPosts.filter(p => p.data.draft).length;
+const publishedPosts = totalPosts - draftPosts;
+---
+
+<AdminLayout title="Dashboard" activeNav="dashboard">
+  <div class="p-8 h-full">
+    <!-- Header -->
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold mb-2">Dashboard</h1>
+      <p class="text-text-muted">Welcome back to your content management system</p>
+    </div>
+
+    <!-- Recent Posts -->
+    <div class="bg-surface border border-border rounded-lg overflow-hidden">
+        <div class="px-6 py-4 border-b border-border">
+          <h2 class="text-lg font-semibold">Recent Posts</h2>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full">
+            <thead>
+              <tr class="border-b border-border bg-background">
+                <th class="text-left p-3 text-sm font-medium">Title</th>
+                <th class="text-left p-3 text-sm font-medium">Status</th>
+                <th class="text-left p-3 text-sm font-medium">Date</th>
+                <th class="text-left p-3 text-sm font-medium">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {sortedPosts.slice(0, 10).map((post) => (
+                <tr class="border-b border-border hover:bg-background/50 transition-colors">
+                  <td class="p-3">
+                    <div>
+                      <div class="font-medium text-sm">{post.data.title}</div>
+                      <div class="text-xs text-text-muted mt-1">{post.data.category}</div>
+                    </div>
+                  </td>
+                  <td class="p-3">
+                    <div class="flex gap-1">
+                      {post.data.draft ? (
+                        <span class="text-xs px-2 py-1 bg-surface border border-border rounded">Draft</span>
+                      ) : (
+                        <span class="text-xs px-2 py-1 bg-text text-background rounded">Published</span>
+                      )}
+                      {post.data.featured && (
+                        <span class="text-xs px-2 py-1 border border-text rounded">Featured</span>
+                      )}
+                    </div>
+                  </td>
+                  <td class="p-3 text-xs text-text-muted">
+                  
+                    {formatDate(post.data.publishDate)}
+                  </td>
+                  <td class="p-3">
+                    <div class="flex gap-2">
+                      <a href={`/blog/${post.slug}`} class="text-xs hover:text-text-muted transition-colors">
+                        View
+                      </a>
+                      <span class="text-text-muted">|</span>
+                      <a href={`/admin/edit/${post.slug}`} class="text-xs hover:text-text-muted transition-colors">
+                        Edit
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          {sortedPosts.length === 0 && (
+            <div class="p-8 text-center text-text-muted">
+              No posts yet. Create your first post to get started.
+            </div>
+          )}
+        </div>
+    </div>
+  </div>
+</AdminLayout>

@@ -1,0 +1,70 @@
+name: Deploy to Hetzner Server
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build project
+      run: npm run build
+
+    - name: Check for build artifacts
+      run: ls -la dist/
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Deploy to server
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.SERVER_HOST }}
+        username: ${{ secrets.SERVER_USER }}
+        key: ${{ secrets.SERVER_SSH_KEY }}
+        script: |
+          echo "🚀 Starting deployment..."
+
+          cd /var/www/CalendHub-Blog-Astro
+
+          echo "📥 Pulling latest changes..."
+          sudo git pull origin main
+
+          echo "📦 Installing dependencies..."
+          sudo NODE_OPTIONS="--max-old-space-size=1024" npm i
+
+          echo "🔨 Building project..."
+          sudo NODE_OPTIONS="--max-old-space-size=1024" npm run build
+
+          echo "🔄 Restarting application..."
+          sudo pm2 restart astro-blog
+          sudo pm2 save
+
+          echo "✅ Testing application..."
+          sleep 5
+          if curl -f -s http://localhost:4321 > /dev/null; then
+            echo "✅ Deployment successful!"
+          else
+            echo "❌ Application failed to start!"
+            sudo pm2 logs astro-blog --lines 10
+            exit 1
+          fi

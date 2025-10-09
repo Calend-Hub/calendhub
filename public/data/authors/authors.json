@@ -1,0 +1,17 @@
+{
+  "authors": [
+    {
+      "id": "kevin",
+      "name": "Kevin Gabeci",
+      "email": "kgabeci@gmail.com",
+      "bio": "A programmer with a passion for writing and simplifying complex tech topics through clear, practical content.",
+      "avatar": "/blog-images/1760022218700-0u92bo.png",
+      "social": {
+        "twitter": "KGabeci",
+        "github": "TheDovakiin",
+        "linkedin": "/kevin-gabeci/",
+        "website": "https://www.kevingabeci.com/"
+      }
+    }
+  ]
+}

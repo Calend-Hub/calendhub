@@ -1,0 +1,109 @@
+{
+  "tags": [
+    {
+      "id": "calendar-integration",
+      "name": "calendar-integration",
+      "slug": "calendar-integration"
+    },
+    {
+      "id": "remote-teams",
+      "name": "remote-teams",
+      "slug": "remote-teams"
+    },
+    {
+      "id": "scheduling",
+      "name": "scheduling",
+      "slug": "scheduling"
+    },
+    {
+      "id": "team-collaboration",
+      "name": "team-collaboration",
+      "slug": "team-collaboration"
+    },
+    {
+      "id": "productivity-tools",
+      "name": "productivity-tools",
+      "slug": "productivity-tools"
+    },
+    {
+      "id": "meeting-scheduling",
+      "name": "meeting-scheduling",
+      "slug": "meeting-scheduling"
+    },
+    {
+      "id": "productivity",
+      "name": "productivity",
+      "slug": "productivity"
+    },
+    {
+      "id": "time-management",
+      "name": "time-management",
+      "slug": "time-management"
+    },
+    {
+      "id": "calendar-sync",
+      "name": "calendar-sync",
+      "slug": "calendar-sync"
+    },
+    {
+      "id": "google-calendar",
+      "name": "google-calendar",
+      "slug": "google-calendar"
+    },
+    {
+      "id": "outlook",
+      "name": "outlook",
+      "slug": "outlook"
+    },
+    {
+      "id": "technical-support",
+      "name": "technical-support",
+      "slug": "technical-support"
+    },
+    {
+      "id": "troubleshooting",
+      "name": "troubleshooting",
+      "slug": "troubleshooting"
+    },
+    {
+      "id": "time-zones",
+      "name": "time-zones",
+      "slug": "time-zones"
+    },
+    {
+      "id": "distributed-teams",
+      "name": "distributed-teams",
+      "slug": "distributed-teams"
+    },
+    {
+      "id": "remote-work",
+      "name": "remote-work",
+      "slug": "remote-work"
+    },
+    {
+      "id": "global-collaboration",
+      "name": "global-collaboration",
+      "slug": "global-collaboration"
+    },
+    {
+      "id": "ai-meeting-notes",
+      "name": "ai-meeting-notes",
+      "slug": "ai-meeting-notes"
+    },
+    {
+      "id": "ai-tools",
+      "name": "ai-tools",
+      "slug": "ai-tools"
+    },
+    {
+      "id": "automation",
+      "name": "automation",
+      "slug": "automation"
+    },
+    {
+      "id": "meeting-efficiency",
+      "name": "meeting-efficiency",
+      "slug": "meeting-efficiency"
+    }
+  ]
+}

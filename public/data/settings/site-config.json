@@ -1,0 +1,65 @@
+{
+  "title": "CalendHub - One Calendar to Rule Them All",
+  "description": "Unify all your calendars, schedule meetings effortlessly, and never miss a moment. The ultimate calendar management platform with AI-powered meeting notes and smart scheduling.",
+  "url": "https://calendhub.com",
+  "author": "CalendHub Team",
+  "authorEmail": "contact@calendhub.com",
+  "authorWebsite": "",
+  "authorAvatar": "",
+  "locale": "en",
+  "ogImage": "/og-image.jpg",
+  "navItems": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    }
+  ],
+  "postsPerPage": 10,
+  "recentPostsCount": 5,
+  "social": {
+    "twitter": "CalendHub",
+    "github": "",
+    "linkedin": "",
+    "instagram": "",
+    "youtube": "",
+    "discord": ""
+  },
+  "features": {
+    "darkMode": true,
+    "search": true,
+    "comments": true,
+    "rss": true
+  },
+  "gaId": "G-Y7JWGXLW8T",
+  "blogCTA": {
+    "enabled": true,
+    "title": "Ready to Simplify Your Schedule?",
+    "description": "Join thousands of professionals who have unified their calendars and reclaimed their time with CalendHub's intelligent scheduling platform.",
+    "buttonText": "Start Free Trial",
+    "buttonUrl": "https://app.calendhub.com/signup",
+    "secondaryText": "No credit card required",
+    "showStats": true,
+    "stats": [
+      {
+        "number": "10,000+",
+        "label": "Active Users"
+      },
+      {
+        "number": "99.9%",
+        "label": "Uptime"
+      },
+      {
+        "number": "50+",
+        "label": "Integrations"
+      }
+    ]
+  }
+}

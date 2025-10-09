@@ -1,0 +1,36 @@
+{
+  "categories": [
+    {
+      "id": "productivity",
+      "name": "Productivity",
+      "slug": "productivity",
+      "description": "Tips, tools, and strategies to boost productivity and efficiency in your work and personal life.",
+      "color": "#3B82F6",
+      "icon": "⚡"
+    },
+    {
+      "id": "technical-support",
+      "name": "Technical Support",
+      "slug": "technical-support",
+      "description": "Troubleshooting guides and technical solutions for common problems and issues.",
+      "color": "#10B981",
+      "icon": "🔧"
+    },
+    {
+      "id": "remote-work",
+      "name": "Remote Work",
+      "slug": "remote-work",
+      "description": "Best practices, tools, and strategies for effective remote work and distributed teams.",
+      "color": "#8B5CF6",
+      "icon": "🌍"
+    },
+    {
+      "id": "ai-productivity",
+      "name": "AI Productivity",
+      "slug": "ai-productivity",
+      "description": "Leverage AI tools and automation to enhance productivity and streamline workflows.",
+      "color": "#F59E0B",
+      "icon": "🤖"
+    }
+  ]
+}

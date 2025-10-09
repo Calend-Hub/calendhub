@@ -1,0 +1,14 @@
+{
+  "sitemap": {
+    "enabled": true,
+    "priority": "1.0",
+    "changefreq": "weekly"
+  },
+  "schema": {
+    "enabled": true,
+    "organization": "CalendHub Blog - Calendar Management & Productivity Insights"
+  },
+  "meta": {
+    "keywords": "calendar management, scheduling, productivity, meeting coordination, time management"
+  }
+}

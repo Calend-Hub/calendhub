@@ -1,0 +1,119 @@
+---
+import { getPublishedBlogPosts } from '../../lib/posts';
+import { formatDate } from '../../lib/utils';
+import { normalizeTagName } from '../../lib/tags';
+
+// Get the 3 latest blog posts
+const allPosts = await getPublishedBlogPosts();
+const latestPosts = allPosts.slice(0, 3);
+---
+
+<section class="py-32 bg-background relative overflow-hidden">
+  <div class="container relative z-10">
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Section Header -->
+      <div class="text-center mb-20">
+        <div class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+          </svg>
+          <span>Resources & Insights</span>
+        </div>
+
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text">
+          Master Your
+          <br/>
+          <span class="text-text-muted">Productivity & Scheduling</span>
+        </h2>
+        <p class="text-xl text-text-muted max-w-2xl mx-auto leading-relaxed">
+          Expert tips, guides, and strategies to optimize your calendar management, boost productivity, and reclaim your time.
+        </p>
+      </div>
+
+      <!-- Blog Grid -->
+      {latestPosts.length > 0 ? (
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+          {latestPosts.map((post) => (
+            <a href={`/blog/${post.slug}`} class="group relative block">
+              <!-- Glow effect -->
+              <div class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              <div class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 h-full flex flex-col">
+                {post.data.heroImage && (
+                  <div class="aspect-video overflow-hidden">
+                    <img
+                      src={post.data.heroImage}
+                      alt={post.data.heroImageAlt || `${post.data.title} - ${post.data.category} guide`}
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                  </div>
+                )}
+                <div class="p-6 flex-1 flex flex-col">
+                  <div class="flex items-center gap-2 text-xs text-text-muted mb-3">
+                    <span class="px-3 py-1 bg-orange-500/10 text-orange-600 dark:text-orange-400 rounded-full font-medium">
+                      {post.data.category}
+                    </span>
+                    <span>•</span>
+                    <span>{formatDate(post.data.publishDate)}</span>
+                    {post.data.featured && (
+                      <span class="ml-auto px-3 py-1 bg-orange-600 text-white text-xs rounded-full font-semibold">
+                        FEATURED
+                      </span>
+                    )}
+                  </div>
+                  <h3 class="text-lg font-display font-bold mb-3 text-text group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors line-clamp-2">
+                    {post.data.title}
+                  </h3>
+                  <p class="text-sm text-text-muted line-clamp-3 mb-4 flex-1">
+                    {post.data.description}
+                  </p>
+                  <div class="flex items-center gap-2 text-orange-600 dark:text-orange-400 font-semibold text-sm">
+                    <span>Read Article</span>
+                    <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      ) : (
+        <div class="text-center py-16 bg-surface/30 rounded-3xl border border-border">
+          <svg class="w-16 h-16 mx-auto mb-4 text-text-muted opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
+          </svg>
+          <p class="text-text-muted text-lg">Blog posts coming soon! Stay tuned for productivity tips and scheduling guides.</p>
+        </div>
+      )}
+
+      <!-- CTA Button -->
+      <div class="text-center">
+        <a
+          href="/blog"
+          class="group inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40"
+        >
+          <span>Explore Productivity Resources</span>
+          <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Background decoration -->
+  <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="blog-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+          <path d="M 32 0 L 0 0 0 32" fill="none" stroke="currentColor" stroke-width="1"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#blog-grid)"/>
+    </svg>
+  </div>
+</section>

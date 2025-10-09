@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/landing/HeroSection.astro';
+import FeaturesSection from '../components/landing/FeaturesSection.astro';
+import CTASection from '../components/landing/CTASection.astro';
+import BlogSection from '../components/landing/BlogSection.astro';
+import FAQSection from '../components/landing/FAQSection.astro';
+---
+
+<BaseLayout
+  title="CalendHub - Unified Calendar Management & Smart Scheduling Software"
+  description="Sync all your calendars in one place. CalendHub combines Google Calendar, Outlook, and iCloud with smart booking links and AI meeting notes. Free 14-day trial."
+  hideSearch={true}
+  hideThemeToggle={true}
+  siteName="CalendHub"
+>
+  <HeroSection />
+  <FeaturesSection />
+  <CTASection />
+  <BlogSection />
+  <FAQSection />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "CalendHub",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "Unified calendar management platform with multi-calendar sync, smart meeting booking links, and AI-powered meeting notes. Replaces multiple calendars with one intelligent solution.",
+      "url": "https://calendhub.com",
+      "author": {
+        "@type": "Organization",
+        "name": "CalendHub",
+        "url": "https://calendhub.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "14-day free trial, no credit card required"
+      },
+      "featureList": [
+        "Multi-Calendar Sync",
+        "Smart Meeting Booking Links",
+        "AI Meeting Notes & Transcription",
+        "Privacy Mode",
+        "Team Collaboration",
+        "CRM Integration",
+        "Social Media Management",
+        "Automated Scheduling"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "2847",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+  </script>
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CalendHub",
+      "url": "https://calendhub.com",
+      "logo": "https://calendhub.com/favicon.png",
+      "sameAs": [
+        "https://twitter.com/CalendHub"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support",
+        "email": "contact@calendhub.com",
+        "availableLanguage": ["English"]
+      }
+    }
+  </script>
+</BaseLayout>
