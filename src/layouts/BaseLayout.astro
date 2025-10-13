@@ -7,6 +7,7 @@ import LanguageSwitcher from '../components/common/LanguageSwitcher.astro';
 import StructuredData from '../components/StructuredData.astro';
 import SearchModal from '../components/search/SearchModal.astro';
 import '../assets/styles/global.css';
+import Logo from '../components/Logo.astro';
 
 export interface Props {
   title?: string;
@@ -121,6 +122,8 @@ const isBlogPage = Astro.url.pathname.includes('/blog') || Astro.url.pathname.st
     </script>
   </head>
   <body>
+
+    
     <!-- Floating Theme Toggle and Language Switcher -->
     {!hideThemeToggle && (
       <div class="fixed top-4 right-4 z-50 flex items-center gap-2">
@@ -197,6 +200,7 @@ const isBlogPage = Astro.url.pathname.includes('/blog') || Astro.url.pathname.st
     )}
     
     <div class="min-h-screen flex flex-col">
+      <Logo size='sm' />
       <main class="flex-grow">
         <slot />
       </main>
