@@ -1,0 +1,23 @@
+---
+export interface Props {
+  size?: 'sm' | 'md' | 'lg';
+}
+
+const { size = 'lg' } = Astro.props;
+
+const sizeClass =
+  size === 'sm'
+    ? 'text-3xl'
+    : size === 'md'
+    ? 'text-4xl sm:text-5xl'
+    : 'text-[56px] sm:text-[64px]';
+---
+
+
+  <h1
+    class={`container font-extrabold font-[Inter] tracking-tight text-white dark:text-white leading-none ${sizeClass} pt-10`}
+  >
+    <a href="/" aria-label="CalendHub Home">
+        calend<span class="text-orange-500">hub.</span>
+    </a>
+  </h1>
