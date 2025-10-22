@@ -1,0 +1,1088 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Buffer Time - Prevent Back-to-Back Meeting Burnout | CalendHub"
+  description="Add buffer time before and after meetings automatically. Give yourself breathing room to prepare, take notes, and transition between appointments without back-to-back burnout."
+>
+  <!-- Hero Section -->
+  <section
+    class="min-h-[40vh] bg-background relative overflow-hidden flex items-center"
+  >
+    <!-- Animated gradient background -->
+    <div
+      class="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-background to-background"
+    >
+    </div>
+
+    <!-- Decorative blur circles -->
+    <div
+      class="absolute top-20 right-[15%] w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"
+    >
+    </div>
+    <div
+      class="absolute bottom-20 left-[10%] w-96 h-96 bg-amber-500/5 rounded-full blur-3xl"
+    >
+    </div>
+
+    <div class="container relative z-10 py-20">
+      <div class="max-w-4xl mx-auto text-center">
+        <!-- Badge -->
+        <div
+          class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+        >
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <span>Buffer Time</span>
+        </div>
+
+        <!-- Hero Heading -->
+        <h1
+          class="text-5xl sm:text-6xl lg:text-7xl font-display font-bold mb-6 text-text leading-[1.1]"
+        >
+          Buffer Time
+          <br />
+          <span class="text-text-muted">Breathing Room Between Meetings</span>
+        </h1>
+        <p
+          class="text-xl lg:text-2xl text-text-muted leading-relaxed mb-12 max-w-3xl mx-auto"
+        >
+          Add automatic buffer time before and after meetings. Give yourself
+          space to prepare, take notes, and transition between appointments
+          without back-to-back burnout.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex justify-center mb-12">
+          <a
+            href="https://app.calendhub.com/sign-up"
+            class="group relative inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40"
+          >
+            <span>Start Free Trial</span>
+            <svg
+              class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Trust Bar -->
+        <div
+          class="flex flex-wrap justify-center items-center gap-6 text-sm text-text-muted pt-8"
+        >
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-5 h-5 text-orange-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>Automatic buffer time</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-5 h-5 text-orange-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>No back-to-back meetings</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-5 h-5 text-orange-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>Customizable duration</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subtle grid background -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="hero-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#hero-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section id="features" class="py-32 relative overflow-hidden">
+    <div class="container relative z-10">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Feature 1 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Before Meeting Buffer
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Add time before meetings automatically for preparation and review.
+              Arrive at every meeting ready instead of rushing from the previous
+              appointment.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              After Meeting Buffer
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Add time after meetings for notes and follow-up. Document
+              decisions and action items while they're fresh instead of
+              forgetting important details.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Customizable Duration
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Set buffer time from 5 to 60 minutes based on your needs.
+              Different meeting types can have different buffer durations for
+              maximum flexibility.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Automatic Blocking
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Buffer time blocks automatically in your calendar. No one can book
+              meetings during buffer periods - you get protected prep and
+              wrap-up time.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Per-Event Type Settings
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Different buffer times for different meeting types. Quick
+              check-ins need less buffer than important client meetings or
+              presentations.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Prevent Burnout
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Stop back-to-back meeting fatigue before it starts. Buffer time
+              creates sustainable meeting schedules that maintain energy and
+              focus throughout the day.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="features-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#features-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="py-20 bg-background">
+    <div class="container">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-text mb-6">
+          End Back-to-Back Meeting Burnout
+        </h2>
+        <div
+          class="prose prose-lg max-w-none space-y-6 text-text-muted leading-relaxed"
+        >
+          <p>
+            Buffer time creates breathing room between meetings automatically.
+            Set how much time you need before and after appointments, and
+            CalendHub blocks those periods in your calendar. When someone tries
+            to book a meeting, the system only shows times that include your
+            required buffer. This prevents back-to-back scheduling that leads to
+            fatigue, poor preparation, and rushed transitions between important
+            conversations.
+          </p>
+
+          <p>
+            Before meetings, buffer time gives you space to review materials,
+            check previous notes, and mentally prepare for the conversation
+            ahead. After meetings, buffer time lets you document decisions, send
+            follow-up messages, and process what happened before rushing to the
+            next appointment. This simple gap between meetings dramatically
+            improves meeting quality because you arrive prepared and leave with
+            clear next steps instead of constantly playing catch-up.
+          </p>
+
+          <p>
+            The buffer applies automatically to all new bookings. You configure
+            it once per meeting type, and every appointment booked through that
+            link includes the specified buffer. A 30-minute meeting with
+            15-minute buffers actually blocks 60 minutes in your calendar - 15
+            minutes before, 30 minutes for the meeting, and 15 minutes after.
+            The booking page only shows available times that accommodate the
+            full duration including buffers.
+          </p>
+
+          <p>
+            Different meeting types benefit from different buffer durations.
+            Quick 15-minute check-ins might need only 5-minute buffers for basic
+            transitions. Important client presentations or interviews might need
+            30-minute buffers for thorough preparation and detailed note-taking.
+            CalendHub lets you set appropriate buffer times for each appointment
+            type, ensuring the right amount of breathing room for each situation
+            without over-blocking your entire calendar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="py-32 relative overflow-hidden">
+    <div class="container relative z-10">
+      <div class="max-w-5xl mx-auto">
+        <!-- Badge -->
+        <div
+          class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+        >
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
+          <span>How It Works</span>
+        </div>
+
+        <!-- Heading -->
+        <h2
+          class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+        >
+          Automatic Buffer Time
+          <br />
+          <span class="text-text-muted">In Three Simple Steps</span>
+        </h2>
+
+        <!-- 3 Step Cards -->
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <!-- Step 1 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <span class="text-3xl font-display font-bold text-white">1</span
+                >
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Set Buffer Duration
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Choose how much buffer time you need before and after meetings.
+                Set different durations for different types of appointments.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <span class="text-3xl font-display font-bold text-white">2</span
+                >
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Buffer Applies Automatically
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                When someone books a meeting, buffer time blocks automatically
+                in your calendar. The system ensures no conflicts during buffer
+                periods.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <span class="text-3xl font-display font-bold text-white">3</span
+                >
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Enjoy Breathing Room
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Arrive at every meeting prepared and leave with time for
+                follow-up. No more rushing between back-to-back appointments.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Details Card -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300"
+          >
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Smart Availability Calculation
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              CalendHub factors buffer time into availability calculations
+              automatically. When displaying available time slots to people
+              booking meetings, the system only shows times where the full
+              buffer can be accommodated. A 30-minute meeting with 15-minute
+              buffers requires 60 minutes of free time in your calendar. This
+              intelligent blocking ensures you always get the breathing room you
+              configured, preventing the system from squeezing meetings into
+              gaps that would eliminate your buffer time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="howitworks-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#howitworks-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-background via-background to-orange-500/5 relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-6xl mx-auto">
+        <!-- Badge + Heading -->
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+              ></path>
+            </svg>
+            <span>Use Cases</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Who Benefits from
+            <br />
+            <span class="text-text-muted">Buffer Time?</span>
+          </h2>
+        </div>
+
+        <!-- 4 Use Case Cards (2x2 grid) -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Use Case 1 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Executives & Managers
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Leaders with packed schedules need time between meetings to
+                process decisions and prepare for the next conversation.
+                Back-to-back meetings create mental fatigue and poor decision
+                quality. Buffer time ensures executives arrive at every meeting
+                with proper context and leave with time to document action
+                items. This small gap between meetings significantly improves
+                leadership effectiveness and decision quality throughout the
+                day.
+              </p>
+              <div
+                class="bg-orange-500/5 border border-orange-500/10 rounded-2xl p-4 mt-4"
+              >
+                <p class="text-sm text-text-muted">
+                  <strong class="text-text">Benefit:</strong> Maintain high-quality
+                  decision making throughout a packed meeting schedule without burnout.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Use Case 2 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Sales Professionals
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Sales teams conducting back-to-back demos and discovery calls
+                need prep time before each meeting and time to update CRM
+                records after. Buffer time ensures sales reps can review
+                prospect information before calls and immediately log notes
+                while details are fresh. This improves meeting quality and
+                ensures accurate sales pipeline tracking without creating
+                administrative burden that extends beyond work hours.
+              </p>
+              <div
+                class="bg-orange-500/5 border border-orange-500/10 rounded-2xl p-4 mt-4"
+              >
+                <p class="text-sm text-text-muted">
+                  <strong class="text-text">Benefit:</strong> Better prepared sales
+                  calls and accurate CRM updates without working overtime on admin
+                  tasks.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Use Case 3 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Consultants & Coaches
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Professional service providers delivering back-to-back client
+                sessions need mental space between appointments to switch
+                contexts and maintain service quality. Each client deserves
+                focused attention, not a consultant still processing the
+                previous session. Buffer time creates clear boundaries between
+                client work, ensuring every session receives full attention and
+                proper documentation without bleeding into the next client's
+                time.
+              </p>
+              <div
+                class="bg-orange-500/5 border border-orange-500/10 rounded-2xl p-4 mt-4"
+              >
+                <p class="text-sm text-text-muted">
+                  <strong class="text-text">Benefit:</strong> Maintain focused attention
+                  and high service quality across multiple client sessions per day.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Use Case 4 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Healthcare Providers
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Medical professionals conducting patient consultations need time
+                to review medical history before appointments and document visit
+                notes immediately after. Buffer time ensures providers arrive at
+                every consultation properly prepared with patient context and
+                can complete documentation while details are fresh. This
+                improves care quality and reduces end-of-day charting burden
+                that extends provider work hours unnecessarily.
+              </p>
+              <div
+                class="bg-orange-500/5 border border-orange-500/10 rounded-2xl p-4 mt-4"
+              >
+                <p class="text-sm text-text-muted">
+                  <strong class="text-text">Benefit:</strong> Better prepared patient
+                  visits and timely documentation without excessive after-hours charting.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-background via-background to-orange-500/5 relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <span>FAQ</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Frequently Asked Questions
+          </h2>
+        </div>
+        <div class="space-y-6">
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                What is buffer time and why do I need it?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Buffer time is breathing room automatically added before and
+                after meetings. You need it to prevent back-to-back meeting
+                burnout, give yourself time to prepare before appointments, and
+                space to document decisions and send follow-ups after meetings.
+                Without buffer time, you rush from meeting to meeting without
+                preparation or processing time, leading to poor meeting quality
+                and mental fatigue throughout the day.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                How does buffer time work in CalendHub?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                You configure buffer duration for each meeting type - for
+                example, 15 minutes before and 15 minutes after. When someone
+                books a 30-minute meeting, CalendHub actually blocks 60 minutes
+                in your calendar (15 + 30 + 15). The booking page only shows
+                times where the full duration including buffers is available,
+                preventing anyone from scheduling meetings during your buffer
+                periods. This happens automatically without requiring manual
+                calendar blocking.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Can I set different buffer times for different meeting types?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, each event type can have unique buffer settings. Quick
+                15-minute check-ins might need only 5-minute buffers for basic
+                transitions, while important client presentations might need
+                30-minute buffers for thorough preparation and detailed
+                note-taking. You configure buffer duration per meeting type,
+                ensuring the right amount of breathing room for each situation
+                without over-blocking your entire calendar with unnecessary
+                gaps.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Does buffer time prevent people from booking back-to-back
+                meetings?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, buffer time automatically prevents back-to-back scheduling.
+                The booking page only displays time slots where your meeting
+                plus both buffers can fit without conflicts. If someone books a
+                meeting at 2pm with 15-minute buffers, the next available slot
+                starts at 3pm or later, never at 2:30pm. This automatic blocking
+                ensures you always get your configured buffer time without
+                manually managing availability or telling people not to book
+                consecutive slots.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Will buffer time show up on my calendar as a separate event?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                No, buffer time blocks the surrounding time in your calendar
+                without creating separate events. When someone books a meeting,
+                only the actual meeting appears as a calendar event. The buffer
+                periods before and after simply make that time unavailable for
+                additional bookings. Your calendar shows clean meeting blocks
+                while the buffer time protection works invisibly to prevent
+                anyone from scheduling into those periods through your booking
+                links.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                How much buffer time should I add to my meetings?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Buffer duration depends on meeting type and your preparation
+                needs. For quick check-ins, 5-10 minute buffers provide basic
+                transition time. Standard business meetings often benefit from
+                15-minute buffers for prep and follow-up. Important
+                presentations, client meetings, or interviews might need 20-30
+                minute buffers for thorough preparation and documentation. Start
+                with 15 minutes and adjust based on whether you feel rushed or
+                have too much idle time between meetings.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="faq-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#faq-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-orange-500/5 to-background relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-5xl mx-auto">
+        <div class="relative group">
+          <!-- Glow effect -->
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/30 to-amber-500/30 rounded-[3rem] blur-3xl opacity-60 group-hover:opacity-80 transition-opacity duration-500"
+          >
+          </div>
+
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm rounded-[3rem] p-12 md:p-16 text-center"
+          >
+            <h2
+              class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+            >
+              Ready to Stop Meeting Burnout?
+            </h2>
+            <p
+              class="text-xl lg:text-2xl text-text-muted leading-relaxed mb-12 max-w-3xl mx-auto"
+            >
+              Add buffer time automatically and give yourself breathing room
+              between every meeting. Arrive prepared and leave with time for
+              follow-up.
+            </p>
+
+            <div class="flex justify-center mb-8">
+              <a
+                href="https://app.calendhub.com/sign-up"
+                class="group relative inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40"
+              >
+                <span>Start Free Trial</span>
+                <svg
+                  class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </a>
+            </div>
+
+            <div
+              class="flex flex-wrap justify-center items-center gap-6 text-sm text-text-muted"
+            >
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>No credit card required</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>14-day free trial</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Automatic buffer blocking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,1083 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Calendar Sharing - Share Your Availability with Public Links | CalendHub"
+  description="Share your availability instantly with public booking links. Let anyone book time with you without revealing specific meeting details or personal calendar information."
+>
+  <!-- Hero Section -->
+  <section
+    class="min-h-[40vh] bg-background relative overflow-hidden flex items-center"
+  >
+    <!-- Animated gradient background -->
+    <div
+      class="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-background to-background"
+    >
+    </div>
+
+    <!-- Decorative blur circles -->
+    <div
+      class="absolute top-20 right-[15%] w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"
+    >
+    </div>
+    <div
+      class="absolute bottom-20 left-[10%] w-96 h-96 bg-amber-500/5 rounded-full blur-3xl"
+    >
+    </div>
+
+    <div class="container relative z-10 py-20">
+      <div class="max-w-4xl mx-auto text-center">
+        <!-- Badge -->
+        <div
+          class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+        >
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
+            ></path>
+          </svg>
+          <span>Calendar Sharing</span>
+        </div>
+
+        <!-- Hero Heading -->
+        <h1
+          class="text-5xl sm:text-6xl lg:text-7xl font-display font-bold mb-6 text-text leading-[1.1]"
+        >
+          Calendar Sharing
+          <br />
+          <span class="text-text-muted"
+            >Share Availability with Public Links</span
+          >
+        </h1>
+        <p
+          class="text-xl lg:text-2xl text-text-muted leading-relaxed mb-12 max-w-3xl mx-auto"
+        >
+          Share your availability instantly with public booking links. Let
+          anyone book time with you without revealing specific meeting details
+          or personal calendar information.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex justify-center mb-12">
+          <a
+            href="https://app.calendhub.com/sign-up"
+            class="group relative inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40"
+          >
+            <span>Start Free Trial</span>
+            <svg
+              class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Trust Bar -->
+        <div
+          class="flex flex-wrap justify-center items-center gap-6 text-sm text-text-muted pt-8"
+        >
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-5 h-5 text-orange-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>Instant booking links</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-5 h-5 text-orange-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>Privacy protected</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-5 h-5 text-orange-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>No back-and-forth</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subtle grid background -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="hero-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#hero-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section id="features" class="py-32 relative overflow-hidden">
+    <div class="container relative z-10">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Feature 1 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Public Booking Links
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Share a simple link and let anyone book time with you. No account
+              required for bookers - they just click, choose a time, and book.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Privacy Protection
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Share availability without revealing meeting details. Bookers see
+              only open time slots, not your existing appointments or personal
+              calendar information.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Customizable Links
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Create branded booking links with custom URLs. Add your logo,
+              brand colors, and personalized messaging to maintain professional
+              appearance.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Multiple Link Types
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Create different links for different purposes. One link for client
+              meetings, another for internal team sync-ups, and another for
+              quick consultations.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Share Anywhere
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Add booking links to email signatures, website pages, social media
+              profiles, or messaging apps. Share via any communication channel
+              instantly.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Usage Analytics
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Track how often your booking links are viewed and used. See which
+              links generate the most bookings and optimize your sharing
+              strategy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="features-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#features-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="py-20 bg-background">
+    <div class="container">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-text mb-6">
+          Share Your Availability Instantly
+        </h2>
+        <div
+          class="prose prose-lg max-w-none space-y-6 text-text-muted leading-relaxed"
+        >
+          <p>
+            Calendar sharing through public booking links eliminates scheduling
+            friction. Instead of sending multiple emails asking about
+            availability and proposing times that don't work, share a single
+            link that shows your real-time availability. Recipients click the
+            link, see when you're free, choose a time that works for them, and
+            book instantly. No email back-and-forth, no timezone confusion, no
+            double-booking conflicts.
+          </p>
+
+          <p>
+            Your booking link connects to your actual calendar and displays only
+            genuinely available time slots. When someone books through your
+            link, the appointment appears immediately in both calendars with all
+            meeting details. The link protects your privacy by showing
+            availability without revealing what else is scheduled. Recipients
+            see open time slots but never see titles, attendees, or details of
+            your existing meetings.
+          </p>
+
+          <p>
+            Create different booking links for different situations. A 30-minute
+            link for client consultations, a 15-minute link for quick check-ins,
+            and a 60-minute link for in-depth strategy sessions. Each link can
+            have unique settings for duration, availability, questions to ask
+            bookers, and confirmation messaging. Share the appropriate link
+            based on context, giving recipients exactly the booking experience
+            you want them to have.
+          </p>
+
+          <p>
+            Booking links work everywhere. Add them to email signatures so every
+            message lets recipients book time instantly. Embed them on website
+            contact pages or service pages. Share them in LinkedIn messages,
+            Twitter DMs, or Slack conversations. Post them in social media bios.
+            The link works wherever you share it, making it effortless for
+            anyone to schedule time with you regardless of which communication
+            platform they use.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="py-32 relative overflow-hidden">
+    <div class="container relative z-10">
+      <div class="max-w-5xl mx-auto">
+        <!-- Badge -->
+        <div
+          class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+        >
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
+          <span>How It Works</span>
+        </div>
+
+        <!-- Heading -->
+        <h2
+          class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+        >
+          Share Your Calendar
+          <br />
+          <span class="text-text-muted">In Three Simple Steps</span>
+        </h2>
+
+        <!-- 3 Step Cards -->
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <!-- Step 1 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <span class="text-3xl font-display font-bold text-white">1</span
+                >
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Create Booking Link
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Set up a meeting type with duration, availability, and
+                preferences. CalendHub generates a unique booking link you can
+                share anywhere.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <span class="text-3xl font-display font-bold text-white">2</span
+                >
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Share Your Link
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Copy your booking link and share it via email, website, social
+                media, or any communication channel. Works everywhere instantly.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <span class="text-3xl font-display font-bold text-white">3</span
+                >
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Receive Bookings
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Anyone with your link can see your availability and book time
+                instantly. Appointments appear automatically in both calendars
+                with confirmations.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Details Card -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300"
+          >
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Real-Time Availability Sync
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Your booking link stays synchronized with your calendar in
+              real-time. As soon as you book a meeting manually or someone else
+              books through your link, that time becomes unavailable
+              automatically. The link never shows outdated availability that
+              could lead to double-bookings. This live synchronization ensures
+              anyone accessing your booking link always sees accurate,
+              up-to-the-minute availability, making scheduling reliable and
+              conflict-free for everyone involved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="howitworks-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#howitworks-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-background via-background to-orange-500/5 relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-6xl mx-auto">
+        <!-- Badge + Heading -->
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+              ></path>
+            </svg>
+            <span>Use Cases</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Who Benefits from
+            <br />
+            <span class="text-text-muted">Calendar Sharing?</span>
+          </h2>
+        </div>
+
+        <!-- 4 Use Case Cards (2x2 grid) -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Use Case 1 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Sales & Business Development
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Sales teams need effortless booking for prospects and leads.
+                Adding a booking link to outreach emails eliminates the "when
+                are you available?" back-and-forth that delays sales
+                conversations. Prospects click the link, book a demo or
+                discovery call instantly, and the opportunity moves forward
+                immediately. This reduces friction in the sales process and
+                accelerates deal velocity by making it trivially easy for
+                interested prospects to schedule conversations.
+              </p>
+              <div
+                class="bg-orange-500/5 border border-orange-500/10 rounded-2xl p-4 mt-4"
+              >
+                <p class="text-sm text-text-muted">
+                  <strong class="text-text">Benefit:</strong> Accelerate sales cycles
+                  by removing scheduling friction from prospect conversations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Use Case 2 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Freelancers & Consultants
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Independent professionals need an easy way for potential clients
+                to book initial consultations. Putting a booking link on your
+                website, portfolio, or social media profiles lets interested
+                prospects schedule discovery calls without waiting for your
+                response. This professional self-service experience demonstrates
+                organizational competence while capturing opportunities that
+                might otherwise be lost to scheduling delays or missed messages.
+              </p>
+              <div
+                class="bg-orange-500/5 border border-orange-500/10 rounded-2xl p-4 mt-4"
+              >
+                <p class="text-sm text-text-muted">
+                  <strong class="text-text">Benefit:</strong> Capture more consulting
+                  opportunities with instant professional booking experience.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Use Case 3 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Customer Success Teams
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Support and success teams need easy scheduling for customer
+                check-ins and training sessions. Sending customers a booking
+                link for onboarding calls, quarterly business reviews, or
+                support escalations lets them choose convenient times without
+                waiting for scheduling coordination. This improves customer
+                experience by providing immediate access to schedule support
+                while reducing administrative work for the success team.
+              </p>
+              <div
+                class="bg-orange-500/5 border border-orange-500/10 rounded-2xl p-4 mt-4"
+              >
+                <p class="text-sm text-text-muted">
+                  <strong class="text-text">Benefit:</strong> Improve customer experience
+                  with instant access to schedule support and success meetings.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Use Case 4 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Recruiters & HR Teams
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Recruiting teams conducting hundreds of interviews need
+                streamlined candidate scheduling. Sending interview booking
+                links with candidate outreach lets prospects schedule their own
+                interviews instantly. This eliminates scheduling coordination as
+                a bottleneck in the hiring process, speeds up time-to-hire, and
+                creates a better candidate experience that reflects positively
+                on employer brand during competitive talent acquisition.
+              </p>
+              <div
+                class="bg-orange-500/5 border border-orange-500/10 rounded-2xl p-4 mt-4"
+              >
+                <p class="text-sm text-text-muted">
+                  <strong class="text-text">Benefit:</strong> Accelerate hiring process
+                  and improve candidate experience with instant interview scheduling.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-background via-background to-orange-500/5 relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <span>FAQ</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Frequently Asked Questions
+          </h2>
+        </div>
+        <div class="space-y-6">
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                How do I share my calendar without revealing existing meeting
+                details?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                CalendHub creates public booking links that show your
+                availability without exposing meeting details. Recipients see
+                open time slots but never see titles, attendees, or details of
+                your existing meetings. The system displays only "busy" or
+                "available" status for each time slot, protecting your privacy
+                while letting people book time with you instantly through a
+                simple shareable link.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Can I create different booking links for different purposes?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, you can create multiple booking links with different
+                settings. Create a 30-minute link for client consultations, a
+                15-minute link for quick check-ins, and a 60-minute link for
+                in-depth strategy sessions. Each link can have unique duration,
+                availability windows, custom questions, and confirmation
+                messaging. Share the appropriate link based on context to give
+                recipients exactly the booking experience you want them to have.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Where can I share my booking link?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Booking links work everywhere. Add them to email signatures so
+                every message includes booking capability. Embed them on website
+                contact pages or service pages. Share them in LinkedIn messages,
+                Twitter DMs, or Slack conversations. Post them in social media
+                bios. Include them in proposals and quotes. The link works
+                wherever you share it, making it effortless for anyone to
+                schedule time with you regardless of communication platform.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Does my booking link update in real-time when my schedule
+                changes?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, your booking link stays synchronized with your calendar in
+                real-time. As soon as you book a meeting manually or someone
+                books through your link, that time becomes unavailable
+                immediately. The link never shows outdated availability that
+                could lead to double-bookings. This live synchronization ensures
+                anyone accessing your booking link always sees accurate,
+                up-to-the-minute availability for conflict-free scheduling.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Do people need a CalendHub account to book time with me?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                No, recipients don't need accounts to book through your links.
+                They simply click your booking link, see your available times,
+                choose a slot that works for them, provide their name and email,
+                and confirm the booking. The entire process works without
+                requiring them to sign up, log in, or create any account. This
+                removes friction from scheduling and makes it easy for anyone to
+                book time with you instantly.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Can I customize the appearance of my booking page?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, you can customize your booking page with your logo, brand
+                colors, custom URLs, and personalized messaging. This creates a
+                professional branded experience that matches your business
+                identity. Different appointment types can have different
+                branding and messaging, ensuring the right information reaches
+                bookers based on what they're scheduling. Branded booking pages
+                demonstrate professionalism and create consistent experience
+                from initial booking through meeting completion.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="faq-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#faq-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-orange-500/5 to-background relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-5xl mx-auto">
+        <div class="relative group">
+          <!-- Glow effect -->
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/30 to-amber-500/30 rounded-[3rem] blur-3xl opacity-60 group-hover:opacity-80 transition-opacity duration-500"
+          >
+          </div>
+
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm rounded-[3rem] p-12 md:p-16 text-center"
+          >
+            <h2
+              class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+            >
+              Ready to Share Your Calendar?
+            </h2>
+            <p
+              class="text-xl lg:text-2xl text-text-muted leading-relaxed mb-12 max-w-3xl mx-auto"
+            >
+              Create your public booking link and let anyone schedule time with
+              you instantly. No more scheduling back-and-forth.
+            </p>
+
+            <div class="flex justify-center mb-8">
+              <a
+                href="https://app.calendhub.com/sign-up"
+                class="group relative inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40"
+              >
+                <span>Start Free Trial</span>
+                <svg
+                  class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </a>
+            </div>
+
+            <div
+              class="flex flex-wrap justify-center items-center gap-6 text-sm text-text-muted"
+            >
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>No credit card required</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>14-day free trial</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Share anywhere instantly</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

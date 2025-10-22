@@ -1,0 +1,2066 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Calendar Analytics & Insights - Meeting Productivity Tracking | CalendHub"
+  description="Track calendar analytics, meeting patterns, and time allocation with powerful productivity insights. Built-in analytics tool for data-driven scheduling decisions. Better than RescueTime for calendar data."
+>
+  <!-- Hero Section -->
+  <section
+    class="min-h-[40vh] bg-background relative overflow-hidden flex items-center"
+  >
+    <!-- Animated gradient background -->
+    <div
+      class="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-background to-background"
+    >
+    </div>
+
+    <!-- Decorative blur circles -->
+    <div
+      class="absolute top-20 right-[15%] w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"
+    >
+    </div>
+    <div
+      class="absolute bottom-20 left-[10%] w-96 h-96 bg-amber-500/5 rounded-full blur-3xl"
+    >
+    </div>
+
+    <div class="container relative z-10 py-20">
+      <div class="max-w-4xl mx-auto text-center">
+        <!-- Badge -->
+        <div
+          class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+        >
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+            ></path>
+          </svg>
+          <span>Calendar Analytics & Productivity Insights</span>
+        </div>
+
+        <!-- Hero Heading -->
+        <h1
+          class="text-5xl sm:text-6xl lg:text-7xl font-display font-bold mb-6 text-text leading-[1.1]"
+        >
+          Calendar Insights & Activity Tracking
+        </h1>
+        <p
+          class="text-xl lg:text-2xl text-text-muted leading-relaxed mb-12 max-w-3xl mx-auto"
+        >
+          Get simple insights into your calendar activity. See appointment
+          trends, busiest times, and weekly patterns to understand how your
+          schedule fills up over time.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex justify-center mb-12">
+          <a
+            href="https://app.calendhub.com/sign-up"
+            class="group relative inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40"
+          >
+            <span>Start Free Trial</span>
+            <svg
+              class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Trust Bar -->
+        <div
+          class="flex flex-wrap justify-center items-center gap-6 text-sm text-text-muted pt-8"
+        >
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-5 h-5 text-orange-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>Built into calendar tool</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-5 h-5 text-orange-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>Automatic data collection</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-5 h-5 text-orange-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>No separate tracking app needed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subtle grid background -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="hero-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#hero-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Initial Features Grid -->
+  <section id="features" class="py-32 relative overflow-hidden">
+    <div class="container relative z-10">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Feature 1: Appointment Overview -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Appointment Analysis
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              View basic statistics about your appointments and meetings. See
+              how many meetings you have each week, average meeting duration,
+              and busiest days at a glance.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 2: Weekly & Monthly Reports -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Weekly & Monthly Summaries
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Get simple weekly and monthly summaries of your calendar activity.
+              Track how your schedule changes over time and compare busy periods
+              to lighter weeks.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 3: Meeting Patterns -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Schedule Patterns & Trends
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Identify recurring patterns in your calendar. See which days tend
+              to be meeting-heavy, what times you typically schedule
+              appointments, and how your calendar fills up over time.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 4: Time Breakdown -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Time Allocation View
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Understand how your time is distributed across different calendars
+              and appointment types. See total hours in meetings versus
+              available time blocks throughout your week.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 5: Busiest Days/Times -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Peak Activity Insights
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Discover your busiest days and times based on historical calendar
+              data. Identify which days of the week or hours of the day
+              typically have the most appointments scheduled.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 6: Calendar Comparison -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Multi-Calendar Breakdown
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Compare activity across your different calendars. See how much
+              time is allocated to work meetings versus personal appointments or
+              client calendars versus internal schedules.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="features-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#features-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="py-20 bg-background">
+    <div class="container">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-text mb-6">
+          What Are Calendar Insights?
+        </h2>
+        <div
+          class="prose prose-lg max-w-none space-y-6 text-text-muted leading-relaxed"
+        >
+          <p>
+            Calendar insights give you a simple overview of your appointment
+            activity and scheduling patterns. Instead of manually tracking
+            meetings or reviewing your calendar day by day, CalendHub
+            automatically shows you basic statistics like how many appointments
+            you have each week, which days are busiest, and how your schedule
+            changes over time. These insights are built directly into your
+            calendar management platform, so you can see appointment trends
+            without using separate tracking tools or spreadsheets.
+          </p>
+
+          <p>
+            Your calendar already contains information about every meeting and
+            appointment you schedule. CalendHub's insights feature simply
+            organizes this information into easy-to-read summaries and
+            visualizations. See weekly totals, compare busy weeks to light
+            weeks, identify your typical busiest days, and understand how time
+            is distributed across your different calendars. The system
+            automatically tracks this data as you use your calendar normally -
+            no manual input, timers, or extra steps required.
+          </p>
+
+          <p>
+            Unlike standalone time tracking applications that require you to
+            categorize activities or run background software, CalendHub's
+            calendar insights work with the scheduling data you're already
+            creating. View simple metrics about meeting frequency, average
+            durations, and time allocation across work and personal calendars.
+            Track patterns over time to see how your schedule evolves from month
+            to month. All insights are based on your calendar events, giving you
+            a straightforward view of your appointment activity without
+            complicated analytics dashboards or advanced reporting features.
+          </p>
+
+          <p>
+            Privacy and data security are important when viewing calendar
+            information. CalendHub only displays insights based on your own
+            calendar events - the basic metadata like event times, durations,
+            and which calendar they belong to. No meeting content, notes, or
+            sensitive details are analyzed. You control which calendars are
+            included in your insights, and all data remains private and
+            encrypted. This simple, privacy-focused approach gives you
+            visibility into your scheduling patterns without exposing
+            confidential information or requiring complex permissions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="py-32 relative overflow-hidden">
+    <div class="container relative z-10">
+      <div class="max-w-5xl mx-auto">
+        <!-- Badge -->
+        <div
+          class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+        >
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
+          <span>How It Works</span>
+        </div>
+
+        <!-- Heading -->
+        <h2
+          class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+        >
+          View Your Calendar Insights
+          <br />
+          <span class="text-text-muted">Automatically</span>
+        </h2>
+
+        <!-- 3 Step Cards -->
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <!-- Step 1 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <span class="text-3xl font-display font-bold text-white">1</span
+                >
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Use Your Calendar Normally
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Schedule appointments, create meetings, and manage your calendar
+                as you always do. CalendHub automatically tracks this activity
+                in the background without any extra work from you.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <span class="text-3xl font-display font-bold text-white">2</span
+                >
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Data Organizes Automatically
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Your calendar information gets organized into simple summaries
+                and visualizations. See weekly appointment counts, busiest days,
+                time distribution, and basic patterns emerge from your
+                scheduling data.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <span class="text-3xl font-display font-bold text-white">3</span
+                >
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                View Simple Insights
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Check your insights whenever you want to see appointment trends,
+                compare different time periods, or understand how your calendar
+                activity changes over weeks and months. All information is right
+                in your calendar app.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Details Card -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300"
+          >
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Simple Calendar Activity Tracking
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              CalendHub's insights feature works by organizing the basic
+              information from your calendar events - times, durations, and
+              which calendar they belong to. As you schedule appointments
+              throughout the week, the system keeps running totals and
+              identifies simple patterns like which days tend to fill up first
+              or how many meetings you typically have. Historical data shows how
+              your schedule looked in previous weeks or months for easy
+              comparison. All information is stored securely with encryption,
+              and only displays data from calendars you've connected to
+              CalendHub.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="howitworks-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#howitworks-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-background via-background to-orange-500/5 relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-6xl mx-auto">
+        <!-- Badge + Heading -->
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+              ></path>
+            </svg>
+            <span>Use Cases</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Who Benefits from
+            <br />
+            <span class="text-text-muted">Calendar Analytics Software?</span>
+          </h2>
+        </div>
+
+        <!-- 4 Use Case Cards (2x2 grid) -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Use Case 1: Executives & Managers -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Executives & Managers
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Senior leaders spend 20-40 hours per week in meetings, often
+                losing visibility into focus time and work-life balance.
+                Calendar analytics software helps executives identify meeting
+                overload, delegate unnecessary meetings, and protect strategic
+                thinking time. Data-driven insights show which recurring
+                meetings deliver value versus drain productivity, enabling
+                leaders to make evidence-based decisions about their schedule.
+              </p>
+              <div
+                class="bg-orange-500/5 border border-orange-500/10 rounded-2xl p-4 mt-4"
+              >
+                <p class="text-sm text-text-muted">
+                  <strong class="text-text">Common setup:</strong> Executive managing
+                  4 calendars (personal, work, board meetings, industry commitments)
+                  with 30-50 meetings per week. Analytics reveal 12 hours of recurring
+                  meetings that could be delegated or eliminated, freeing time for
+                  strategic initiatives.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Use Case 2: Productivity Enthusiasts -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Productivity Enthusiasts
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Individual contributors optimizing personal productivity need
+                visibility into meeting versus focus time ratios. Calendar
+                analytics reveals peak performance hours, optimal times for deep
+                work, and meeting patterns that fragment the workday.
+                Productivity insights show the true cost of context switching
+                and help individuals protect valuable focus time for high-impact
+                work.
+              </p>
+              <div
+                class="bg-orange-500/5 border border-orange-500/10 rounded-2xl p-4 mt-4"
+              >
+                <p class="text-sm text-text-muted">
+                  <strong class="text-text">Common setup:</strong> Professional with
+                  30-50 meetings per month across work and personal calendars. Analytics
+                  identify that Tuesdays and Thursdays are 80% meeting-free (ideal
+                  focus days), while Mondays and Wednesdays are fragmented with 6+
+                  short meetings preventing deep work.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Use Case 3: Team Leads -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Team Leads & Managers
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Team managers need visibility into team-wide meeting load,
+                collaboration patterns, and workload distribution. Team
+                analytics dashboards reveal whether meeting burden is
+                distributed fairly or if certain team members are overwhelmed
+                with coordination overhead. Meeting efficiency metrics help
+                managers optimize standup frequency, reduce status update
+                meetings, and ensure team resources are allocated to high-value
+                work.
+              </p>
+              <div
+                class="bg-orange-500/5 border border-orange-500/10 rounded-2xl p-4 mt-4"
+              >
+                <p class="text-sm text-text-muted">
+                  <strong class="text-text">Common setup:</strong> Manager leading
+                  5-15 team members with shared project calendars. Team analytics
+                  show 3 team members spend 60% of time in meetings while others
+                  have 80% focus time, revealing workload imbalance. Manager redistributes
+                  coordination responsibilities to improve team productivity.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Use Case 4: Consultants & Freelancers -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Consultants & Freelancers
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Independent professionals managing multiple clients need
+                accurate time allocation data for billing and profitability
+                analysis. Calendar analytics provides automatic time tracking by
+                client, project category, or meeting type without manual timers.
+                Custom reports show billable versus non-billable time
+                distribution, client meeting loads, and opportunities to
+                optimize service delivery.
+              </p>
+              <div
+                class="bg-orange-500/5 border border-orange-500/10 rounded-2xl p-4 mt-4"
+              >
+                <p class="text-sm text-text-muted">
+                  <strong class="text-text">Common setup:</strong> Consultant juggling
+                  3-10 client calendars with separate booking links and project schedules.
+                  Analytics reveal 15% of time spent in internal coordination meetings
+                  versus 65% in billable client work, helping optimize business model
+                  for profitability.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section class="py-32 relative overflow-hidden">
+    <div class="container relative z-10">
+      <div class="max-w-5xl mx-auto">
+        <!-- Badge + Heading -->
+        <div class="text-center mb-16">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span>Comparison</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            CalendHub Analytics vs
+            <br />
+            <span class="text-text-muted">Other Productivity Tools</span>
+          </h2>
+        </div>
+
+        <!-- Comparison Table -->
+        <div
+          class="bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border rounded-2xl overflow-hidden mb-12"
+        >
+          <div class="overflow-x-auto">
+            <table class="w-full">
+              <thead class="bg-orange-500/10">
+                <tr>
+                  <th class="text-left p-4 text-text font-display">Feature</th>
+                  <th class="text-center p-4 text-text font-display"
+                    >CalendHub Analytics</th
+                  >
+                  <th class="text-center p-4 text-text font-display"
+                    >RescueTime / Clockwise</th
+                  >
+                  <th class="text-center p-4 text-text font-display"
+                    >Manual Spreadsheets</th
+                  >
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-border">
+                <tr>
+                  <td class="p-4 text-text-muted">Automatic meeting tracking</td
+                  >
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 mx-auto text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                  <td class="p-4 text-center">
+                    <span class="text-orange-500">~</span>
+                    <span class="text-xs block"
+                      >Limited calendar integration</span
+                    >
+                  </td>
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 mx-auto text-red-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-4 text-text-muted">Built into calendar tool</td>
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 mx-auto text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 mx-auto text-red-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 mx-auto text-red-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-4 text-text-muted">Meeting pattern analysis</td>
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 mx-auto text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                  <td class="p-4 text-center">
+                    <span class="text-orange-500">~</span>
+                    <span class="text-xs block">Generic activity tracking</span>
+                  </td>
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 mx-auto text-red-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-4 text-text-muted">Team analytics dashboard</td>
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 mx-auto text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                  <td class="p-4 text-center">
+                    <span class="text-orange-500">~</span>
+                    <span class="text-xs block">Paid enterprise tier only</span>
+                  </td>
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 mx-auto text-red-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-4 text-text-muted">AI schedule optimization</td>
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 mx-auto text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                  <td class="p-4 text-center">
+                    <span class="text-orange-500">~</span>
+                    <span class="text-xs block">Focus time protection only</span
+                    >
+                  </td>
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 mx-auto text-red-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-4 text-text-muted">Custom report builder</td>
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 mx-auto text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                  <td class="p-4 text-center">
+                    <span class="text-orange-500">~</span>
+                    <span class="text-xs block">Basic exports</span>
+                  </td>
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 mx-auto text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="text-xs block">Manual effort</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Competitor Limitation Disclaimer -->
+        <div class="group relative mt-8">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300"
+          >
+            <h3 class="text-xl font-display font-bold text-text mb-4">
+              RescueTime & Clockwise Limitations
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              RescueTime tracks all computer activity including browsing and
+              application usage, providing generic productivity scores but
+              lacking calendar-specific context like meeting attendee data,
+              recurring patterns, or scheduling conflicts. It requires
+              background monitoring software and doesn't integrate with calendar
+              management workflows. Clockwise focuses primarily on protecting
+              focus time by automatically moving meetings, but lacks
+              comprehensive meeting analytics, historical trend analysis, and
+              custom reporting capabilities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="comparison-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#comparison-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-background via-background to-orange-500/5 relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-6xl mx-auto">
+        <!-- Badge + Heading -->
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+              ></path>
+            </svg>
+            <span>Key Benefits</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Benefits of Calendar Analytics
+            <br />
+            <span class="text-text-muted">For Your Productivity</span>
+          </h2>
+        </div>
+
+        <!-- 6 Benefit Cards (3x2 grid) -->
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Benefit 1 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Data-Driven Scheduling Decisions
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Make scheduling decisions based on evidence, not intuition.
+                Analytics reveal which meetings drive results and which waste
+                time, enabling you to optimize your calendar with confidence.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Identify Time Wasters Automatically
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Calendar analytics automatically flags low-value meetings,
+                recurring events with declining attendance, and schedule
+                patterns that fragment focus time. Reclaim hours every week
+                without manual auditing.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Optimize Meeting Load Balance
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Team analytics reveal meeting distribution across your
+                organization. Ensure coordination burden is shared fairly and
+                prevent meeting overload that leads to burnout and reduced
+                productivity.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Improve Overall Productivity
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Productivity insights help you align your schedule with your
+                peak performance hours. Schedule demanding work during
+                high-energy periods and meetings during natural collaboration
+                windows for maximum effectiveness.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 5 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Better Work-Life Balance
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Track work calendar hours and identify unsustainable patterns
+                before burnout occurs. Analytics show when work meetings
+                encroach on personal time, helping you establish healthy
+                boundaries.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 6 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Actionable Custom Reports
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Generate executive dashboards, team performance reports, or
+                personal productivity summaries. Export data for presentations
+                or integrate with business intelligence tools for deeper
+                organizational analysis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-32 bg-background relative overflow-hidden">
+    <div class="container relative z-10">
+      <div class="max-w-6xl mx-auto">
+        <!-- Badge + Heading -->
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <span>Frequently Asked Questions</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Calendar Analytics
+            <br />
+            <span class="text-text-muted">Questions Answered</span>
+          </h2>
+        </div>
+
+        <!-- FAQ Grid (2x4) -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- FAQ 1 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                What exactly does calendar analytics software track?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Calendar analytics software tracks meeting frequency, duration,
+                attendee counts, recurring patterns, time-of-day distribution,
+                and focus time versus meeting time ratios. CalendHub analyzes
+                event metadata from your synchronized calendars without
+                accessing meeting content, notes, or attachments. The system
+                identifies patterns like back-to-back meetings, fragmented
+                schedules, meeting overload, and collaboration trends across
+                individuals or teams.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                How does CalendHub analytics differ from RescueTime or
+                Clockwise?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                CalendHub provides calendar-specific analytics built into your
+                scheduling tool, while RescueTime tracks generic computer
+                activity and Clockwise focuses primarily on focus time
+                protection. CalendHub analyzes meeting patterns, attendee data,
+                and scheduling conflicts that activity tracking tools can't see.
+                Our analytics integrate directly with calendar management, so
+                insights immediately inform scheduling decisions without
+                switching between separate applications or requiring background
+                monitoring software.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                How fast does calendar analytics update with new data?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                CalendHub analytics updates in real-time as calendar events are
+                created, modified, or completed. Meeting analytics reflect the
+                latest scheduling data within minutes, and productivity
+                dashboards refresh automatically throughout the day. Historical
+                trend analysis processes overnight to generate weekly and
+                monthly reports. Real-time updates ensure you always have
+                current visibility into meeting load, schedule changes, and
+                productivity patterns without waiting for batch processing.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                Is my calendar data secure in analytics processing?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, CalendHub processes all analytics data with
+                enterprise-grade encryption and privacy controls. We only
+                analyze calendar event metadata like times, durations, and
+                attendee counts - never meeting content, notes, attachments, or
+                private details. You control which calendars are included in
+                analytics, who can view reports, and how long historical data is
+                retained. Team analytics include individual privacy settings so
+                users can opt out of certain metrics while still contributing to
+                aggregate insights.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                Which calendar platforms does analytics support?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                CalendHub analytics works with all synchronized calendar
+                platforms including Google Calendar, Microsoft Outlook/365,
+                Apple iCloud, Exchange, and CalDAV-compatible calendars.
+                Analytics automatically aggregate data across all your connected
+                calendars, providing unified insights regardless of calendar
+                provider. You can filter reports by specific calendars, view
+                cross-platform meeting patterns, and analyze time allocation
+                across both work and personal calendars in a single dashboard.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                Are there limits on analytics data or report generation?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                CalendHub includes unlimited analytics tracking and report
+                generation on all paid plans. There are no restrictions on the
+                number of calendars analyzed, historical data retention periods,
+                or custom reports you can create. Free trial accounts include
+                full analytics access for 14 days. Team plans include unlimited
+                user analytics dashboards and aggregate reports. Export
+                capabilities allow you to extract raw data for external analysis
+                in business intelligence tools.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                Can I use analytics to track billable time for clients?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, calendar analytics provides automatic time tracking by
+                calendar, meeting category, or custom tags. Consultants and
+                freelancers use CalendHub to track billable client time without
+                manual timers. Tag client meetings, categorize internal versus
+                billable work, and generate time allocation reports showing
+                hours per client or project. Custom reports can be exported for
+                invoicing or profitability analysis. This calendar-based
+                approach is more accurate than manual time tracking because it
+                captures all scheduled client interactions.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                How do team analytics respect individual privacy?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Team analytics include privacy controls that let individuals opt
+                out of specific metrics while still contributing to aggregate
+                data. Managers see team-wide patterns like average meeting load
+                or focus time distribution without viewing individual calendar
+                details. Personal productivity insights remain private unless
+                users explicitly share reports. Privacy settings are granular -
+                users can participate in workload balance analytics while opting
+                out of detailed meeting pattern tracking. This approach provides
+                organizational insights without micromanagement or privacy
+                concerns.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="faq-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#faq-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-background via-background to-orange-500/5 relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <span>FAQ</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Frequently Asked Questions
+          </h2>
+        </div>
+        <div class="space-y-6">
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                What scheduling metrics can I track with CalendHub analytics?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                CalendHub tracks comprehensive scheduling metrics including
+                booking volume, conversion rates, popular time slots,
+                cancellation rates, no-show percentages, average lead time,
+                meeting duration patterns, and peak booking days. You can
+                segment data by team member, meeting type, calendar, or custom
+                parameters.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Can I export analytics data for custom reporting?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, all analytics data can be exported in CSV, Excel, or JSON
+                formats. You can schedule automated exports to run daily,
+                weekly, or monthly, and integrate with business intelligence
+                tools like Tableau, Power BI, or Google Data Studio for advanced
+                custom reporting and visualization.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Does CalendHub analytics support team performance tracking?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Absolutely. Our team analytics dashboard provides individual and
+                comparative performance metrics, showing booking distribution,
+                response times, utilization rates, and customer satisfaction
+                scores across team members. Perfect for identifying top
+                performers and optimizing team scheduling efficiency.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                How far back does historical analytics data go?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                CalendHub retains unlimited historical analytics data for the
+                lifetime of your account. Access years of scheduling data to
+                identify long-term trends, seasonal patterns, and year-over-year
+                growth. Compare any time periods to understand how your
+                scheduling patterns evolve.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Can I create custom analytics dashboards for specific needs?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, CalendHub allows you to create unlimited custom dashboards
+                tailored to specific roles, departments, or objectives. Choose
+                from 50+ widgets, arrange layouts, set filters, and save views.
+                Share dashboards with stakeholders or embed them in other tools
+                via iframe.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Are real-time analytics available for monitoring current booking
+                activity?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, real-time analytics provide live updates on current booking
+                activity, active sessions, conversion funnels, and immediate
+                insights. Monitor booking trends as they happen, receive instant
+                alerts for anomalies, and make data-driven decisions without
+                waiting for end-of-day reports.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="faq-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#faq-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-orange-500/5 to-background relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-5xl mx-auto">
+        <div class="relative group">
+          <!-- Glow effect -->
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/30 to-amber-500/30 rounded-[3rem] blur-3xl opacity-60 group-hover:opacity-80 transition-opacity duration-500"
+          >
+          </div>
+
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm rounded-[3rem] p-12 md:p-16 text-center"
+          >
+            <h2
+              class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+            >
+              Ready to Optimize Your Calendar?
+            </h2>
+            <p
+              class="text-xl lg:text-2xl text-text-muted leading-relaxed mb-12 max-w-3xl mx-auto"
+            >
+              Start tracking meeting patterns, identifying time wasters, and
+              making data-driven scheduling decisions. Get comprehensive
+              calendar analytics built into your scheduling workflow.
+            </p>
+
+            <div class="flex justify-center mb-8">
+              <a
+                href="https://app.calendhub.com/sign-up"
+                class="group relative inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40"
+              >
+                <span>Start Free Trial</span>
+                <svg
+                  class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </a>
+            </div>
+
+            <div
+              class="flex flex-wrap justify-center items-center gap-6 text-sm text-text-muted"
+            >
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>No credit card required</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Unlimited analytics & reports</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Setup in 5 minutes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating elements -->
+    <div
+      class="absolute inset-0 pointer-events-none overflow-hidden opacity-20"
+    >
+      <div
+        class="absolute top-20 left-[10%] animate-pulse"
+        style="animation-duration: 4s;"
+      >
+        <svg
+          class="w-16 h-16 text-orange-500"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"
+          ></path>
+        </svg>
+      </div>
+      <div
+        class="absolute bottom-20 right-[15%] animate-pulse"
+        style="animation-duration: 5s; animation-delay: 1s;"
+      >
+        <svg
+          class="w-16 h-16 text-orange-500"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<!-- FAQPage Schema -->
+<script type="application/ld+json" is:inline>
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What exactly does calendar analytics software track?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Calendar analytics software tracks meeting frequency, duration, attendee counts, recurring patterns, time-of-day distribution, and focus time versus meeting time ratios. CalendHub analyzes event metadata from your synchronized calendars without accessing meeting content, notes, or attachments. The system identifies patterns like back-to-back meetings, fragmented schedules, meeting overload, and collaboration trends across individuals or teams."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does CalendHub analytics differ from RescueTime or Clockwise?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CalendHub provides calendar-specific analytics built into your scheduling tool, while RescueTime tracks generic computer activity and Clockwise focuses primarily on focus time protection. CalendHub analyzes meeting patterns, attendee data, and scheduling conflicts that activity tracking tools can't see. Our analytics integrate directly with calendar management, so insights immediately inform scheduling decisions without switching between separate applications or requiring background monitoring software."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How fast does calendar analytics update with new data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CalendHub analytics updates in real-time as calendar events are created, modified, or completed. Meeting analytics reflect the latest scheduling data within minutes, and productivity dashboards refresh automatically throughout the day. Historical trend analysis processes overnight to generate weekly and monthly reports. Real-time updates ensure you always have current visibility into meeting load, schedule changes, and productivity patterns without waiting for batch processing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my calendar data secure in analytics processing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, CalendHub processes all analytics data with enterprise-grade encryption and privacy controls. We only analyze calendar event metadata like times, durations, and attendee counts - never meeting content, notes, attachments, or private details. You control which calendars are included in analytics, who can view reports, and how long historical data is retained. Team analytics include individual privacy settings so users can opt out of certain metrics while still contributing to aggregate insights."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which calendar platforms does analytics support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CalendHub analytics works with all synchronized calendar platforms including Google Calendar, Microsoft Outlook/365, Apple iCloud, Exchange, and CalDAV-compatible calendars. Analytics automatically aggregate data across all your connected calendars, providing unified insights regardless of calendar provider. You can filter reports by specific calendars, view cross-platform meeting patterns, and analyze time allocation across both work and personal calendars in a single dashboard."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are there limits on analytics data or report generation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CalendHub includes unlimited analytics tracking and report generation on all paid plans. There are no restrictions on the number of calendars analyzed, historical data retention periods, or custom reports you can create. Free trial accounts include full analytics access for 14 days. Team plans include unlimited user analytics dashboards and aggregate reports. Export capabilities allow you to extract raw data for external analysis in business intelligence tools."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use analytics to track billable time for clients?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, calendar analytics provides automatic time tracking by calendar, meeting category, or custom tags. Consultants and freelancers use CalendHub to track billable client time without manual timers. Tag client meetings, categorize internal versus billable work, and generate time allocation reports showing hours per client or project. Custom reports can be exported for invoicing or profitability analysis. This calendar-based approach is more accurate than manual time tracking because it captures all scheduled client interactions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do team analytics respect individual privacy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Team analytics include privacy controls that let individuals opt out of specific metrics while still contributing to aggregate data. Managers see team-wide patterns like average meeting load or focus time distribution without viewing individual calendar details. Personal productivity insights remain private unless users explicitly share reports. Privacy settings are granular - users can participate in workload balance analytics while opting out of detailed meeting pattern tracking. This approach provides organizational insights without micromanagement or privacy concerns."
+        }
+      }
+    ]
+  }
+</script>
+
+<!-- SoftwareApplication Schema -->
+<script type="application/ld+json" is:inline>
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "CalendHub Calendar Analytics",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web, iOS, Android",
+    "description": "Calendar analytics software that tracks meeting patterns, time allocation, and productivity insights. Built-in analytics tool for data-driven scheduling decisions with automatic meeting tracking, AI-powered schedule optimization, and team performance dashboards.",
+    "url": "https://calendhub.com/features/analytics",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "14-day free trial, no credit card required"
+    },
+    "featureList": [
+      "Automatic time tracking from calendar events",
+      "Meeting pattern analysis and insights",
+      "AI-powered productivity recommendations",
+      "Schedule optimization engine",
+      "Team analytics dashboards",
+      "Custom report builder with exports",
+      "Real-time analytics updates",
+      "Privacy-preserving data processing",
+      "Unlimited calendar connections",
+      "Billable time tracking by client"
+    ]
+  }
+</script>

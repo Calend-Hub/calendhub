@@ -1,0 +1,2198 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Team Calendar Management - Multi-Tenant Workspaces | CalendHub"
+  description="Manage unlimited team calendars with multi-tenant workspaces, role-based access control, and advanced team scheduling. No 6-calendar limit. Perfect for agencies, sales teams, and distributed organizations."
+>
+  <!-- Hero Section -->
+  <section
+    class="min-h-[40vh] bg-background relative overflow-hidden flex items-center"
+  >
+    <!-- Animated gradient background -->
+    <div
+      class="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-background to-background"
+    >
+    </div>
+
+    <!-- Decorative blur circles -->
+    <div
+      class="absolute top-20 right-[15%] w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"
+    >
+    </div>
+    <div
+      class="absolute bottom-20 left-[10%] w-96 h-96 bg-amber-500/5 rounded-full blur-3xl"
+    >
+    </div>
+
+    <div class="container relative z-10 py-20">
+      <div class="max-w-5xl mx-auto text-center">
+        <!-- Badge -->
+        <div
+          class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+        >
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path
+              d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"
+            ></path>
+          </svg>
+          <span>Enterprise Feature</span>
+        </div>
+
+        <!-- Heading -->
+        <h1
+          class="text-5xl sm:text-6xl lg:text-7xl font-display font-bold mb-6 text-text leading-[1.1]"
+        >
+          Team Calendar Management
+          <br />
+          <span class="text-text-muted">Built for Collaboration</span>
+        </h1>
+
+        <!-- Subheading -->
+        <p
+          class="text-xl lg:text-2xl text-text-muted leading-relaxed mb-10 max-w-4xl mx-auto"
+        >
+          Multi-tenant workspace architecture designed for teams. Manage
+          unlimited calendars with role-based access control, team scheduling,
+          and complete data isolation between workspaces.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex justify-center mb-12">
+          <a
+            href="https://app.calendhub.com/sign-up"
+            class="group relative inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40"
+          >
+            <span>Start Free Trial</span>
+            <svg
+              class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Trust Bar -->
+        <div
+          class="flex flex-wrap justify-center items-center gap-6 text-sm text-text-muted pt-8"
+        >
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-5 h-5 text-orange-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>Unlimited workspaces</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-5 h-5 text-orange-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>No team member limits</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-5 h-5 text-orange-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>14-day free trial</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subtle grid background -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="hero-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#hero-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Initial Features Grid -->
+  <section id="features" class="py-32 relative overflow-hidden">
+    <div class="container relative z-10">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Feature 1 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Multi-Tenant Workspaces
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Create separate workspaces for different teams, clients, or
+              projects. Keep everything organized with complete data isolation
+              and independent settings.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Team Collaboration
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Share calendars, booking links, and meeting notes seamlessly
+              across your team. Real-time synchronization keeps everyone aligned
+              and informed.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Role-Based Access Control
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Define granular permissions for team members with admin, editor,
+              and viewer roles. Control who can view, edit, or manage scheduling
+              settings.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Workspace Management
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Centralized settings and billing for each workspace. Streamline
+              onboarding and offboarding with instant access provisioning and
+              revocation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Advanced Team Scheduling
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Round-robin distribution and collective scheduling for team
+              meetings. Balance workloads fairly and find times that work for
+              all participants.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Team Analytics & Insights
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Track team performance, meeting load, and productivity metrics.
+              Make data-driven decisions about resource allocation and capacity
+              planning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="features-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#features-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="py-20 bg-background">
+    <div class="container">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-text mb-6">
+          What Is Team Calendar Management Software?
+        </h2>
+        <div
+          class="prose prose-lg max-w-none text-text-muted leading-relaxed space-y-6"
+        >
+          <p>
+            Team calendar management software is a multi-tenant scheduling
+            solution that enables organizations to coordinate meetings, manage
+            availability, and collaborate across distributed teams. Unlike
+            traditional calendar tools that focus on individual scheduling, team
+            calendar management platforms provide workspace-based architecture
+            where multiple teams can operate independently while sharing a
+            unified scheduling infrastructure. This approach is essential for
+            agencies managing client workspaces, sales organizations
+            coordinating lead distribution, and professional services firms
+            allocating resources across project teams.
+          </p>
+          <p>
+            CalendHub's team calendar management system is built around
+            multi-tenant workspaces with complete data isolation. Each workspace
+            functions as an independent scheduling environment with its own
+            calendars, team members, booking links, and settings. Organizations
+            can create unlimited workspaces for different departments, clients,
+            or projects without additional configuration overhead. This
+            architecture supports role-based access control where workspace
+            administrators define granular permissions for team members,
+            ensuring sensitive calendar data remains secure while enabling
+            seamless collaboration within appropriate boundaries.
+          </p>
+          <p>
+            The platform addresses critical limitations found in competing
+            solutions like <a
+              href="/blog/calendhub-vs-calendly-roi-multiple-calendars-2025"
+              class="text-orange-600 hover:text-orange-700 underline"
+              >Calendly Teams</a
+            >, which imposes restrictive calendar connection limits even on team
+            plans. While Calendly restricts users to 6 connected calendars
+            regardless of plan tier, CalendHub supports unlimited calendar
+            connections per team member, making it ideal for consultants
+            managing multiple client calendars, executives balancing work and
+            personal schedules, or sales representatives tracking various
+            pipeline calendars. This fundamental difference in architecture
+            means teams can scale their scheduling infrastructure without
+            artificial platform constraints.
+          </p>
+          <p>
+            Beyond basic calendar aggregation, CalendHub's team management
+            features include advanced scheduling capabilities like round-robin
+            meeting distribution, collective availability finding, and team-wide
+            analytics dashboards. Security and privacy are prioritized through
+            enterprise-grade data isolation between workspaces, ensuring that
+            one team's calendar information never leaks to another workspace.
+            Organizations gain centralized billing and administrative controls
+            while individual teams maintain autonomy over their scheduling
+            preferences, creating an optimal balance between governance and
+            flexibility for modern distributed workforces.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="py-32 relative overflow-hidden">
+    <div class="container relative z-10">
+      <div class="max-w-5xl mx-auto">
+        <!-- Badge -->
+        <div
+          class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+        >
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path
+              fill-rule="evenodd"
+              d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span>How It Works</span>
+        </div>
+
+        <!-- Heading -->
+        <h2
+          class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+        >
+          Set Up Team Scheduling
+          <br />
+          <span class="text-text-muted">In Three Simple Steps</span>
+        </h2>
+
+        <!-- 3 Step Cards -->
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <!-- Step 1 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <span class="text-3xl font-bold text-white">1</span>
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Create Workspaces
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Set up separate workspaces for each team, client, or department.
+                Configure workspace settings, branding, and scheduling
+                preferences independently.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <span class="text-3xl font-bold text-white">2</span>
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Add Team Members
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Invite team members and assign roles with granular permissions.
+                Each member connects their calendars and configures availability
+                preferences.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <span class="text-3xl font-bold text-white">3</span>
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Collaborate Seamlessly
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Enable round-robin scheduling, share booking links, and track
+                team performance. Real-time sync keeps everyone aligned across
+                all calendars.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Details Card -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300"
+          >
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Behind the Scenes: Multi-Tenant Architecture
+            </h3>
+            <p class="text-text-muted leading-relaxed mb-4">
+              CalendHub's workspace system employs true multi-tenancy with
+              complete data isolation. Each workspace operates in a logically
+              separated environment where calendar data, user permissions, and
+              scheduling configurations cannot be accessed by other workspaces.
+              This architecture ensures enterprise-grade security while
+              maintaining high performance through shared infrastructure
+              optimization.
+            </p>
+            <p class="text-text-muted leading-relaxed">
+              The platform uses webhook-based calendar synchronization for
+              real-time updates, eliminating polling delays and ensuring that
+              team members see availability changes instantly. Role-based access
+              control is enforced at the database level with additional
+              application-layer validation, preventing unauthorized access even
+              if API endpoints are directly accessed. All workspace
+              communications are encrypted in transit and at rest, meeting
+              compliance requirements for regulated industries.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="how-it-works-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#how-it-works-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-background via-background to-orange-500/5 relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-6xl mx-auto">
+        <!-- Badge + Large Heading -->
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
+              ></path>
+            </svg>
+            <span>Use Cases</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Who Benefits from
+            <br />
+            <span class="text-text-muted">Team Calendar Management?</span>
+          </h2>
+        </div>
+
+        <!-- 4 Use Case Cards -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Use Case 1 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Agencies & Consultancies
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Marketing agencies, consulting firms, and professional services
+                companies managing multiple client accounts simultaneously. Each
+                client requires dedicated scheduling infrastructure with
+                separate team assignments, branding, and billing.
+              </p>
+              <p class="text-text-muted leading-relaxed">
+                <strong class="text-text">Common setup:</strong> Create 8-15 client
+                workspaces, each with 3-7 team members assigned. Configure client-specific
+                booking pages, meeting types, and availability rules. Team members
+                participate in multiple workspaces based on account assignments.
+              </p>
+            </div>
+          </div>
+
+          <!-- Use Case 2 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Sales Organizations
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                B2B sales teams requiring equitable lead distribution and
+                territory-based scheduling. Round-robin algorithms ensure fair
+                meeting allocation while team analytics track conversion rates
+                and meeting velocity across representatives.
+              </p>
+              <p class="text-text-muted leading-relaxed">
+                <strong class="text-text">Common setup:</strong> Single sales workspace
+                with 15-50 representatives organized by territory or product line.
+                Enable round-robin booking links for inbound leads, configure meeting
+                quotas, and track team performance through centralized dashboards.
+              </p>
+            </div>
+          </div>
+
+          <!-- Use Case 3 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Customer Success Teams
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Customer success managers coordinating account reviews,
+                onboarding sessions, and support escalations. Account-based
+                scheduling ensures customers always reach their designated CSM
+                while backup coverage prevents gaps during time off.
+              </p>
+              <p class="text-text-muted leading-relaxed">
+                <strong class="text-text">Common setup:</strong> CSM workspace with
+                10-25 team members, each managing 15-30 accounts. Configure account-specific
+                booking links that route to assigned CSM with automatic backup routing.
+                Track customer engagement metrics and meeting frequency.
+              </p>
+            </div>
+          </div>
+
+          <!-- Use Case 4 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Professional Services Firms
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Law firms, accounting practices, and consulting groups
+                organizing schedules around project engagements. Project-based
+                workspaces facilitate resource allocation and capacity planning
+                while maintaining client confidentiality through data isolation.
+              </p>
+              <p class="text-text-muted leading-relaxed">
+                <strong class="text-text">Common setup:</strong> Create 5-12 project
+                workspaces with 8-20 consultants allocated based on expertise and
+                availability. Configure collective scheduling for client presentations
+                requiring multiple team members. Track billable hours and utilization
+                rates per workspace.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section class="py-32 relative overflow-hidden">
+    <div class="container relative z-10">
+      <div class="max-w-5xl mx-auto">
+        <!-- Badge + Heading -->
+        <div class="text-center mb-12">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>Comparison</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            CalendHub vs
+            <br />
+            <span class="text-text-muted">Competing Solutions</span>
+          </h2>
+        </div>
+
+        <!-- Comparison Table -->
+        <div
+          class="bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border rounded-2xl overflow-hidden"
+        >
+          <div class="overflow-x-auto">
+            <table class="w-full">
+              <thead class="bg-orange-500/10">
+                <tr>
+                  <th class="text-left p-4 text-text font-display">Feature</th>
+                  <th class="text-center p-4 text-text font-display"
+                    >CalendHub</th
+                  >
+                  <th class="text-center p-4 text-text font-display"
+                    >Calendly Teams</th
+                  >
+                  <th class="text-center p-4 text-text font-display"
+                    >Manual Coordination</th
+                  >
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-border">
+                <tr>
+                  <td class="p-4 text-text-muted"
+                    >Calendar Connections per User</td
+                  >
+                  <td class="p-4 text-center">
+                    <span
+                      class="inline-flex items-center gap-2 text-green-600 dark:text-green-400 font-semibold"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      Unlimited
+                    </span>
+                  </td>
+                  <td class="p-4 text-center">
+                    <span
+                      class="inline-flex items-center gap-2 text-orange-600 dark:text-orange-400 font-semibold"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 000 2h6a1 1 0 100-2H7z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      6 maximum
+                    </span>
+                  </td>
+                  <td class="p-4 text-center">
+                    <span
+                      class="inline-flex items-center gap-2 text-red-600 dark:text-red-400 font-semibold"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      N/A
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-4 text-text-muted">Multi-Tenant Workspaces</td>
+                  <td class="p-4 text-center">
+                    <span
+                      class="inline-flex items-center gap-2 text-green-600 dark:text-green-400 font-semibold"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      Unlimited
+                    </span>
+                  </td>
+                  <td class="p-4 text-center">
+                    <span
+                      class="inline-flex items-center gap-2 text-orange-600 dark:text-orange-400 font-semibold"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 000 2h6a1 1 0 100-2H7z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      Single organization
+                    </span>
+                  </td>
+                  <td class="p-4 text-center">
+                    <span
+                      class="inline-flex items-center gap-2 text-red-600 dark:text-red-400 font-semibold"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      N/A
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-4 text-text-muted"
+                    >Granular Role-Based Permissions</td
+                  >
+                  <td class="p-4 text-center">
+                    <span
+                      class="inline-flex items-center gap-2 text-green-600 dark:text-green-400 font-semibold"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      Admin/Editor/Viewer
+                    </span>
+                  </td>
+                  <td class="p-4 text-center">
+                    <span
+                      class="inline-flex items-center gap-2 text-orange-600 dark:text-orange-400 font-semibold"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 000 2h6a1 1 0 100-2H7z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      Basic roles
+                    </span>
+                  </td>
+                  <td class="p-4 text-center">
+                    <span
+                      class="inline-flex items-center gap-2 text-red-600 dark:text-red-400 font-semibold"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      N/A
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-4 text-text-muted"
+                    >Round-Robin & Collective Scheduling</td
+                  >
+                  <td class="p-4 text-center">
+                    <span
+                      class="inline-flex items-center gap-2 text-green-600 dark:text-green-400 font-semibold"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      Yes
+                    </span>
+                  </td>
+                  <td class="p-4 text-center">
+                    <span
+                      class="inline-flex items-center gap-2 text-green-600 dark:text-green-400 font-semibold"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      Yes
+                    </span>
+                  </td>
+                  <td class="p-4 text-center">
+                    <span
+                      class="inline-flex items-center gap-2 text-red-600 dark:text-red-400 font-semibold"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      Manual only
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-4 text-text-muted">Workspace Data Isolation</td>
+                  <td class="p-4 text-center">
+                    <span
+                      class="inline-flex items-center gap-2 text-green-600 dark:text-green-400 font-semibold"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      Enterprise-grade
+                    </span>
+                  </td>
+                  <td class="p-4 text-center">
+                    <span
+                      class="inline-flex items-center gap-2 text-orange-600 dark:text-orange-400 font-semibold"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 000 2h6a1 1 0 100-2H7z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      Single org only
+                    </span>
+                  </td>
+                  <td class="p-4 text-center">
+                    <span
+                      class="inline-flex items-center gap-2 text-red-600 dark:text-red-400 font-semibold"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      N/A
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-4 text-text-muted">Team Analytics Dashboard</td>
+                  <td class="p-4 text-center">
+                    <span
+                      class="inline-flex items-center gap-2 text-green-600 dark:text-green-400 font-semibold"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      Real-time metrics
+                    </span>
+                  </td>
+                  <td class="p-4 text-center">
+                    <span
+                      class="inline-flex items-center gap-2 text-green-600 dark:text-green-400 font-semibold"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      Basic reporting
+                    </span>
+                  </td>
+                  <td class="p-4 text-center">
+                    <span
+                      class="inline-flex items-center gap-2 text-red-600 dark:text-red-400 font-semibold"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      Manual tracking
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Disclaimer Box -->
+        <div class="group relative mt-8">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300"
+          >
+            <h3 class="text-xl font-display font-bold text-text mb-4">
+              Calendly's 6-Calendar Limitation
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Even on Calendly's Teams plan, each user can only connect a
+              maximum of 6 calendars for availability checking. This limitation
+              creates significant challenges for <a
+                href="/blog/consultant-multiple-client-calendar-management-guide-2025"
+                class="text-orange-600 hover:text-orange-700 dark:text-orange-400 dark:hover:text-orange-300 underline"
+                >consultants managing multiple client calendars</a
+              >, agencies coordinating team schedules across numerous accounts,
+              and executives balancing work and personal commitments across
+              different calendar systems. CalendHub removes this artificial
+              restriction entirely.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="comparison-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#comparison-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-background via-background to-orange-500/5 relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-6xl mx-auto">
+        <!-- Badge + Heading -->
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>Key Benefits</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Benefits of Team Management
+            <br />
+            <span class="text-text-muted">For Modern Organizations</span>
+          </h2>
+        </div>
+
+        <!-- 6 Benefit Cards -->
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Benefit 1 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Eliminate Scheduling Bottlenecks
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Round-robin distribution and automated scheduling remove manual
+                coordination overhead, reducing time-to-meeting by up to 75% for
+                inbound leads.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Enterprise-Grade Data Security
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Complete workspace isolation ensures client calendar data never
+                crosses boundaries. GDPR-compliant architecture with encryption
+                at rest and in transit.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Reduce Administrative Overhead
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Centralized workspace management cuts admin time by 60%. Bulk
+                user provisioning and automated access controls streamline team
+                onboarding.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Data-Driven Resource Allocation
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Team analytics reveal meeting patterns, workload distribution,
+                and capacity constraints. Optimize staffing decisions with
+                real-time utilization metrics.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 5 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Scale Without Limits
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Add unlimited workspaces, team members, and calendar connections
+                as your organization grows. No tiered pricing penalties or
+                feature restrictions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 6 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Improve Team Coordination
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Real-time calendar synchronization keeps distributed teams
+                aligned. Collective scheduling finds optimal meeting times
+                across timezones automatically.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-32 bg-background relative overflow-hidden">
+    <div class="container relative z-10">
+      <div class="max-w-5xl mx-auto">
+        <!-- Badge + Heading -->
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>FAQ</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Frequently Asked Questions
+            <br />
+            <span class="text-text-muted">About Team Management</span>
+          </h2>
+        </div>
+
+        <!-- FAQ Grid -->
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- FAQ 1 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                What is multi-tenant workspace architecture?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Multi-tenant workspaces allow organizations to create completely
+                isolated scheduling environments within a single CalendHub
+                account. Each workspace has its own calendars, team members,
+                booking links, settings, and billing, making it ideal for
+                agencies managing client accounts or companies organizing by
+                department while maintaining enterprise-grade data separation.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                How does role-based access control work?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                CalendHub provides three permission levels: Admins can manage
+                workspace settings, billing, and all team members; Editors can
+                create booking links and modify scheduling configurations;
+                Viewers can only access read-only calendar data. Permissions are
+                enforced at both the database and application layers to prevent
+                unauthorized access across workspace boundaries.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                Can team members belong to multiple workspaces?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, team members can participate in unlimited workspaces with
+                different permission levels in each. For example, a consultant
+                might be an Admin in their primary company workspace while being
+                an Editor in various client workspaces. The platform seamlessly
+                switches context between workspaces, ensuring calendar data
+                remains properly isolated.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                How does round-robin scheduling distribute meetings?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Round-robin scheduling automatically rotates meeting assignments
+                among team members based on availability and configurable rules.
+                You can set distribution based on equal count, weighted
+                percentage, meeting quotas, or priority ordering. The system
+                tracks historical assignments and balances workloads to ensure
+                fair distribution over time.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                Is workspace data truly isolated from other workspaces?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Absolutely. CalendHub implements workspace isolation at multiple
+                levels: database-level row security, application-layer
+                authorization checks, and encrypted data storage with
+                workspace-specific keys. Calendar events, meeting notes, and
+                user data from one workspace are cryptographically separated
+                from all other workspaces, meeting compliance requirements for
+                regulated industries.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                What team analytics are available?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Workspace administrators access real-time dashboards showing
+                meeting volume, booking conversion rates, team member
+                utilization, average scheduling time, and availability patterns.
+                Export detailed reports for capacity planning, performance
+                reviews, and resource allocation decisions. All analytics
+                respect workspace boundaries and user privacy settings.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                How many calendars can each team member connect?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Unlike <a
+                  href="/blog/best-multiple-calendar-management-software-2025"
+                  class="text-orange-600 hover:text-orange-700 underline"
+                  >competing platforms</a
+                > that limit calendar connections, CalendHub supports unlimited calendar
+                connections per team member. Connect all Google Calendar accounts,
+                Outlook calendars, iCloud calendars, and more without restrictions.
+                This is essential for consultants managing client calendars or executives
+                balancing multiple professional and personal schedules.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                How does collective scheduling work for team meetings?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Collective scheduling analyzes availability across multiple team
+                members simultaneously to find mutually available time slots.
+                Configure required attendees versus optional participants, set
+                meeting duration and buffer times, and define timezone
+                preferences. The system displays only time slots where all
+                required participants are available, streamlining coordination
+                for distributed teams.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="faq-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#faq-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-background via-background to-orange-500/5 relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <span>FAQ</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Frequently Asked Questions
+          </h2>
+        </div>
+        <div class="space-y-6">
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                How many team members can I manage in CalendHub?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                CalendHub supports unlimited team members across all plans. Add
+                your entire sales team, customer success department, or entire
+                organization without per-seat limitations. Manage individual
+                calendars, team availability, and collective scheduling needs
+                from a single centralized dashboard.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Can I set different permissions for different team roles?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, CalendHub offers granular role-based access control. Create
+                custom roles with specific permissions for admins, managers,
+                team members, and guests. Control who can view calendars, book
+                meetings, modify settings, access analytics, manage
+                integrations, and perform administrative functions.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Does CalendHub support team scheduling and round-robin
+                distribution?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Absolutely. Configure round-robin scheduling to evenly
+                distribute meeting bookings across team members, route based on
+                expertise or availability, prioritize specific team members, or
+                use weighted distribution. Ensure balanced workloads and
+                optimize team utilization automatically.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Can I view team availability across multiple calendars?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, the team dashboard provides a unified view of availability
+                across all team members and their connected calendars. See who's
+                available, busy, on vacation, or in meetings at a glance. Filter
+                by team, department, skills, or custom attributes to find the
+                right person for any meeting.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                How does CalendHub handle team time off and vacation scheduling?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Team members can mark time off, vacation days, or blocked time
+                that automatically adjusts their availability and routing rules.
+                Admins can view team time-off calendars, approve requests,
+                ensure adequate coverage, and automatically redistribute
+                bookings when team members are unavailable.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Can I track team performance and booking metrics?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, comprehensive team analytics show individual and
+                comparative performance metrics including booking volume,
+                conversion rates, response times, meeting types, and customer
+                satisfaction. Identify top performers, optimize team efficiency,
+                and make data-driven decisions about resource allocation and
+                training needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="faq-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#faq-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-orange-500/5 to-background relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-5xl mx-auto">
+        <div class="relative group">
+          <!-- Glow effect -->
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/30 to-amber-500/30 rounded-[3rem] blur-3xl opacity-60 group-hover:opacity-80 transition-opacity duration-500"
+          >
+          </div>
+
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm rounded-[3rem] p-12 md:p-16 text-center"
+          >
+            <h2
+              class="text-4xl sm:text-5xl font-display font-bold text-text mb-6"
+            >
+              Ready to Transform Your Team's Scheduling?
+            </h2>
+            <p
+              class="text-xl text-text-muted mb-10 max-w-3xl mx-auto leading-relaxed"
+            >
+              Start your 14-day free trial today. No credit card required. Set
+              up unlimited workspaces and connect unlimited calendars in
+              minutes.
+            </p>
+
+            <div class="flex justify-center mb-8">
+              <a
+                href="https://app.calendhub.com/sign-up"
+                class="group/btn relative inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40"
+              >
+                <span>Start Free Trial</span>
+                <svg
+                  class="w-5 h-5 group-hover/btn:translate-x-1 transition-transform"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </a>
+            </div>
+
+            <div
+              class="flex flex-wrap justify-center items-center gap-6 text-sm text-text-muted"
+            >
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>No credit card required</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>14-day free trial</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Cancel anytime</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating elements -->
+    <div
+      class="absolute inset-0 pointer-events-none overflow-hidden opacity-20"
+    >
+      <div
+        class="absolute top-20 left-[10%] animate-pulse"
+        style="animation-duration: 4s;"
+      >
+        <svg
+          class="w-16 h-16 text-orange-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="1.5"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+          ></path>
+        </svg>
+      </div>
+      <div
+        class="absolute bottom-32 right-[15%] animate-pulse"
+        style="animation-duration: 5s; animation-delay: 1s;"
+      >
+        <svg
+          class="w-20 h-20 text-amber-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="1.5"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is multi-tenant workspace architecture?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Multi-tenant workspaces allow organizations to create completely isolated scheduling environments within a single CalendHub account. Each workspace has its own calendars, team members, booking links, settings, and billing, making it ideal for agencies managing client accounts or companies organizing by department while maintaining enterprise-grade data separation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does role-based access control work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CalendHub provides three permission levels: Admins can manage workspace settings, billing, and all team members; Editors can create booking links and modify scheduling configurations; Viewers can only access read-only calendar data. Permissions are enforced at both the database and application layers to prevent unauthorized access across workspace boundaries."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can team members belong to multiple workspaces?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, team members can participate in unlimited workspaces with different permission levels in each. For example, a consultant might be an Admin in their primary company workspace while being an Editor in various client workspaces. The platform seamlessly switches context between workspaces, ensuring calendar data remains properly isolated."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does round-robin scheduling distribute meetings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Round-robin scheduling automatically rotates meeting assignments among team members based on availability and configurable rules. You can set distribution based on equal count, weighted percentage, meeting quotas, or priority ordering. The system tracks historical assignments and balances workloads to ensure fair distribution over time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is workspace data truly isolated from other workspaces?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. CalendHub implements workspace isolation at multiple levels: database-level row security, application-layer authorization checks, and encrypted data storage with workspace-specific keys. Calendar events, meeting notes, and user data from one workspace are cryptographically separated from all other workspaces, meeting compliance requirements for regulated industries."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What team analytics are available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Workspace administrators access real-time dashboards showing meeting volume, booking conversion rates, team member utilization, average scheduling time, and availability patterns. Export detailed reports for capacity planning, performance reviews, and resource allocation decisions. All analytics respect workspace boundaries and user privacy settings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many calendars can each team member connect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unlike competing platforms that limit calendar connections, CalendHub supports unlimited calendar connections per team member. Connect all Google Calendar accounts, Outlook calendars, iCloud calendars, and more without restrictions. This is essential for consultants managing client calendars or executives balancing multiple professional and personal schedules."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does collective scheduling work for team meetings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Collective scheduling analyzes availability across multiple team members simultaneously to find mutually available time slots. Configure required attendees versus optional participants, set meeting duration and buffer times, and define timezone preferences. The system displays only time slots where all required participants are available, streamlining coordination for distributed teams."
+          }
+        }
+      ]
+    }
+  </script>
+
+  <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "CalendHub Team Calendar Management",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, iOS, Android",
+      "description": "Multi-tenant team calendar management software with unlimited workspaces, role-based access control, and advanced team scheduling features. Perfect for agencies, sales organizations, and distributed teams.",
+      "url": "https://calendhub.com/features/team-management",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "14-day free trial, no credit card required"
+      },
+      "featureList": [
+        "Unlimited multi-tenant workspaces with complete data isolation",
+        "Unlimited calendar connections per team member",
+        "Granular role-based access control (Admin, Editor, Viewer)",
+        "Round-robin meeting distribution with customizable rules",
+        "Collective scheduling for team meetings",
+        "Real-time team analytics and utilization dashboards",
+        "Workspace-specific branding and settings",
+        "Centralized billing and administrative controls",
+        "Enterprise-grade security with encryption at rest and in transit",
+        "Webhook-based real-time calendar synchronization"
+      ]
+    }
+  </script>
+</BaseLayout>

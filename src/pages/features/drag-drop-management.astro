@@ -1,0 +1,1112 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Drag & Drop Management - Visual Calendar Editing | CalendHub"
+  description="Intuitive drag-and-drop interface for moving and rescheduling appointments. Quick visual editing makes managing your calendar effortless."
+>
+  <!-- Hero Section -->
+  <section
+    class="min-h-[40vh] bg-background relative overflow-hidden flex items-center"
+  >
+    <!-- Animated gradient background -->
+    <div
+      class="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-background to-background"
+    >
+    </div>
+
+    <!-- Decorative blur circles -->
+    <div
+      class="absolute top-20 right-[15%] w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"
+    >
+    </div>
+    <div
+      class="absolute bottom-20 left-[10%] w-96 h-96 bg-amber-500/5 rounded-full blur-3xl"
+    >
+    </div>
+
+    <div class="container relative z-10 py-20">
+      <div class="max-w-4xl mx-auto text-center">
+        <!-- Badge -->
+        <div
+          class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+        >
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path>
+          </svg>
+          <span>Drag & Drop Management</span>
+        </div>
+
+        <!-- Hero Heading -->
+        <h1
+          class="text-5xl sm:text-6xl lg:text-7xl font-display font-bold mb-6 text-text leading-[1.1]"
+        >
+          Drag & Drop Management
+          <br />
+          <span class="text-text-muted">Visual Calendar Editing</span>
+        </h1>
+        <p
+          class="text-xl lg:text-2xl text-text-muted leading-relaxed mb-12 max-w-3xl mx-auto"
+        >
+          Intuitive drag-and-drop interface for moving and rescheduling
+          appointments. Quick visual editing makes managing your calendar
+          effortless.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex justify-center mb-12">
+          <a
+            href="https://app.calendhub.com/sign-up"
+            class="group relative inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40"
+          >
+            <span>Start Free Trial</span>
+            <svg
+              class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Trust Bar -->
+        <div
+          class="flex flex-wrap justify-center items-center gap-6 text-sm text-text-muted pt-8"
+        >
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-5 h-5 text-orange-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>Instant updates</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-5 h-5 text-orange-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>Visual interface</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-5 h-5 text-orange-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>No forms required</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subtle grid background -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="hero-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#hero-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section id="features" class="py-32 relative overflow-hidden">
+    <div class="container relative z-10">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Feature 1 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Click and Drag
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Click any appointment and drag it to a new time slot. The
+              appointment moves instantly with visual feedback showing where it
+              will land.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Automatic Conflict Detection
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Visual indicators prevent double-booking. Overlapping time slots
+              highlight in red, ensuring you never accidentally create
+              scheduling conflicts.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Resize Appointments
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Drag appointment edges to extend or shorten duration. Visual
+              handles make it easy to adjust meeting length without forms or
+              dialogs.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Instant Calendar Updates
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Changes save automatically as you drag and drop. No save buttons
+              or confirmation dialogs - edits apply immediately to your
+              calendar.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Undo Changes
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Accidentally moved the wrong appointment? One-click undo instantly
+              reverts drag-and-drop changes to previous state.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Visual Feedback
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Clear visual cues show valid drop zones, conflicts, and current
+              position. Dragging feels natural with smooth animations and
+              instant feedback.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="features-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#features-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="py-20 bg-background">
+    <div class="container">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-text mb-6">
+          Reschedule Appointments Visually Without Forms
+        </h2>
+        <div
+          class="prose prose-lg max-w-none space-y-6 text-text-muted leading-relaxed"
+        >
+          <p>
+            Drag-and-drop management transforms calendar editing from tedious
+            form-filling into natural visual interaction. Instead of clicking
+            edit buttons, changing times in dropdown menus, and confirming
+            updates, you simply click an appointment and drag it to the new time
+            slot. The appointment moves instantly with smooth animation showing
+            exactly where it will land. This visual approach reduces
+            rescheduling from multiple clicks and form interactions down to a
+            single drag gesture, making calendar adjustments feel effortless
+            rather than administrative.
+          </p>
+
+          <p>
+            Conflict detection works automatically during dragging. When you
+            move an appointment over an occupied time slot, visual feedback
+            immediately shows the overlap with red highlighting or warning
+            indicators. This real-time conflict awareness prevents
+            double-booking before you drop the appointment, eliminating the
+            error state that traditional form-based scheduling creates when you
+            submit conflicting times. You see scheduling problems instantly
+            while dragging rather than discovering them after clicking save
+            buttons.
+          </p>
+
+          <p>
+            Duration adjustments work through edge dragging. Each appointment
+            displays resize handles on top and bottom edges. Drag the bottom
+            edge down to extend meeting duration or drag the top edge to adjust
+            start time while keeping end time fixed. This visual manipulation
+            makes duration changes feel like physical objects you are reshaping
+            rather than abstract time values you are entering in forms. When a
+            meeting runs long or needs buffer time added, extending the
+            appointment takes one drag gesture instead of navigating edit
+            dialogs.
+          </p>
+
+          <p>
+            Changes save automatically without confirmation dialogs. When you
+            drop an appointment in a new location, CalendHub immediately updates
+            the calendar and syncs changes to connected services. Undo
+            functionality provides safety net for accidental moves, letting you
+            reverse changes with one click if you drag the wrong appointment or
+            drop in unintended location. This combination of instant saves and
+            easy undo creates confident editing environment where you can
+            quickly adjust schedules without worrying about irreversible
+            mistakes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="py-32 relative overflow-hidden">
+    <div class="container relative z-10">
+      <div class="max-w-5xl mx-auto">
+        <!-- Badge -->
+        <div
+          class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+        >
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
+          <span>How It Works</span>
+        </div>
+
+        <!-- Heading -->
+        <h2
+          class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+        >
+          Visual Calendar Editing
+          <br />
+          <span class="text-text-muted">Simplified Through Drag & Drop</span>
+        </h2>
+
+        <!-- 3 Step Cards -->
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <!-- Step 1 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <span class="text-3xl font-display font-bold text-white">1</span
+                >
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Click Appointment
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Click any appointment on your calendar to select it. The
+                appointment highlights to show it's ready for dragging with
+                visual feedback.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <span class="text-3xl font-display font-bold text-white">2</span
+                >
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Drag to New Time
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Hold mouse button and drag to different time slot. Visual
+                indicators show valid drop zones and potential conflicts as you
+                move.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <span class="text-3xl font-display font-bold text-white">3</span
+                >
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Drop and Save
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Release to drop appointment in new slot. Changes save
+                automatically and sync to connected calendars without
+                confirmation dialogs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Details Card -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300"
+          >
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Smart Conflict Detection and Duration Adjustment
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              CalendHub provides real-time conflict detection while dragging
+              appointments. When you move an appointment over occupied time
+              slots, visual indicators immediately highlight overlapping
+              meetings so you see scheduling conflicts before dropping. This
+              prevents double-booking errors that traditional form-based
+              scheduling creates when you submit conflicting times without
+              realizing overlaps. Duration changes work through edge dragging
+              where you grab appointment borders and stretch or shrink meeting
+              length visually. This eliminates form fields for start time and
+              end time, making duration adjustments feel like physically
+              reshaping objects rather than entering abstract time values. All
+              changes save automatically with one-click undo available if you
+              accidentally move wrong appointment or need to reverse
+              adjustments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="howitworks-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#howitworks-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-background via-background to-orange-500/5 relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-6xl mx-auto">
+        <!-- Badge + Heading -->
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+              ></path>
+            </svg>
+            <span>Use Cases</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Who Benefits from
+            <br />
+            <span class="text-text-muted">Drag & Drop Management?</span>
+          </h2>
+        </div>
+
+        <!-- 4 Use Case Cards (2x2 grid) -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Use Case 1 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Executive Assistants
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Executive assistants managing complex executive calendars need
+                to quickly adjust schedules when priorities change or meetings
+                run long. Drag-and-drop lets them reschedule multiple
+                appointments rapidly by clicking and moving visually rather than
+                opening edit dialogs for each change. When an urgent meeting
+                needs to be added, they can drag existing appointments to create
+                space without navigating forms. Visual conflict detection
+                prevents double-booking while juggling multiple rescheduling
+                requests, maintaining scheduling integrity despite constant
+                calendar changes requiring rapid adjustments.
+              </p>
+              <div
+                class="bg-orange-500/5 border border-orange-500/10 rounded-2xl p-4 mt-4"
+              >
+                <p class="text-sm text-text-muted">
+                  <strong class="text-text">Benefit:</strong> Rapidly reschedule
+                  complex executive calendars with visual editing instead of tedious
+                  forms.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Use Case 2 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Healthcare Providers
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Medical practices deal with constant appointment changes as
+                patients reschedule, cancellations create gaps, and urgent cases
+                need immediate slots. Drag-and-drop allows front desk staff to
+                visually reorganize patient appointments to fill cancellation
+                gaps and optimize provider schedules throughout the day. When
+                appointments run over time, staff can drag subsequent
+                appointments to accurate times rather than maintaining incorrect
+                schedule that creates patient wait confusion. Visual editing
+                helps maximize appointment density while maintaining realistic
+                timing based on actual patient flow.
+              </p>
+              <div
+                class="bg-orange-500/5 border border-orange-500/10 rounded-2xl p-4 mt-4"
+              >
+                <p class="text-sm text-text-muted">
+                  <strong class="text-text">Benefit:</strong> Optimize provider schedules
+                  and patient flow with quick visual appointment reorganization.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Use Case 3 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Service Businesses
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Salons, repair shops, and service providers need to adjust
+                appointment schedules as jobs run long, technicians become
+                available, or clients request different times. Drag-and-drop
+                enables quick schedule reorganization when service appointments
+                take longer than estimated time blocks. Staff can drag
+                appointments to different days when specific technicians are
+                available or equipment becomes free. Duration adjustment through
+                edge dragging helps extend appointments that need extra time
+                without navigating edit forms, keeping schedule accurate to
+                actual service delivery timing.
+              </p>
+              <div
+                class="bg-orange-500/5 border border-orange-500/10 rounded-2xl p-4 mt-4"
+              >
+                <p class="text-sm text-text-muted">
+                  <strong class="text-text">Benefit:</strong> Keep service schedules
+                  accurate with visual adjustments as job timing changes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Use Case 4 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Project Managers
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Project managers coordinating team meetings and project
+                milestones need flexibility to adjust schedules as project
+                timelines shift and priorities change. Drag-and-drop lets them
+                quickly reorganize project check-ins when deliverable dates move
+                or dependencies change. When team members have conflicts,
+                managers can visually find new meeting times by dragging
+                appointments across the calendar to spot availability gaps. This
+                visual planning approach helps balance project meetings across
+                the week to prevent meeting-heavy days that reduce team
+                productivity and deep work time.
+              </p>
+              <div
+                class="bg-orange-500/5 border border-orange-500/10 rounded-2xl p-4 mt-4"
+              >
+                <p class="text-sm text-text-muted">
+                  <strong class="text-text">Benefit:</strong> Balance project meetings
+                  and adapt to timeline changes with flexible visual scheduling.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-background via-background to-orange-500/5 relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <span>FAQ</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Frequently Asked Questions
+          </h2>
+        </div>
+        <div class="space-y-6">
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                How do I move an appointment to a different time using drag and
+                drop?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Click any appointment on your calendar to select it, then hold
+                the mouse button and drag the appointment to a new time slot.
+                Visual indicators show where the appointment will land as you
+                move it. Release the mouse button to drop the appointment in the
+                new location. The appointment moves instantly with automatic
+                calendar updates and sync to connected services without
+                requiring forms or confirmation dialogs.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                What happens if I try to drag an appointment over an existing
+                meeting?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                CalendHub provides real-time conflict detection while dragging.
+                When you move an appointment over occupied time slots, visual
+                indicators immediately highlight overlapping meetings with red
+                coloring or warning signs. You see scheduling conflicts before
+                dropping the appointment, preventing double-booking errors. The
+                system won't let you create conflicts - you must drop
+                appointments in genuinely available time slots that don't
+                overlap with existing meetings.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Can I change the duration of an appointment by dragging?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, each appointment displays resize handles on the top and
+                bottom edges. Drag the bottom edge down to extend meeting
+                duration or drag the top edge up to adjust start time while
+                keeping end time fixed. This visual manipulation makes duration
+                changes feel like physically reshaping objects rather than
+                entering abstract time values in forms. When a meeting needs to
+                run longer or buffer time added, extending the appointment takes
+                one drag gesture.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Do I need to manually save changes after dragging appointments?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                No, changes save automatically when you drop appointments in new
+                locations. CalendHub immediately updates the calendar and syncs
+                changes to connected calendar services without requiring save
+                buttons or confirmation dialogs. If you accidentally move the
+                wrong appointment, one-click undo instantly reverts the change
+                to its previous state. This combination of automatic saves and
+                easy undo creates confident editing without worrying about
+                irreversible mistakes.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Can I drag appointments to different days or just different
+                times?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                You can drag appointments to different days and different times.
+                In week view or month view, drag appointments horizontally
+                across days or vertically across time slots to reschedule to any
+                available date and time. In day view, drag vertically to
+                different time slots within that day. The drag-and-drop
+                interface works consistently across all views, letting you move
+                appointments wherever you need them within your visible calendar
+                range.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Does drag and drop work on mobile devices and tablets?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Drag and drop functionality is optimized for desktop and laptop
+                use with mouse or trackpad. On mobile devices and tablets, you
+                can still reschedule appointments by tapping them to open edit
+                options and selecting new times from available slots. While
+                mobile doesn't support the drag gesture, the same rescheduling
+                capabilities remain available through touch-optimized interfaces
+                designed specifically for smaller screens and touch interaction.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="faq-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#faq-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-orange-500/5 to-background relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-5xl mx-auto">
+        <div class="relative group">
+          <!-- Glow effect -->
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/30 to-amber-500/30 rounded-[3rem] blur-3xl opacity-60 group-hover:opacity-80 transition-opacity duration-500"
+          >
+          </div>
+
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm rounded-[3rem] p-12 md:p-16 text-center"
+          >
+            <h2
+              class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+            >
+              Ready for Visual Calendar Management?
+            </h2>
+            <p
+              class="text-xl lg:text-2xl text-text-muted leading-relaxed mb-12 max-w-3xl mx-auto"
+            >
+              Start managing your calendar with intuitive drag-and-drop. Quick
+              visual editing makes scheduling effortless.
+            </p>
+
+            <div class="flex justify-center mb-8">
+              <a
+                href="https://app.calendhub.com/sign-up"
+                class="group relative inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40"
+              >
+                <span>Start Free Trial</span>
+                <svg
+                  class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </a>
+            </div>
+
+            <div
+              class="flex flex-wrap justify-center items-center gap-6 text-sm text-text-muted"
+            >
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>No credit card required</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>14-day free trial</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Instant updates</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

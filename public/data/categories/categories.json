@@ -1,36 +1,84 @@
 {
   "categories": [
     {
-      "id": "productivity",
-      "name": "Productivity",
-      "slug": "productivity",
-      "description": "Tips, tools, and strategies to boost productivity and efficiency in your work and personal life.",
+      "id": "calendar-sync",
+      "name": "Calendar Sync",
+      "slug": "calendar-sync",
+      "description": "Bidirectional sync, two-way synchronization, and real-time calendar updates across platforms.",
       "color": "#3B82F6",
-      "icon": "⚡"
+      "icon": "🔄"
     },
     {
-      "id": "technical-support",
-      "name": "Technical Support",
-      "slug": "technical-support",
-      "description": "Troubleshooting guides and technical solutions for common problems and issues.",
+      "id": "tool-comparisons",
+      "name": "Tool Comparisons",
+      "slug": "tool-comparisons",
+      "description": "In-depth comparisons and reviews of calendar management tools and software.",
       "color": "#10B981",
+      "icon": "⚖️"
+    },
+    {
+      "id": "multi-calendar-management",
+      "name": "Multi-Calendar Management",
+      "slug": "multi-calendar-management",
+      "description": "Strategies and tools for consolidating and managing multiple calendars in one unified view.",
+      "color": "#8B5CF6",
+      "icon": "📅"
+    },
+    {
+      "id": "how-to-guides",
+      "name": "How-To Guides",
+      "slug": "how-to-guides",
+      "description": "Step-by-step tutorials and implementation guides for calendar management.",
+      "color": "#F59E0B",
+      "icon": "📖"
+    },
+    {
+      "id": "calendly-alternatives",
+      "name": "Calendly Alternatives",
+      "slug": "calendly-alternatives",
+      "description": "Solutions to Calendly's 6-calendar limit and alternative scheduling platforms.",
+      "color": "#EF4444",
+      "icon": "🔀"
+    },
+    {
+      "id": "problem-solving",
+      "name": "Problem Solving",
+      "slug": "problem-solving",
+      "description": "Solutions to common calendar problems like double bookings, missed meetings, and chaos.",
+      "color": "#EC4899",
       "icon": "🔧"
     },
     {
-      "id": "remote-work",
-      "name": "Remote Work",
-      "slug": "remote-work",
-      "description": "Best practices, tools, and strategies for effective remote work and distributed teams.",
-      "color": "#8B5CF6",
-      "icon": "🌍"
+      "id": "productivity",
+      "name": "Productivity",
+      "slug": "productivity",
+      "description": "Tips, tools, and strategies to boost productivity and efficiency in calendar management.",
+      "color": "#06B6D4",
+      "icon": "⚡"
     },
     {
-      "id": "ai-productivity",
-      "name": "AI Productivity",
-      "slug": "ai-productivity",
-      "description": "Leverage AI tools and automation to enhance productivity and streamline workflows.",
-      "color": "#F59E0B",
-      "icon": "🤖"
+      "id": "use-cases-workflows",
+      "name": "Use Cases & Workflows",
+      "slug": "use-cases-workflows",
+      "description": "Real-world workflows for consultants, freelancers, executives, and assistants.",
+      "color": "#14B8A6",
+      "icon": "👥"
+    },
+    {
+      "id": "developer-guides",
+      "name": "Developer Guides",
+      "slug": "developer-guides",
+      "description": "Technical implementation guides for webhooks, APIs, and calendar integrations.",
+      "color": "#6366F1",
+      "icon": "💻"
+    },
+    {
+      "id": "scheduling-time-management",
+      "name": "Scheduling & Time Management",
+      "slug": "scheduling-time-management",
+      "description": "Time zone management, meeting scheduling, and coordination strategies.",
+      "color": "#84CC16",
+      "icon": "⏰"
     }
   ]
 }

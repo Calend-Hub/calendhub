@@ -54,6 +54,170 @@ export const GET: APIRoute = async () => {
     <priority>0.8</priority>
   </url>
 
+  <!-- Features Index -->
+  <url>
+    <loc>${SITE_CONFIG.url}/features</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Feature Pages -->
+  <url>
+    <loc>${SITE_CONFIG.url}/features/email-reminders</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/webhook-integrations</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/white-labeling</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/recurring-meetings</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/custom-form-fields</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/timezone-intelligence</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/video-conferencing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/round-robin-scheduling</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/buffer-time</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/calendar-sharing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/instant-confirmations</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/easy-rescheduling</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/multi-language-support</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/multi-calendar-views</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/drag-drop-management</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/multi-tenant-saas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/cloud-infrastructure</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/guest-management</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/service-catalog</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/product-catalog</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/lead-management</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/realtime-dashboard</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/support-system</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/role-based-access</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/ai-meeting-notes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/analytics</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/crm-integration</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/multi-calendar-sync</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/smart-booking-links</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/social-management</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${SITE_CONFIG.url}/features/team-management</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Policy pages -->
   <url>
     <loc>${SITE_CONFIG.url}/terms-of-service</loc>
@@ -62,16 +226,6 @@ export const GET: APIRoute = async () => {
   </url>
   <url>
     <loc>${SITE_CONFIG.url}/privacy-policy</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>${SITE_CONFIG.url}/refund-cancellation-policy</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>${SITE_CONFIG.url}/ai-content-usage-policy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

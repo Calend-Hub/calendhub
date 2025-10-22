@@ -1,18 +1,209 @@
 ---
 import { SITE_CONFIG } from '../../data/site-config';
 import ThemeToggle from './ThemeToggle.astro';
+import Logo from '../Logo.astro';
+
+export interface Props {
+  showSearch?: boolean;
+}
+
+const { showSearch = false } = Astro.props;
+
+const features = [
+  { name: 'Multi-Calendar Sync', href: '/features/multi-calendar-sync', description: 'Connect unlimited calendars' },
+  { name: 'Smart Booking Links', href: '/features/smart-booking-links', description: 'Beautiful booking pages' },
+  { name: 'AI Meeting Notes', href: '/features/ai-meeting-notes', description: 'Automated transcription & summaries' },
+  { name: 'Team Management', href: '/features/team-management', description: 'Multi-tenant workspace' },
+  { name: 'CRM Integration', href: '/features/crm-integration', description: 'Track customers & services' },
+  { name: 'Social Management', href: '/features/social-management', description: 'Schedule social posts' },
+  { name: 'Analytics', href: '/features/analytics', description: 'Time tracking & insights' },
+];
 ---
 
-<header class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-  <div class="container flex h-16 items-center justify-between">
-    <!-- Logo -->
-    <a href="/" class="flex items-center space-x-2 font-bold text-xl hover:opacity-80 transition-opacity">
-      <span>CalendHub</span>
-    </a>
-    
-    <div class="flex items-center gap-4">
-      <!-- Theme toggle -->
+<header class="sticky top-0 z-50 w-full border-b border-border bg-background backdrop-blur supports-[backdrop-filter]:bg-background/95">
+  <div class="container mx-auto">
+    <!-- Everything on one line, centered -->
+    <div class="flex justify-center items-center gap-12 h-16">
+      <!-- Logo -->
+      <a href="/" class="hover:opacity-90 transition-opacity flex items-center">
+        <Logo size="sm" />
+      </a>
+
+      <!-- Navigation -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="/" class="text-sm font-medium text-text-muted hover:text-text transition-colors">
+          Home
+        </a>
+
+        <!-- Features Dropdown -->
+        <div class="relative group">
+          <button class="text-sm font-medium text-text-muted hover:text-text transition-colors flex items-center gap-1">
+            Features
+            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <!-- Dropdown Menu -->
+          <div class="absolute left-0 mt-2 w-80 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2">
+            <div class="bg-surface border border-border rounded-xl shadow-xl p-2">
+              {features.map((feature) => (
+                <a
+                  href={feature.href}
+                  class="block p-3 rounded-lg hover:bg-background transition-colors group/item"
+                >
+                  <div class="font-medium text-text text-sm group-hover/item:text-orange-600">{feature.name}</div>
+                  <div class="text-xs text-text-muted mt-0.5">{feature.description}</div>
+                </a>
+              ))}
+
+              <!-- More Features Link -->
+              <div class="border-t border-border mt-2 pt-2">
+                <a
+                  href="/features"
+                  class="block p-3 rounded-lg hover:bg-background transition-colors group/item"
+                >
+                  <div class="font-medium text-orange-600 text-sm group-hover/item:text-orange-700 flex items-center gap-2">
+                    View All Features
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                  </div>
+                  <div class="text-xs text-text-muted mt-0.5">Explore 20+ powerful features</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="/about" class="text-sm font-medium text-text-muted hover:text-text transition-colors">
+          About
+        </a>
+
+        <a href="/blog" class="text-sm font-medium text-text-muted hover:text-text transition-colors">
+          Blog
+        </a>
+      </nav>
+
+      <!-- Search & Theme Toggle -->
+      <div class="hidden md:flex items-center gap-3">
+        {showSearch && (
+          <button
+            id="search-trigger"
+            class="p-2 text-text-muted hover:text-text transition-colors"
+            aria-label="Open search (Ctrl+K)"
+            title="Search (Ctrl+K)"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="M21 21l-4.35-4.35"></path>
+            </svg>
+          </button>
+        )}
+        {SITE_CONFIG.features.darkMode && <ThemeToggle />}
+      </div>
+    </div>
+
+    <!-- Mobile Menu Button, Search & Theme Toggle -->
+    <div class="md:hidden absolute right-4 top-4 flex items-center gap-3">
+      {showSearch && (
+        <button
+          id="search-trigger-mobile"
+          class="p-2 text-text-muted hover:text-text transition-colors"
+          aria-label="Open search (Ctrl+K)"
+          title="Search (Ctrl+K)"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="M21 21l-4.35-4.35"></path>
+          </svg>
+        </button>
+      )}
       {SITE_CONFIG.features.darkMode && <ThemeToggle />}
+
+      <button
+        id="mobile-menu-button"
+        class="p-2 text-text-muted hover:text-text transition-colors"
+        aria-label="Toggle menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-border bg-background">
+    <div class="container py-4 space-y-2">
+      <a href="/" class="block px-4 py-2 text-sm font-medium text-text-muted hover:text-text hover:bg-surface rounded-lg transition-colors">
+        Home
+      </a>
+
+      <!-- Mobile Features Submenu -->
+      <div>
+        <button id="mobile-features-toggle" class="w-full flex items-center justify-between px-4 py-2 text-sm font-medium text-text-muted hover:text-text hover:bg-surface rounded-lg transition-colors">
+          <span>Features</span>
+          <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="mobile-features-menu" class="hidden pl-4 mt-1 space-y-1">
+          {features.map((feature) => (
+            <a
+              href={feature.href}
+              class="block px-4 py-2 text-sm text-text-muted hover:text-orange-600 hover:bg-surface/50 rounded-lg transition-colors"
+            >
+              {feature.name}
+            </a>
+          ))}
+
+          <!-- More Features Link -->
+          <a
+            href="/features"
+            class="block px-4 py-2 text-sm font-medium text-orange-600 hover:text-orange-700 hover:bg-surface/50 rounded-lg transition-colors"
+          >
+            View All Features →
+          </a>
+        </div>
+      </div>
+
+      <a href="/about" class="block px-4 py-2 text-sm font-medium text-text-muted hover:text-text hover:bg-surface rounded-lg transition-colors">
+        About
+      </a>
+
+      <a href="/blog" class="block px-4 py-2 text-sm font-medium text-text-muted hover:text-text hover:bg-surface rounded-lg transition-colors">
+        Blog
+      </a>
     </div>
   </div>
 </header>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  mobileMenuButton?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+
+  // Mobile features submenu toggle
+  const mobileFeaturesToggle = document.getElementById('mobile-features-toggle');
+  const mobileFeaturesMenu = document.getElementById('mobile-features-menu');
+  const mobileFeaturesIcon = mobileFeaturesToggle?.querySelector('svg');
+
+  mobileFeaturesToggle?.addEventListener('click', () => {
+    mobileFeaturesMenu?.classList.toggle('hidden');
+    mobileFeaturesIcon?.classList.toggle('rotate-180');
+  });
+
+  // Search trigger for mobile
+  const searchTriggerMobile = document.getElementById('search-trigger-mobile');
+  if (searchTriggerMobile) {
+    searchTriggerMobile.addEventListener('click', () => {
+      const event = new CustomEvent('open-search');
+      window.dispatchEvent(event);
+    });
+  }
+</script>

@@ -7,18 +7,14 @@ const { size = 'lg' } = Astro.props;
 
 const sizeClass =
   size === 'sm'
-    ? 'text-3xl'
+    ? 'text-2xl'
     : size === 'md'
     ? 'text-4xl sm:text-5xl'
     : 'text-[56px] sm:text-[64px]';
+
+const paddingClass = size === 'sm' ? '' : 'pt-10';
 ---
 
-
-  <h1
-    class={`container font-extrabold font-[Inter] tracking-tight text-white dark:text-white leading-none ${sizeClass} pt-10`}
-  >
-    <a href="/" aria-label="CalendHub Home">
-        <span class="text-black dark:text-white">calend</span>
-        <span class="text-orange-500">hub.</span>
-    </a>
-  </h1>
+<div class={`font-extrabold font-[Inter] tracking-tight leading-none ${sizeClass} ${paddingClass}`}>
+  <span class="text-black dark:text-white">calend</span><span class="text-orange-500">hub.</span>
+</div>

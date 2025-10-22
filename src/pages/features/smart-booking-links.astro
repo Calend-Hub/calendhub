@@ -1,0 +1,1974 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Smart Booking Links Software - Meeting Scheduler | CalendHub"
+  description="Create unlimited booking pages with flexible meeting durations, automatic time zone detection & multiple meeting types. Better than Calendly with unlimited calendar connections. Try free!"
+>
+  <div class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <section
+      class="min-h-[40vh] bg-background relative overflow-hidden flex items-center"
+    >
+      <!-- Animated gradient background -->
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-background to-background"
+      >
+      </div>
+
+      <!-- Decorative blur circles -->
+      <div
+        class="absolute top-20 right-[15%] w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"
+      >
+      </div>
+      <div
+        class="absolute bottom-20 left-[10%] w-96 h-96 bg-amber-500/5 rounded-full blur-3xl"
+      >
+      </div>
+
+      <div class="container relative z-10 py-20">
+        <div class="max-w-5xl mx-auto text-center">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+              ></path>
+            </svg>
+            <span>Core Feature</span>
+          </div>
+
+          <h1
+            class="text-5xl sm:text-6xl lg:text-7xl font-display font-bold mb-6 text-text leading-[1.1]"
+          >
+            Smart Booking Links
+          </h1>
+          <p
+            class="text-xl lg:text-2xl text-text-muted mb-10 leading-relaxed max-w-3xl mx-auto"
+          >
+            Create unlimited booking pages with flexible meeting durations,
+            automatic time zone detection, and branded scheduling links. More
+            powerful than Calendly with unlimited calendar connections.
+          </p>
+
+          <div class="flex justify-center">
+            <a
+              href="https://app.calendhub.com/sign-up"
+              class="group relative inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40"
+            >
+              <span>Start Free Trial</span>
+              <svg
+                class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Trust Bar -->
+          <div
+            class="flex flex-wrap justify-center items-center gap-6 text-sm text-text-muted pt-8"
+          >
+            <div class="flex items-center gap-2">
+              <svg
+                class="w-5 h-5 text-orange-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>No credit card required</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg
+                class="w-5 h-5 text-orange-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>14-day free trial</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg
+                class="w-5 h-5 text-orange-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Unlimited meeting types</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subtle grid background -->
+      <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern
+              id="hero-grid"
+              width="32"
+              height="32"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M 32 0 L 0 0 0 32"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"></path>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#hero-grid)"></rect>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" class="py-32 relative overflow-hidden">
+      <div class="container relative z-10">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <!-- Feature 1 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Branded Booking Pages
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Customize booking pages with your logo, colors, and branding.
+                Create a professional impression with every meeting invitation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Smart Time Zone Detection
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Automatically detect and display meeting times in your invitee's
+                local time zone. No more confusion or missed meetings.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Buffer Times
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Add automatic buffer time before and after meetings. Give
+                yourself breathing room and prevent back-to-back scheduling
+                burnout.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Multiple Booking Links
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Create unlimited booking links for different occasions - client
+                meetings, consultations, team sync-ups. Each with unique
+                settings and branding.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Flexible Meeting Durations
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Set custom meeting lengths for each booking link - 15, 30, 45,
+                60 minutes or more. Perfect for quick check-ins to deep-dive
+                sessions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Unlimited Meeting Types
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Create unlimited meeting types with different durations,
+                questions, and settings. Unlike Calendly's limits on lower
+                tiers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Background decoration -->
+      <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern
+              id="features-grid"
+              width="32"
+              height="32"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M 32 0 L 0 0 0 32"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"></path>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#features-grid)"></rect>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-20 bg-background">
+      <div class="container">
+        <div class="max-w-4xl mx-auto">
+          <h2
+            class="text-3xl sm:text-4xl font-display font-bold text-text mb-6"
+          >
+            What Are Smart Booking Links?
+          </h2>
+          <div class="prose prose-lg max-w-none">
+            <p class="text-lg text-text-muted leading-relaxed mb-4">
+              Smart booking links are personalized scheduling URLs that allow
+              anyone to book meetings with you based on your real-time
+              availability. Unlike traditional back-and-forth email scheduling,
+              booking links provide a professional self-service scheduling
+              experience where invitees can see your available time slots and
+              book meetings instantly without requiring your manual
+              confirmation.
+            </p>
+            <p class="text-lg text-text-muted leading-relaxed mb-4">
+              CalendHub's smart booking links go far beyond simple meeting
+              schedulers. Our booking page software includes automatic time zone
+              detection, custom branding, advanced scheduling rules, buffer time
+              management, and unlimited meeting types. Each booking link
+              connects to all your calendars simultaneously, checking real-time
+              availability across Google Calendar, Outlook, iCloud, and other
+              platforms to prevent double-bookings automatically.
+            </p>
+            <p class="text-lg text-text-muted leading-relaxed mb-4">
+              While Calendly popularized booking links, CalendHub provides more
+              powerful features without artificial limitations. Create unlimited
+              meeting types on any plan, customize every aspect of your booking
+              pages, and leverage advanced scheduling rules that Calendly
+              reserves for premium tiers. Our meeting scheduling software gives
+              you complete control over your booking experience while
+              maintaining a simple, professional interface for your invitees.
+            </p>
+            <p class="text-lg text-text-muted leading-relaxed">
+              The power of smart booking links lies in their versatility. Use
+              them in email signatures, on social media profiles, in LinkedIn
+              messaging, on your website, or anywhere you communicate. Instead
+              of saying "let's find a time to meet," simply share your booking
+              link and let invitees choose from your available slots. It saves
+              time, reduces scheduling friction, and creates a more professional
+              impression with clients, prospects, and colleagues.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-32 relative overflow-hidden">
+      <div class="container relative z-10">
+        <div class="max-w-5xl mx-auto">
+          <!-- Badge -->
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+            <span>How It Works</span>
+          </div>
+
+          <!-- Heading -->
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Create Smart Booking Links
+            <br />
+            <span class="text-text-muted">In Three Simple Steps</span>
+          </h2>
+          <p class="text-xl text-text-muted mb-16 leading-relaxed max-w-3xl">
+            Set up professional booking pages in minutes. No technical skills
+            required, just connect your calendars and customize your booking
+            experience.
+          </p>
+
+          <!-- 3 Step Cards -->
+          <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <!-- Step 1 -->
+            <div class="group relative">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              >
+              </div>
+
+              <div
+                class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+              >
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+                >
+                  <span class="text-3xl font-bold text-white">1</span>
+                </div>
+                <h3 class="text-2xl font-display font-bold text-text mb-4">
+                  Connect Your Calendars
+                </h3>
+                <p class="text-text-muted leading-relaxed">
+                  Connect Google Calendar, Outlook, iCloud, or any other
+                  calendar service. CalendHub checks all your calendars in
+                  real-time to show accurate availability and prevent
+                  double-bookings automatically.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="group relative">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              >
+              </div>
+
+              <div
+                class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+              >
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+                >
+                  <span class="text-3xl font-bold text-white">2</span>
+                </div>
+                <h3 class="text-2xl font-display font-bold text-text mb-4">
+                  Customize Your Booking Page
+                </h3>
+                <p class="text-text-muted leading-relaxed">
+                  Add your logo, choose your brand colors, set your availability
+                  preferences, define meeting durations, add custom questions,
+                  and create your unique booking URL. Make it completely yours
+                  with unlimited meeting types.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="group relative">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              >
+              </div>
+
+              <div
+                class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+              >
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+                >
+                  <span class="text-3xl font-bold text-white">3</span>
+                </div>
+                <h3 class="text-2xl font-display font-bold text-text mb-4">
+                  Share Your Link
+                </h3>
+                <p class="text-text-muted leading-relaxed">
+                  Add your booking link to your email signature, website, social
+                  profiles, or share it directly. Invitees pick a time from your
+                  available slots, and meetings appear automatically on all your
+                  connected calendars.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Details Card -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300"
+            >
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Behind the Scenes: Real-Time Availability Checking
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                When someone visits your booking page, CalendHub instantly
+                queries all your connected calendars to show only genuinely
+                available time slots. Our smart booking engine respects your
+                scheduling rules, buffer times, date ranges, and existing
+                commitments across every calendar platform. The moment someone
+                books a meeting, it's added to your designated calendar and
+                marked as busy across all other connected calendars to prevent
+                conflicts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Background grid pattern -->
+      <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern
+              id="how-it-works-grid"
+              width="32"
+              height="32"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M 32 0 L 0 0 0 32"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"></path>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#how-it-works-grid)"
+          ></rect>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section
+      class="py-32 bg-gradient-to-b from-background via-background to-orange-500/5 relative overflow-hidden"
+    >
+      <div class="container relative z-10">
+        <div class="max-w-6xl mx-auto">
+          <!-- Badge + Heading -->
+          <div class="text-center mb-20">
+            <div
+              class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"
+                ></path>
+              </svg>
+              <span>Use Cases</span>
+            </div>
+            <h2
+              class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+            >
+              Who Benefits from
+              <br />
+              <span class="text-text-muted">Smart Booking Links?</span>
+            </h2>
+          </div>
+
+          <!-- 4 Use Case Cards -->
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Use Case 1: Sales & Business Development -->
+            <div class="group relative">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              >
+              </div>
+
+              <div
+                class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+              >
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+                >
+                  <svg
+                    class="w-8 h-8 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-display font-bold text-text mb-4">
+                  Sales & Business Development
+                </h3>
+                <p class="text-text-muted leading-relaxed mb-4">
+                  Sales professionals need to make booking meetings as
+                  frictionless as possible. After a cold email, LinkedIn
+                  message, or networking conversation, the last thing you want
+                  is email ping-pong trying to find a meeting time. Smart
+                  booking links let prospects self-schedule instantly when
+                  they're interested.
+                </p>
+                <p class="text-text-muted leading-relaxed">
+                  <strong class="text-text">Common setup:</strong> Multiple booking
+                  links for discovery calls (30 min), product demos (45 min), and
+                  customer calls (60 min). Custom questions to qualify leads before
+                  meetings. Integration with CRM to automatically log scheduled meetings.
+                </p>
+              </div>
+            </div>
+
+            <!-- Use Case 2: Consultants & Freelancers -->
+            <div class="group relative">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              >
+              </div>
+
+              <div
+                class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+              >
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+                >
+                  <svg
+                    class="w-8 h-8 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-display font-bold text-text mb-4">
+                  Consultants & Freelancers
+                </h3>
+                <p class="text-text-muted leading-relaxed mb-4">
+                  Independent professionals juggling multiple clients need to
+                  maintain a professional image while efficiently managing their
+                  schedule. Branded booking pages with custom URLs create a
+                  polished impression. Buffer times between meetings prevent
+                  burnout. Separate booking links for different service types
+                  keep client scheduling organized.
+                </p>
+                <p class="text-text-muted leading-relaxed">
+                  <strong class="text-text">Common setup:</strong> Different booking
+                  links for free consultations (15 min), strategy sessions (60 min),
+                  and ongoing client check-ins (30 min). Each with different availability
+                  windows, custom questions, and buffer times.
+                </p>
+              </div>
+            </div>
+
+            <!-- Use Case 3: Recruiting & HR -->
+            <div class="group relative">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              >
+              </div>
+
+              <div
+                class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+              >
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+                >
+                  <svg
+                    class="w-8 h-8 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-display font-bold text-text mb-4">
+                  Recruiting & HR Teams
+                </h3>
+                <p class="text-text-muted leading-relaxed mb-4">
+                  Recruiters coordinate dozens of interviews weekly with
+                  candidates across different time zones. Smart booking links
+                  eliminate the back-and-forth of interview scheduling, letting
+                  candidates choose times that work for them. Custom questions
+                  gather necessary information before the interview. Automatic
+                  time zone detection prevents confusion.
+                </p>
+                <p class="text-text-muted leading-relaxed">
+                  <strong class="text-text">Common setup:</strong> Phone screens
+                  (20 min), technical interviews (60 min), culture fit interviews
+                  (45 min), and executive interviews (30 min). Each booking link
+                  includes relevant pre-interview questions and automatically adds
+                  the correct video conferencing link.
+                </p>
+              </div>
+            </div>
+
+            <!-- Use Case 4: Coaches & Educators -->
+            <div class="group relative">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              >
+              </div>
+
+              <div
+                class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+              >
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+                >
+                  <svg
+                    class="w-8 h-8 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-display font-bold text-text mb-4">
+                  Coaches & Educators
+                </h3>
+                <p class="text-text-muted leading-relaxed mb-4">
+                  Life coaches, career coaches, tutors, and educators need
+                  flexible scheduling for clients or students across different
+                  time zones. Smart booking links with automatic time zone
+                  detection prevent confusion. Maximum daily bookings prevent
+                  overcommitment. Buffer times provide preparation and
+                  reflection time between sessions.
+                </p>
+                <p class="text-text-muted leading-relaxed">
+                  <strong class="text-text">Common setup:</strong> Free discovery
+                  sessions (20 min), regular coaching sessions (60 min), intensive
+                  deep-dive sessions (90 min), and quick check-ins (15 min). Date
+                  ranges limit how far in advance bookings can be made. Maximum bookings
+                  per day prevent burnout.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="py-32 relative overflow-hidden">
+      <div class="container relative z-10">
+        <div class="max-w-5xl mx-auto">
+          <!-- Badge + Heading -->
+          <div class="text-center mb-16">
+            <div
+              class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+            >
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                ></path>
+              </svg>
+              <span>Comparison</span>
+            </div>
+            <h2
+              class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+            >
+              CalendHub vs Calendly
+              <br />
+              <span class="text-text-muted">vs Manual Scheduling</span>
+            </h2>
+          </div>
+
+          <!-- Comparison Table -->
+          <div
+            class="bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border rounded-2xl overflow-hidden"
+          >
+            <div class="overflow-x-auto">
+              <table class="w-full">
+                <thead class="bg-orange-500/10">
+                  <tr>
+                    <th class="text-left p-4 text-text font-display">Feature</th
+                    >
+                    <th class="text-center p-4 text-text font-display"
+                      >CalendHub</th
+                    >
+                    <th class="text-center p-4 text-text font-display"
+                      >Calendly</th
+                    >
+                    <th class="text-center p-4 text-text font-display"
+                      >Manual</th
+                    >
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-border">
+                  <tr>
+                    <td class="p-4 text-text-muted">Meeting Types per User</td>
+                    <td class="p-4 text-center"
+                      ><span
+                        class="text-green-600 dark:text-green-400 font-bold"
+                        >Unlimited</span
+                      ></td
+                    >
+                    <td class="p-4 text-center"
+                      ><span class="text-orange-600">Limited on Free/Basic</span
+                      ></td
+                    >
+                    <td class="p-4 text-center"
+                      ><span class="text-text-muted">N/A</span></td
+                    >
+                  </tr>
+                  <tr>
+                    <td class="p-4 text-text-muted">Connected Calendars</td>
+                    <td class="p-4 text-center"
+                      ><span
+                        class="text-green-600 dark:text-green-400 font-bold"
+                        >Unlimited</span
+                      ></td
+                    >
+                    <td class="p-4 text-center"
+                      ><span class="text-orange-600">6 Calendar Maximum</span
+                      ></td
+                    >
+                    <td class="p-4 text-center"
+                      ><span class="text-red-600">Manual Checking</span></td
+                    >
+                  </tr>
+                  <tr>
+                    <td class="p-4 text-text-muted">Custom Branding</td>
+                    <td class="p-4 text-center"
+                      ><span
+                        class="text-green-600 dark:text-green-400 font-bold"
+                        >Full Customization</span
+                      ></td
+                    >
+                    <td class="p-4 text-center"
+                      ><span class="text-orange-600">Premium Plans Only</span
+                      ></td
+                    >
+                    <td class="p-4 text-center"
+                      ><span class="text-text-muted">N/A</span></td
+                    >
+                  </tr>
+                  <tr>
+                    <td class="p-4 text-text-muted">Buffer Times</td>
+                    <td class="p-4 text-center"
+                      ><span
+                        class="text-green-600 dark:text-green-400 font-bold"
+                        >Before & After</span
+                      ></td
+                    >
+                    <td class="p-4 text-center"
+                      ><span class="text-green-600 dark:text-green-400">✓</span
+                      ></td
+                    >
+                    <td class="p-4 text-center"
+                      ><span class="text-red-600">Manual Only</span></td
+                    >
+                  </tr>
+                  <tr>
+                    <td class="p-4 text-text-muted">Time Zone Detection</td>
+                    <td class="p-4 text-center"
+                      ><span
+                        class="text-green-600 dark:text-green-400 font-bold"
+                        >Automatic</span
+                      ></td
+                    >
+                    <td class="p-4 text-center"
+                      ><span class="text-green-600 dark:text-green-400">✓</span
+                      ></td
+                    >
+                    <td class="p-4 text-center"
+                      ><span class="text-red-600">Prone to Errors</span></td
+                    >
+                  </tr>
+                  <tr>
+                    <td class="p-4 text-text-muted"
+                      >Flexible Meeting Durations</td
+                    >
+                    <td class="p-4 text-center"
+                      ><span
+                        class="text-green-600 dark:text-green-400 font-bold"
+                        >15, 30, 45, 60+ min</span
+                      ></td
+                    >
+                    <td class="p-4 text-center"
+                      ><span class="text-green-600 dark:text-green-400">✓</span
+                      ></td
+                    >
+                    <td class="p-4 text-center"
+                      ><span class="text-red-600">Manual tracking</span></td
+                    >
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Calendly Limitation Disclaimer -->
+        <div class="group relative mt-8">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300"
+          >
+            <h3 class="text-xl font-display font-bold text-text mb-4">
+              Calendly Limitation
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Calendly limits users to checking availability across only 6
+              calendars, even on premium plans. If you manage calendars across
+              more than 6 accounts or platforms, you'll experience
+              double-bookings. CalendHub has no calendar connection limits on
+              any plan. (<a
+                href="https://help.calendly.com/hc/en-us/articles/223193488-Connecting-your-calendar-to-Calendly"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-orange-600 hover:text-orange-700 dark:text-orange-400 dark:hover:text-orange-300 underline"
+                >source: Calendly Help Center</a
+              >)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Background grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="comparison-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#comparison-grid)"></rect>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Benefits Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-background via-background to-orange-500/5 relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-6xl mx-auto">
+        <!-- Badge + Heading -->
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+              ></path>
+            </svg>
+            <span>Key Benefits</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Benefits of Smart Booking Links
+            <br />
+            <span class="text-text-muted">for Modern Professionals</span>
+          </h2>
+        </div>
+
+        <!-- 6 Benefit Cards (3x2 grid) -->
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Benefit 1 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Save Hours Each Week
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Eliminate back-and-forth scheduling emails. What used to take
+                3-4 email exchanges now happens instantly with a single link
+                share.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Professional Brand Image
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Branded booking pages with custom URLs and your logo create a
+                polished, professional impression with every meeting invitation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Never Double-Book Again
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Real-time availability checking across all your calendars
+                ensures you never accidentally accept conflicting meetings.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Automatic Time Zone Handling
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                No more mental math converting time zones. Your invitees see
+                times in their local zone automatically, eliminating confusion.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 5 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Gather Information Upfront
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Custom questions collect the information you need before
+                meetings start, so you can prepare effectively and make meetings
+                more productive.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 6 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Unlimited Meeting Types
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Create as many booking page types as you need—discovery calls,
+                demos, consultations, interviews. No arbitrary limits like other
+                platforms.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-32 bg-background relative overflow-hidden">
+    <div class="container relative z-10">
+      <div class="max-w-6xl mx-auto">
+        <!-- Badge + Heading -->
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>Frequently Asked Questions</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Smart Booking Links
+            <br />
+            <span class="text-text-muted">Questions & Answers</span>
+          </h2>
+        </div>
+
+        <!-- FAQ Grid (2 columns) -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Question 1 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                How do smart booking links work?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Smart booking links connect to all your calendars and check your
+                real-time availability. When someone clicks your link, they see
+                only the time slots you're actually available. When they book,
+                the meeting is automatically added to your calendar and marked
+                as busy across all connected calendars to prevent
+                double-bookings.
+              </p>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                How quickly do bookings appear on my calendar?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Instantly. When someone books a meeting through your CalendHub
+                booking link, the event is created on your calendar within
+                seconds. You and your invitee both receive confirmation emails
+                immediately with all meeting details and any video conferencing
+                links.
+              </p>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                Do I need to approve bookings manually?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                No, bookings are confirmed automatically by default. However,
+                CalendHub does offer an optional manual approval workflow if you
+                prefer to review booking requests before confirming. This is
+                useful for sensitive meetings or when you want to screen
+                invitees before committing your time.
+              </p>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                Can I customize my booking page branding?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, fully. Add your logo, customize colors to match your brand,
+                personalize your welcome message, create custom booking URLs,
+                and add your professional photo. Your booking page becomes an
+                extension of your personal or company brand, not a generic
+                scheduling form.
+              </p>
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                Which calendar platforms does CalendHub support?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                CalendHub connects to Google Calendar, Microsoft Outlook, Office
+                365, Exchange, iCloud, and CalDAV calendars. You can connect
+                unlimited calendars from any combination of these platforms.
+                Unlike Calendly's 6-calendar limit, CalendHub checks all your
+                calendars regardless of how many you connect.
+              </p>
+            </div>
+          </div>
+
+          <!-- Question 6 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                How many meeting types can I create?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Unlimited. Create as many different booking page types as you
+                need—15-minute quick calls, 30-minute discovery sessions,
+                60-minute consultations, 90-minute workshops. Each can have its
+                own availability rules, questions, location settings, and
+                branding. No artificial limits on any CalendHub plan.
+              </p>
+            </div>
+          </div>
+
+          <!-- Question 7 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                Can I set buffer time between meetings?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Absolutely. Set automatic buffer time before and after meetings
+                to give yourself breathing room, preparation time, or a break.
+                For example, add 15 minutes before meetings to review notes and
+                10 minutes after to write summaries. CalendHub ensures these
+                buffers are respected when showing available slots.
+              </p>
+            </div>
+          </div>
+
+          <!-- Question 8 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                How is CalendHub different from Calendly?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                CalendHub has no limit on meeting types or calendar connections,
+                while Calendly restricts both on lower tiers and limits all
+                users to 6 calendars. CalendHub offers more advanced scheduling
+                rules, full customization on all plans, and better
+                multi-calendar sync. Plus, CalendHub provides transparent
+                pricing without hidden feature restrictions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="faq-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#faq-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-background via-background to-orange-500/5 relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <span>FAQ</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Frequently Asked Questions
+          </h2>
+        </div>
+        <div class="space-y-6">
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                How do smart booking links differ from regular scheduling links?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Smart booking links use intelligent context detection to
+                automatically adjust availability, meeting types, and settings
+                based on who's booking, their location, previous interactions,
+                and time of day. Unlike static links, they adapt in real-time to
+                provide the most relevant scheduling experience for each person.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Can I customize smart booking links for different purposes?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Absolutely. Create unlimited smart booking links with custom
+                URLs, branding, availability rules, meeting durations, and form
+                fields. Configure separate links for sales calls, customer
+                support, interviews, demos, or any other meeting type, each
+                optimized for its specific purpose.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Do smart booking links work with UTM parameters and tracking?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, smart booking links support full UTM parameter tracking and
+                can pass custom data through the booking flow. Track campaign
+                sources, measure conversion rates, and integrate with analytics
+                platforms to understand which channels drive the most bookings
+                and highest-value meetings.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Can smart booking links route to different team members
+                automatically?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, smart booking links include intelligent routing that
+                assigns meetings based on availability, expertise, workload,
+                round-robin distribution, or custom rules. Route high-value
+                leads to senior team members, balance workload across support
+                staff, or match prospects with the best-fit representative
+                automatically.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                How secure are smart booking links?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Smart booking links include enterprise security features like
+                password protection, expiration dates, booking limits, and
+                domain restrictions. Generate single-use links for sensitive
+                meetings, require authentication for internal bookings, and
+                receive alerts for suspicious booking patterns.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Can I embed smart booking links on my website?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, smart booking links can be embedded as inline widgets,
+                pop-ups, or floating buttons on any website. The embedded
+                experience maintains all smart features while matching your
+                site's design. No coding required - just copy and paste the
+                embed code provided.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="faq-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#faq-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-orange-500/5 to-background relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-5xl mx-auto">
+        <div class="relative group">
+          <!-- Enhanced glow effect -->
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/30 to-amber-500/30 rounded-[3rem] blur-3xl opacity-60 group-hover:opacity-80 transition-opacity duration-500"
+          >
+          </div>
+
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm rounded-[3rem] p-12 md:p-16 text-center"
+          >
+            <h2
+              class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+            >
+              Ready to Simplify
+              <br />
+              <span class="text-text-muted">Your Meeting Scheduling?</span>
+            </h2>
+            <p
+              class="text-xl text-text-muted mb-10 max-w-3xl mx-auto leading-relaxed"
+            >
+              Join thousands of professionals who've eliminated scheduling
+              back-and-forth with smart booking links. Start your free trial
+              today—no credit card required.
+            </p>
+
+            <div class="flex justify-center">
+              <a
+                href="https://app.calendhub.com/sign-up"
+                class="group/btn relative inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40"
+              >
+                <span>Start Free Trial</span>
+                <svg
+                  class="w-5 h-5 group-hover/btn:translate-x-1 transition-transform"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Trust indicators -->
+            <div
+              class="flex flex-wrap justify-center items-center gap-6 text-sm text-text-muted pt-8"
+            >
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>14-day free trial</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>No credit card required</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Cancel anytime</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating decorative elements -->
+    <div
+      class="absolute inset-0 pointer-events-none overflow-hidden opacity-20"
+    >
+      <div
+        class="absolute top-20 left-[10%] animate-pulse"
+        style="animation-duration: 4s;"
+      >
+        <svg
+          class="w-16 h-16 text-orange-500"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+          ></path>
+        </svg>
+      </div>
+      <div
+        class="absolute bottom-20 right-[15%] animate-pulse"
+        style="animation-duration: 5s;"
+      >
+        <svg
+          class="w-20 h-20 text-orange-500"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<!-- Schema Markup: FAQ Page -->
+<script type="application/ld+json" is:inline>
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do smart booking links work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Smart booking links connect to all your calendars and check your real-time availability. When someone clicks your link, they see only the time slots you're actually available. When they book, the meeting is automatically added to your calendar and marked as busy across all connected calendars to prevent double-bookings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly do bookings appear on my calendar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Instantly. When someone books a meeting through your CalendHub booking link, the event is created on your calendar within seconds. You and your invitee both receive confirmation emails immediately with all meeting details and any video conferencing links."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to approve bookings manually?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, bookings are confirmed automatically by default. However, CalendHub does offer an optional manual approval workflow if you prefer to review booking requests before confirming. This is useful for sensitive meetings or when you want to screen invitees before committing your time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I customize my booking page branding?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, fully. Add your logo, customize colors to match your brand, personalize your welcome message, create custom booking URLs, and add your professional photo. Your booking page becomes an extension of your personal or company brand, not a generic scheduling form."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which calendar platforms does CalendHub support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CalendHub connects to Google Calendar, Microsoft Outlook, Office 365, Exchange, iCloud, and CalDAV calendars. You can connect unlimited calendars from any combination of these platforms. Unlike Calendly's 6-calendar limit, CalendHub checks all your calendars regardless of how many you connect."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many meeting types can I create?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Unlimited. Create as many different booking page types as you need—15-minute quick calls, 30-minute discovery sessions, 60-minute consultations, 90-minute workshops. Each can have its own availability rules, questions, location settings, and branding. No artificial limits on any CalendHub plan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I set buffer time between meetings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Set automatic buffer time before and after meetings to give yourself breathing room, preparation time, or a break. For example, add 15 minutes before meetings to review notes and 10 minutes after to write summaries. CalendHub ensures these buffers are respected when showing available slots."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is CalendHub different from Calendly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CalendHub has no limit on meeting types or calendar connections, while Calendly restricts both on lower tiers and limits all users to 6 calendars. CalendHub offers more advanced scheduling rules, full customization on all plans, and better multi-calendar sync. Plus, CalendHub provides transparent pricing without hidden feature restrictions."
+        }
+      }
+    ]
+  }
+</script>
+
+<!-- Schema Markup: Software Application -->
+<script type="application/ld+json" is:inline>
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "CalendHub Smart Booking Links",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web, iOS, Android",
+    "description": "Create branded booking pages with custom URLs, automatic time zone detection, and unlimited meeting types. Better than Calendly with more powerful scheduling rules and no calendar connection limits.",
+    "url": "https://calendhub.com/features/smart-booking-links",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "14-day free trial, no credit card required"
+    },
+    "featureList": [
+      "Unlimited meeting types",
+      "Custom branded booking pages",
+      "Automatic time zone detection",
+      "Buffer time management",
+      "Advanced scheduling rules",
+      "Custom booking URLs",
+      "Real-time availability checking",
+      "Unlimited calendar connections",
+      "Custom questions for invitees",
+      "Integration with Google Calendar, Outlook, iCloud"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "1247"
+    }
+  }
+</script>

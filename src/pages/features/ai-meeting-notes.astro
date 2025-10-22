@@ -1,0 +1,2049 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="AI Meeting Notes Software - Automated Transcription | CalendHub"
+  description="AI meeting notes software that auto-joins Zoom/Meet, transcribes, and generates summaries. Unlimited meetings, searchable archive, action item extraction. No 300-minute monthly limits."
+>
+  <!-- Hero Section -->
+  <section
+    class="min-h-[40vh] bg-background relative overflow-hidden flex items-center"
+  >
+    <!-- Animated gradient background -->
+    <div
+      class="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-background to-background"
+    >
+    </div>
+
+    <!-- Decorative blur circles -->
+    <div
+      class="absolute top-20 right-[15%] w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"
+    >
+    </div>
+    <div
+      class="absolute bottom-20 left-[10%] w-96 h-96 bg-amber-500/5 rounded-full blur-3xl"
+    >
+    </div>
+
+    <div class="container relative z-10 py-20">
+      <div class="max-w-7xl mx-auto text-center">
+        <!-- Badge -->
+        <div
+          class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+        >
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+            ></path>
+          </svg>
+          <span>AI Meeting Assistant</span>
+        </div>
+
+        <!-- Heading -->
+        <h1
+          class="text-5xl sm:text-6xl lg:text-7xl font-display font-bold mb-6 text-text leading-[1.1]"
+        >
+          AI Meeting Notes Software
+          <br />
+          <span class="text-text-muted">Never Take Notes Again</span>
+        </h1>
+
+        <p
+          class="text-xl lg:text-2xl text-text-muted leading-relaxed max-w-4xl mx-auto mb-12"
+        >
+          Our AI meeting assistant automatically joins your Zoom and Google Meet
+          calls, generates accurate transcriptions, extracts action items, and
+          builds a searchable knowledge base. Focus on the conversation while AI
+          handles the documentation.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex justify-center mb-12">
+          <a
+            href="https://app.calendhub.com/sign-up"
+            class="group relative inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40"
+          >
+            <span>Start Free Trial</span>
+            <svg
+              class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Trust Bar -->
+        <div
+          class="flex flex-wrap justify-center items-center gap-6 text-sm text-text-muted pt-8"
+        >
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-5 h-5 text-orange-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>14-day free trial</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-5 h-5 text-orange-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>No credit card required</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-5 h-5 text-orange-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>Unlimited meeting transcriptions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subtle grid background -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="hero-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#hero-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Initial Features Grid -->
+  <section id="features" class="py-32 relative overflow-hidden">
+    <div class="container relative z-10">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Feature 1 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Auto-Join Meetings
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Our AI bot automatically joins your scheduled Zoom and Google Meet
+              calls. No manual recording setup required - seamless calendar
+              integration handles everything for you.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Accurate Transcription
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Get word-for-word automated meeting transcription with speaker
+              identification, timestamps, and searchable text. Never miss
+              critical details from your conversations.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              AI-Powered Summaries
+            </h3>
+            <p class="text-text-muted leading-relaxed">
+              Get intelligent AI meeting summaries highlighting key points,
+              decisions, and discussion themes. Save hours reviewing long
+              recordings with instant comprehension.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="features-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#features-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="py-20 bg-background">
+    <div class="container">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-text mb-6">
+          What Are AI Meeting Notes?
+        </h2>
+        <div class="prose prose-lg max-w-none text-text-muted space-y-6">
+          <p>
+            AI meeting notes software uses artificial intelligence to
+            automatically document your video conferences. Instead of manually
+            typing notes during Zoom or Google Meet calls, an AI meeting
+            assistant joins as a participant, records the conversation,
+            generates accurate transcriptions, and produces intelligent
+            summaries with action items. This automated meeting transcription
+            technology transforms how teams capture, share, and reference
+            important discussions.
+          </p>
+
+          <p>
+            CalendHub's AI meeting notes system integrates directly with your
+            calendar, detecting upcoming meetings and automatically joining
+            without any manual intervention. Our AI note taker creates
+            speaker-identified transcripts, extracts key decisions and action
+            items, and builds a searchable archive of all your team's
+            conversations. The result is a comprehensive meeting knowledge base
+            that requires zero effort to maintain while ensuring nothing
+            important gets lost in the shuffle of back-to-back calls.
+          </p>
+
+          <p>
+            Unlike traditional meeting recorder tools that simply capture audio,
+            CalendHub provides true AI-powered analysis. Our meeting assistant
+            doesn't just transcribe words - it understands context, identifies
+            themes, highlights decisions, and organizes information in ways that
+            make it immediately useful. While solutions like <a
+              href="https://otter.ai"
+              class="text-orange-600 hover:text-orange-700 underline"
+              target="_blank"
+              rel="noopener noreferrer">Otter.ai</a
+            > limit free users to 300 minutes per month (<a
+              href="https://www.eesel.ai/blog/otter-ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-orange-600 hover:text-orange-700 underline"
+              >source: eesel AI</a
+            >), CalendHub offers unlimited transcription capacity, ensuring your
+            team never has to ration meeting documentation or worry about
+            running out of minutes during critical conversations.
+          </p>
+
+          <p>
+            The privacy and security of your AI meeting notes matter. CalendHub
+            encrypts all transcripts and recordings, provides granular sharing
+            controls, and never trains our AI models on your proprietary
+            conversations. You maintain complete ownership of your meeting data
+            with the ability to export, delete, or restrict access at any time.
+            Our automated meeting transcription works behind the scenes to
+            enhance your productivity while respecting your organization's
+            confidentiality requirements and compliance standards.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="py-32 relative overflow-hidden">
+    <div class="container relative z-10">
+      <div class="max-w-5xl mx-auto">
+        <!-- Badge -->
+        <div
+          class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+        >
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
+          <span>How It Works</span>
+        </div>
+
+        <!-- Heading -->
+        <h2
+          class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+        >
+          Automated Meeting Documentation
+          <br />
+          <span class="text-text-muted">In Three Simple Steps</span>
+        </h2>
+
+        <p class="text-xl text-text-muted leading-relaxed mb-12">
+          CalendHub's AI meeting assistant handles everything from joining calls
+          to delivering actionable summaries. Set it up once and forget about
+          manual note-taking forever.
+        </p>
+
+        <!-- 3 Step Cards -->
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <!-- Step 1 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <span class="text-3xl font-display font-bold text-white">1</span
+                >
+              </div>
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Connect Your Calendar
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Integrate your Google Calendar or Outlook calendar in seconds.
+                CalendHub automatically detects meetings on Zoom, Google Meet,
+                and Microsoft Teams.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <span class="text-3xl font-display font-bold text-white">2</span
+                >
+              </div>
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                AI Joins & Records
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Our AI meeting assistant automatically joins your scheduled
+                calls, records the conversation, and generates real-time
+                transcription with speaker identification.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <span class="text-3xl font-display font-bold text-white">3</span
+                >
+              </div>
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Get Instant Summaries
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Receive AI-generated summaries, extracted action items, and
+                searchable transcripts within minutes of your meeting ending.
+                Share with your team instantly.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Details Card -->
+        <div class="group relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300"
+          >
+            <h3 class="text-2xl font-display font-bold text-text mb-4">
+              Behind the Scenes: Advanced AI Technology
+            </h3>
+            <p class="text-text-muted leading-relaxed mb-4">
+              CalendHub uses state-of-the-art speech recognition models combined
+              with large language models to deliver the most accurate automated
+              meeting transcription available. Our system identifies individual
+              speakers, removes filler words, and formats transcripts for
+              maximum readability.
+            </p>
+            <p class="text-text-muted leading-relaxed">
+              The AI meeting assistant analyzes conversation patterns to
+              distinguish between decisions, action items, open questions, and
+              general discussion. This contextual understanding means your AI
+              meeting notes aren't just transcripts - they're structured,
+              actionable intelligence that helps teams move faster and maintain
+              alignment across time zones and busy schedules.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="how-it-works-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#how-it-works-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-background via-background to-orange-500/5 relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-6xl mx-auto">
+        <!-- Badge + Heading -->
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+              ></path>
+            </svg>
+            <span>Use Cases</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Who Benefits from
+            <br />
+            <span class="text-text-muted">AI Meeting Notes?</span>
+          </h2>
+        </div>
+
+        <!-- 4 Use Case Cards -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Use Case 1: Sales Teams -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Sales Teams
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Sales professionals need to focus entirely on building
+                relationships and understanding client needs during discovery
+                calls and demos. Manual note-taking disrupts rapport and causes
+                crucial details about pain points, budget conversations, and
+                buying signals to be missed or forgotten.
+              </p>
+              <p class="text-text-muted leading-relaxed mb-4">
+                With CalendHub's AI meeting notes, sales reps can maintain eye
+                contact and active listening while our meeting assistant
+                captures every detail. After the call, the team can review exact
+                quotes about objections, share perfect summaries with
+                leadership, and automatically populate CRM fields with action
+                items and next steps mentioned during the conversation.
+              </p>
+              <p class="text-text-muted text-sm">
+                <strong class="text-text">Common setup:</strong> 20-30 client calls
+                per week, need for deal review meetings, requirement to share insights
+                with sales management and product teams
+              </p>
+            </div>
+          </div>
+
+          <!-- Use Case 2: Product Teams -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Product Teams
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Product managers, designers, and engineers conduct countless
+                user interviews, design reviews, sprint planning sessions, and
+                stakeholder updates. Important feature requests, usability
+                insights, and technical decisions get scattered across
+                notebooks, chat messages, and people's memories, making it
+                difficult to maintain clear product documentation.
+              </p>
+              <p class="text-text-muted leading-relaxed mb-4">
+                CalendHub's automated meeting transcription creates a searchable
+                product knowledge base from all these conversations. When
+                prioritizing the roadmap, teams can search past user interviews
+                for specific pain points. When onboarding new team members, they
+                can review recorded design critiques to understand past
+                decisions. The AI meeting assistant ensures no valuable insight
+                disappears after the Zoom call ends.
+              </p>
+              <p class="text-text-muted text-sm">
+                <strong class="text-text">Common setup:</strong> 10-15 user research
+                sessions per sprint, daily standups, weekly planning meetings, quarterly
+                stakeholder presentations requiring follow-up documentation
+              </p>
+            </div>
+          </div>
+
+          <!-- Use Case 3: Executive Leadership -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Executive Leadership
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                CEOs, founders, and senior executives jump between board
+                meetings, investor calls, department reviews, and strategic
+                planning sessions. Each conversation involves critical
+                decisions, commitments, and strategic direction that must be
+                communicated accurately to teams. Relying on memory or
+                fragmented notes leads to miscommunication and missed
+                follow-through.
+              </p>
+              <p class="text-text-muted leading-relaxed mb-4">
+                AI meeting notes give executives a reliable system for
+                documenting high-stakes conversations. After a board meeting,
+                detailed transcripts ensure accurate board minutes. Following
+                investor calls, AI-extracted action items create clear task
+                lists for the leadership team. The searchable archive becomes an
+                institutional memory that survives team changes and helps new
+                leaders understand the context behind major decisions.
+              </p>
+              <p class="text-text-muted text-sm">
+                <strong class="text-text">Common setup:</strong> 15-25 strategic
+                meetings per week across board governance, investor relations, department
+                leadership, and external partnerships requiring detailed documentation
+              </p>
+            </div>
+          </div>
+
+          <!-- Use Case 4: Remote Teams -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-display font-bold text-text mb-4">
+                Remote Teams
+              </h3>
+              <p class="text-text-muted leading-relaxed mb-4">
+                Distributed teams across multiple time zones face constant
+                challenges with meeting accessibility and information sharing.
+                Team members who can't attend a meeting at 6am their local time
+                miss critical context, while those who do attend struggle to
+                communicate outcomes to their peers in different regions. This
+                creates information silos and coordination friction.
+              </p>
+              <p class="text-text-muted leading-relaxed mb-4">
+                CalendHub's AI meeting assistant enables true asynchronous
+                collaboration by making every meeting accessible to everyone.
+                Team members in Asia can read AI-generated summaries of the
+                meeting that happened in New York while they slept. Developers
+                can search past architecture discussions to understand decisions
+                made before they joined. The automated meeting transcription
+                system ensures no one gets left behind due to timezone
+                differences or scheduling conflicts.
+              </p>
+              <p class="text-text-muted text-sm">
+                <strong class="text-text">Common setup:</strong> Teams spanning 3-6
+                time zones, mixture of synchronous and asynchronous work, need for
+                meeting recording to accommodate flexible schedules and parental
+                leave
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section class="py-32 relative overflow-hidden">
+    <div class="container relative z-10">
+      <div class="max-w-5xl mx-auto">
+        <!-- Badge + Heading -->
+        <div class="text-center mb-12">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+              ></path>
+            </svg>
+            <span>Comparison</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl font-display font-bold text-text mb-4"
+          >
+            CalendHub vs. Otter.ai vs. Manual Notes
+          </h2>
+          <p class="text-xl text-text-muted">
+            Choose the AI meeting notes solution that scales with your needs
+          </p>
+        </div>
+
+        <!-- Comparison Table -->
+        <div
+          class="bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border rounded-2xl overflow-hidden"
+        >
+          <div class="overflow-x-auto">
+            <table class="w-full">
+              <thead class="bg-orange-500/10">
+                <tr>
+                  <th class="text-left p-4 text-text font-display">Feature</th>
+                  <th class="text-center p-4 text-text font-display"
+                    >CalendHub</th
+                  >
+                  <th class="text-center p-4 text-text font-display"
+                    >Otter.ai</th
+                  >
+                  <th class="text-center p-4 text-text font-display"
+                    >Manual Notes</th
+                  >
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-border">
+                <tr>
+                  <td class="p-4 text-text-muted"
+                    >Monthly transcription minutes</td
+                  >
+                  <td class="p-4 text-center">
+                    <span class="text-green-600 dark:text-green-400 font-bold"
+                      >Unlimited</span
+                    >
+                  </td>
+                  <td class="p-4 text-center">
+                    <span class="text-orange-600 dark:text-orange-400"
+                      >300 (Free)<br />1200 (Pro)</span
+                    >
+                  </td>
+                  <td class="p-4 text-center">
+                    <span class="text-red-600 dark:text-red-400">N/A</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-4 text-text-muted">Calendar auto-join</td>
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 text-green-600 dark:text-green-400 mx-auto"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 text-green-600 dark:text-green-400 mx-auto"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 text-red-600 dark:text-red-400 mx-auto"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-4 text-text-muted"
+                    >AI summaries & action items</td
+                  >
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 text-green-600 dark:text-green-400 mx-auto"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 text-green-600 dark:text-green-400 mx-auto"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 text-red-600 dark:text-red-400 mx-auto"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-4 text-text-muted"
+                    >Searchable transcript archive</td
+                  >
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 text-green-600 dark:text-green-400 mx-auto"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 text-green-600 dark:text-green-400 mx-auto"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                  <td class="p-4 text-center">
+                    <svg
+                      class="w-6 h-6 text-red-600 dark:text-red-400 mx-auto"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-4 text-text-muted"
+                    >Privacy controls & data ownership</td
+                  >
+                  <td class="p-4 text-center">
+                    <span class="text-green-600 dark:text-green-400 font-bold"
+                      >Full control</span
+                    >
+                  </td>
+                  <td class="p-4 text-center">
+                    <span class="text-orange-600 dark:text-orange-400"
+                      >Limited</span
+                    >
+                  </td>
+                  <td class="p-4 text-center">
+                    <span class="text-green-600 dark:text-green-400 font-bold"
+                      >Full control</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-4 text-text-muted"
+                    >Time investment per meeting</td
+                  >
+                  <td class="p-4 text-center">
+                    <span class="text-green-600 dark:text-green-400 font-bold"
+                      >0 minutes</span
+                    >
+                  </td>
+                  <td class="p-4 text-center">
+                    <span class="text-green-600 dark:text-green-400 font-bold"
+                      >0 minutes</span
+                    >
+                  </td>
+                  <td class="p-4 text-center">
+                    <span class="text-red-600 dark:text-red-400 font-bold"
+                      >15-30 minutes</span
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Competitor Limitation Box -->
+        <div class="group relative mt-8">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300"
+          >
+            <h3 class="text-xl font-display font-bold text-text mb-4">
+              Otter.ai Limitations
+            </h3>
+            <p class="text-text-muted leading-relaxed mb-4">
+              Free tier users are limited to 300 monthly transcription minutes
+              and 30 minutes per conversation, with only 3 lifetime audio/video
+              file imports. Pro users get 1200 minutes but still face 90-minute
+              conversation limits. (<a
+                href="https://www.eesel.ai/blog/otter-ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-orange-600 hover:text-orange-700 dark:text-orange-400 dark:hover:text-orange-300 underline"
+                >source: eesel AI</a
+              >)
+            </p>
+            <p class="text-text-muted leading-relaxed">
+              Additionally, Otter.ai has privacy concerns with default sharing
+              settings being overly open, and customer support is reportedly
+              slow when users need help with speaker identification issues. (<a
+                href="https://www.eesel.ai/blog/otter-ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-orange-600 hover:text-orange-700 dark:text-orange-400 dark:hover:text-orange-300 underline"
+                >source: eesel AI</a
+              >)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="comparison-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#comparison-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-background via-background to-orange-500/5 relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-6xl mx-auto">
+        <!-- Badge + Heading -->
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+              ></path>
+            </svg>
+            <span>Key Benefits</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Benefits of AI Meeting Notes
+            <br />
+            <span class="text-text-muted">Transform Your Productivity</span>
+          </h2>
+        </div>
+
+        <!-- 6 Benefit Cards -->
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Benefit 1 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Save 10+ Hours Weekly
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Eliminate manual note-taking and post-meeting documentation.
+                Automated meeting transcription returns hours to your calendar
+                for strategic work instead of administrative tasks.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Perfect Accuracy
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Never misquote a client or miss a commitment again. AI meeting
+                notes capture exact wording with speaker identification,
+                eliminating the errors inherent in human note-taking.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Better Team Alignment
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Instant sharing of AI meeting summaries ensures everyone has the
+                same understanding of decisions and next steps, even if they
+                couldn't attend the meeting live.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Institutional Knowledge
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Build a searchable archive of every important conversation. When
+                team members leave or new people join, your organizational
+                knowledge remains accessible and complete.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 5 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Focus on Conversation
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Give meetings your full attention without worrying about
+                capturing details. The AI meeting assistant handles
+                documentation while you focus on understanding and relationship
+                building.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 6 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full"
+            >
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-orange-500/25"
+              >
+                <svg
+                  class="w-7 h-7 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-display font-bold text-text mb-2">
+                Automatic Accountability
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                AI-extracted action items create clear task lists from every
+                meeting. No more forgotten follow-ups or ambiguous commitments -
+                everyone knows exactly what needs to happen next.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-32 bg-background relative overflow-hidden">
+    <div class="container relative z-10">
+      <div class="max-w-6xl mx-auto">
+        <!-- Badge + Heading -->
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <span>Frequently Asked Questions</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            AI Meeting Notes FAQ
+          </h2>
+        </div>
+
+        <!-- FAQ Grid -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- FAQ 1 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                What are AI meeting notes and how do they work?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                AI meeting notes software automatically joins your video
+                conferences, records the audio, and uses artificial intelligence
+                to generate accurate transcriptions with speaker identification.
+                The AI then analyzes the conversation to create summaries,
+                extract action items, and identify key decisions. This happens
+                automatically without any manual effort, turning every meeting
+                into searchable, shareable documentation.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                Does CalendHub's AI meeting assistant work with Zoom and Google
+                Meet?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, CalendHub's automated meeting transcription works
+                seamlessly with both Zoom and Google Meet, as well as Microsoft
+                Teams. Our AI bot integrates with your calendar, automatically
+                detects which platform each meeting uses, and joins accordingly.
+                You don't need to configure anything differently for each
+                platform - it just works.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                How fast does CalendHub generate meeting transcripts and
+                summaries?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                CalendHub provides real-time transcription during meetings and
+                delivers AI-generated summaries within 2-3 minutes after the
+                meeting ends. You can access preliminary transcripts even while
+                the meeting is still in progress, making it easy to reference
+                earlier discussion points or share notes with colleagues who
+                joined late.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                Is my meeting data secure with AI meeting notes software?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                CalendHub encrypts all meeting recordings, transcripts, and
+                AI-generated summaries both in transit and at rest. We never
+                train our AI models on your proprietary conversations, and you
+                maintain complete ownership of your data with the ability to
+                export or delete it at any time. Granular sharing controls let
+                you decide exactly who can access each meeting's documentation,
+                ensuring compliance with your organization's privacy policies.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                Can I use AI meeting notes on mobile devices?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, CalendHub's AI meeting assistant works automatically
+                regardless of which device you use to join the meeting. The AI
+                bot joins from the cloud, so it functions even if you're
+                attending from your phone, tablet, or laptop. You can access
+                transcripts, summaries, and AI meeting notes from any device
+                through our web app or mobile applications.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                Are there limits on how many meetings I can transcribe with
+                CalendHub?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                CalendHub offers unlimited automated meeting transcription with
+                no monthly minute caps. Unlike other AI meeting notes services
+                that limit free users to 300 minutes or paid users to specific
+                quotas, CalendHub lets you transcribe as many meetings as you
+                need. This is particularly valuable for sales teams, executives,
+                and distributed teams who rely heavily on video conferencing.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                Can AI meeting notes help with compliance and legal
+                documentation?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, automated meeting transcription provides verbatim records
+                of conversations, which can be valuable for compliance, legal
+                documentation, and dispute resolution. The AI maintains speaker
+                identification and timestamps, creating an auditable trail of
+                who said what and when. Many regulated industries use AI meeting
+                notes to document client interactions, board meetings, and
+                critical business decisions while ensuring nothing important is
+                missed or misremembered.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300 h-full"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-4">
+                How does CalendHub compare to Otter.ai for automated meeting
+                transcription?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                CalendHub offers unlimited transcription minutes without monthly
+                caps, while Otter.ai limits free users to 300 minutes and Pro
+                users to 1200 minutes per month. CalendHub also integrates more
+                deeply with calendar and scheduling workflows, making it a
+                complete meeting management solution rather than just a
+                transcription tool. Both offer AI summaries and action item
+                extraction, but CalendHub's unlimited capacity and
+                calendar-first design make it better suited for teams with heavy
+                meeting loads.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="faq-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#faq-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-background via-background to-orange-500/5 relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-20">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <span>FAQ</span>
+          </div>
+          <h2
+            class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6 text-text"
+          >
+            Frequently Asked Questions
+          </h2>
+        </div>
+        <div class="space-y-6">
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Does the AI meeting assistant work with all video conferencing
+                platforms?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, CalendHub's AI meeting notes feature integrates seamlessly
+                with Zoom, Google Meet, Microsoft Teams, and other major video
+                conferencing platforms. Our AI assistant automatically joins
+                your meetings, records audio, and generates transcripts and
+                summaries without requiring any manual setup.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                How accurate is the AI transcription for meeting notes?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Our AI transcription achieves 95%+ accuracy for clear audio in
+                supported languages. The system uses advanced speech recognition
+                models that continuously improve, handle multiple speakers,
+                filter background noise, and accurately capture technical
+                terminology and industry-specific jargon.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Are there any monthly limits on AI meeting transcription?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                No. Unlike competitors who impose 300-minute monthly limits,
+                CalendHub offers truly unlimited AI meeting transcription and
+                note-taking. Record and transcribe as many meetings as you need
+                without worrying about hitting usage caps or paying overage
+                fees.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Can I search through past AI-generated meeting notes?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Absolutely. CalendHub creates a fully searchable archive of all
+                your meeting transcripts and AI-generated summaries. Search by
+                keyword, participant name, date range, or topic to instantly
+                find specific discussions, decisions, or action items from any
+                past meeting.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                Does the AI extract action items automatically from meeting
+                discussions?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Yes, our AI automatically identifies and extracts action items,
+                decisions, and key takeaways from meeting transcripts. Action
+                items are formatted with assignees (when mentioned), due dates,
+                and context, making it easy to track follow-ups and ensure
+                nothing falls through the cracks.
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+              class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1"
+            >
+              <h3 class="text-xl font-display font-bold text-text mb-3">
+                How secure are my AI meeting recordings and transcripts?
+              </h3>
+              <p class="text-text-muted leading-relaxed">
+                Security is paramount. All meeting recordings and transcripts
+                are encrypted in transit and at rest using industry-standard
+                AES-256 encryption. We're SOC 2 Type II compliant, GDPR
+                compliant, and never train AI models on your private meeting
+                data. You control access permissions and can delete recordings
+                at any time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="faq-grid"
+            width="32"
+            height="32"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 32 0 L 0 0 0 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#faq-grid)"></rect>
+      </svg>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section
+    class="py-32 bg-gradient-to-b from-orange-500/5 to-background relative overflow-hidden"
+  >
+    <div class="container relative z-10">
+      <div class="max-w-5xl mx-auto">
+        <div class="relative group">
+          <!-- Enhanced glow effect -->
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/30 to-amber-500/30 rounded-[3rem] blur-3xl opacity-60 group-hover:opacity-80 transition-opacity duration-500"
+          >
+          </div>
+
+          <div
+            class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm rounded-[3rem] p-12 md:p-16 text-center"
+          >
+            <h2
+              class="text-4xl sm:text-5xl font-display font-bold text-text mb-6"
+            >
+              Stop Taking Meeting Notes
+              <br />
+              <span class="text-text-muted">Let AI Handle It</span>
+            </h2>
+            <p
+              class="text-xl text-text-muted leading-relaxed mb-10 max-w-3xl mx-auto"
+            >
+              Join thousands of teams using CalendHub's AI meeting notes to
+              capture every important conversation, extract action items
+              automatically, and build a searchable knowledge base. Start your
+              free trial today.
+            </p>
+
+            <div class="flex justify-center mb-8">
+              <a
+                href="https://app.calendhub.com/sign-up"
+                class="group relative inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40"
+              >
+                <span>Start Free Trial</span>
+                <svg
+                  class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </a>
+            </div>
+
+            <div
+              class="flex flex-wrap justify-center items-center gap-6 text-sm text-text-muted"
+            >
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>14-day free trial</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>No credit card required</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg
+                  class="w-5 h-5 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Unlimited transcriptions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating elements -->
+    <div
+      class="absolute inset-0 pointer-events-none overflow-hidden opacity-20"
+    >
+      <div
+        class="absolute top-20 left-[10%] animate-pulse"
+        style="animation-duration: 4s;"
+      >
+        <svg
+          class="w-12 h-12 text-orange-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+          ></path>
+        </svg>
+      </div>
+      <div
+        class="absolute bottom-20 right-[15%] animate-pulse"
+        style="animation-duration: 5s;"
+      >
+        <svg
+          class="w-16 h-16 text-orange-400"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are AI meeting notes and how do they work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI meeting notes software automatically joins your video conferences, records the audio, and uses artificial intelligence to generate accurate transcriptions with speaker identification. The AI then analyzes the conversation to create summaries, extract action items, and identify key decisions. This happens automatically without any manual effort, turning every meeting into searchable, shareable documentation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does CalendHub's AI meeting assistant work with Zoom and Google Meet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, CalendHub's automated meeting transcription works seamlessly with both Zoom and Google Meet, as well as Microsoft Teams. Our AI bot integrates with your calendar, automatically detects which platform each meeting uses, and joins accordingly. You don't need to configure anything differently for each platform - it just works."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast does CalendHub generate meeting transcripts and summaries?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CalendHub provides real-time transcription during meetings and delivers AI-generated summaries within 2-3 minutes after the meeting ends. You can access preliminary transcripts even while the meeting is still in progress, making it easy to reference earlier discussion points or share notes with colleagues who joined late."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my meeting data secure with AI meeting notes software?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CalendHub encrypts all meeting recordings, transcripts, and AI-generated summaries both in transit and at rest. We never train our AI models on your proprietary conversations, and you maintain complete ownership of your data with the ability to export or delete it at any time. Granular sharing controls let you decide exactly who can access each meeting's documentation, ensuring compliance with your organization's privacy policies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use AI meeting notes on mobile devices?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, CalendHub's AI meeting assistant works automatically regardless of which device you use to join the meeting. The AI bot joins from the cloud, so it functions even if you're attending from your phone, tablet, or laptop. You can access transcripts, summaries, and AI meeting notes from any device through our web app or mobile applications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there limits on how many meetings I can transcribe with CalendHub?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CalendHub offers unlimited automated meeting transcription with no monthly minute caps. Unlike other AI meeting notes services that limit free users to 300 minutes or paid users to specific quotas, CalendHub lets you transcribe as many meetings as you need. This is particularly valuable for sales teams, executives, and distributed teams who rely heavily on video conferencing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can AI meeting notes help with compliance and legal documentation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, automated meeting transcription provides verbatim records of conversations, which can be valuable for compliance, legal documentation, and dispute resolution. The AI maintains speaker identification and timestamps, creating an auditable trail of who said what and when. Many regulated industries use AI meeting notes to document client interactions, board meetings, and critical business decisions while ensuring nothing important is missed or misremembered."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does CalendHub compare to Otter.ai for automated meeting transcription?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CalendHub offers unlimited transcription minutes without monthly caps, while Otter.ai limits free users to 300 minutes and Pro users to 1200 minutes per month. CalendHub also integrates more deeply with calendar and scheduling workflows, making it a complete meeting management solution rather than just a transcription tool. Both offer AI summaries and action item extraction, but CalendHub's unlimited capacity and calendar-first design make it better suited for teams with heavy meeting loads."
+          }
+        }
+      ]
+    }
+  </script>
+
+  <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "CalendHub AI Meeting Notes",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, iOS, Android",
+      "description": "AI meeting notes software that automatically joins Zoom and Google Meet calls, generates accurate transcriptions with speaker identification, extracts action items, and builds a searchable meeting knowledge base. Unlimited transcription capacity with no monthly minute limits.",
+      "url": "https://calendhub.com/features/ai-meeting-notes",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "14-day free trial, no credit card required"
+      },
+      "featureList": [
+        "Automatic meeting join for Zoom and Google Meet",
+        "Real-time automated meeting transcription",
+        "AI-powered meeting summaries",
+        "Action item extraction and tracking",
+        "Searchable transcript archive",
+        "Speaker identification",
+        "Unlimited transcription minutes",
+        "Instant team sharing",
+        "Calendar integration",
+        "End-to-end encryption"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1247"
+      }
+    }
+  </script>
+</BaseLayout>
