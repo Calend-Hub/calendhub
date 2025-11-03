@@ -1,0 +1,119 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_CONFIG } from '../data/site-config';
+---
+
+<BaseLayout
+  title="Calendhub Support - Help & Contact"
+  description="Get help with Calendhub and Zoom integration. Contact our support team or check our documentation for troubleshooting guides."
+  breadcrumb={[
+    { name: 'Home', url: '/' },
+    { name: 'Support', url: '/support' }
+  ]}
+>
+  <div class="container py-12">
+    <div class="max-w-4xl mx-auto">
+
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Calendhub Support</h1>
+        <p class="text-xl text-text-muted max-w-2xl mx-auto">
+          Need help with Calendhub or Zoom integration? Browse our documentation or contact our support team directly.
+        </p>
+      </div>
+
+      <!-- Info Section -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-semibold mb-6 text-center">How We Can Help</h2>
+        <p class="text-text-muted mb-4 text-lg leading-relaxed">
+          Our support team can assist you with connecting Calendhub to Zoom, troubleshooting integration issues, and answering general questions about your events and automated meetings.
+        </p>
+        <p class="text-text-muted text-lg leading-relaxed">
+          Before reaching out, you may find our step-by-step guide helpful: 
+          <a class="underline" href="/docs/zoom">Zoom Integration Documentation</a>.
+        </p>
+      </div>
+
+      <!-- Contact Form Section -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-semibold mb-6 text-center">Contact Support</h2>
+        
+        <!-- Form -->
+        <form 
+        class="space-y-6" 
+        action="https://formspree.io/f/xqagvzwa"
+        method="POST"
+      >
+        <div>
+          <label class="block mb-2 font-medium" for="name">Name</label>
+          <input 
+            class="w-full border border-border rounded-lg px-4 py-2 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100" 
+            type="text" 
+            id="name"
+            name="name" 
+            required 
+            placeholder="Your full name"
+          />
+        </div>
+      
+        <div>
+          <label class="block mb-2 font-medium" for="email">Email</label>
+          <input 
+            class="w-full border border-border rounded-lg px-4 py-2 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100" 
+            type="email" 
+            id="email"
+            name="email" 
+            required 
+            placeholder="you@example.com"
+          />
+        </div>
+      
+        <div>
+          <label class="block mb-2 font-medium" for="subject">Subject</label>
+          <input 
+            class="w-full border border-border rounded-lg px-4 py-2 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100" 
+            type="text" 
+            id="subject"
+            name="subject" 
+            required 
+            placeholder="Brief subject"
+          />
+        </div>
+      
+        <div>
+          <label class="block mb-2 font-medium" for="message">Message</label>
+          <textarea 
+            class="w-full border border-border rounded-lg px-4 py-2 bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100" 
+            id="message"
+            name="message" 
+            rows="5" 
+            required
+            placeholder="Type your message here..."
+          ></textarea>
+        </div>
+      
+        <button type="submit" class="px-6 py-3 bg-text text-background font-medium rounded-full hover:opacity-80 transition-opacity">
+          Send Message
+        </button>
+      </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div>
+          <h2 class="text-2xl font-semibold mb-4">Email & Support</h2>
+          <p class="text-text-muted mb-2">For general inquiries or questions:</p>
+          <p class="text-text-muted font-medium">support@calendhub.com</p>
+        </div>
+        <div>
+          <h2 class="text-2xl font-semibold mb-4">Website</h2>
+          <p class="text-text-muted mb-2">Learn more about Calendhub:</p>
+          <p class="text-text-muted font-medium">
+            <a href="https://calendhub.com">Calendhub</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</BaseLayout>
