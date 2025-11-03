@@ -1,8 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
-// --- Color and Data Definitions ---
-// Using orange as requested
 const PRIMARY_COLOR_TEXT = 'text-orange-500'; 
 const PRIMARY_COLOR_BG = 'bg-orange-500'; 
 const PRIMARY_COLOR_HOVER = 'hover:bg-orange-600'; 
@@ -548,7 +546,7 @@ const canonicalUrl = "https://www.calendhub.com/docs/zoom";
     </div>
   </div>
 
-  {/* --- Client-Side JS for FAQ Toggle and GSAP Animations --- */}
+  {/* --- Client-Side JS for FAQ Toggle --- */}
   <script is:inline>
     // 1. FAQ Toggle Logic
     document.addEventListener('DOMContentLoaded', () => {
@@ -594,38 +592,6 @@ const canonicalUrl = "https://www.calendhub.com/docs/zoom";
         });
       }
 
-      // 2. GSAP Animation Logic (If GSAP is available globally)
-      if (typeof gsap !== 'undefined') {
-        gsap.from(".title", { y: 100, opacity: 0, duration: 1 });
-        gsap.from(".subtitle", { y: -50, opacity: 0, duration: 1 });
-        gsap.from(".title-description", { y: 100, opacity: 0, duration: 1.5 });
-        gsap.from(".hero-feature", {
-          y: 50,
-          opacity: 0,
-          duration: 1.2,
-          delay: 0.3,
-          stagger: 0.1,
-        });
-        gsap.from(".step-card", {
-          y: 50,
-          opacity: 0,
-          duration: 1,
-          delay: 0.5,
-          stagger: 0.15,
-        });
-        gsap.from(".content-section", {
-          y: 100,
-          delay: 0.7,
-          opacity: 0,
-          duration: 1.5,
-        });
-        gsap.from(".faq-section", {
-          y: 50,
-          opacity: 0,
-          duration: 1,
-          delay: 0.8,
-        });
-      }
     });
   </script>
 </BaseLayout>
