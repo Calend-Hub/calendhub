@@ -11,43 +11,39 @@ const steps = [
   {
     number: "01",
     title: "Log In to Your Account",
-    description:
-      "Visit calendhub.com and log in using your credentials. Make sure you're signed in with the correct account that will manage Zoom meetings. Once you have logged in successfully you will see the dashboard.",
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a4.5 4.5 0 002.32-.733l-1.033-1.033zM12 21a1.5 1.5 0 001.5-1.5v-2c0-.828.327-1.614.918-2.205l.444-.444a1.5 1.5 0 000-2.121l-1.414-1.414a1.5 1.5 0 00-2.121 0L9.439 12.04a1.5 1.5 0 000 2.121l.444.444c.591.591.918 1.377.918 2.205v2A1.5 1.5 0 0012 21zM9 12a3 3 0 116 0V7.5a3 3 0 00-6 0V12z" /></svg>`,
+    description: "Visit calendhub.com and log in using your credentials. Make sure you're signed in with the correct account that will manage Zoom meetings. Once you have logged in successfully you will see the dashboard.",
     image: "/0.png",
   },
   {
     number: "02",
     title: "Go to the Integrations Page",
-    description:
-      "Once logged in, navigate to the Integrations page from your dashboard sidebar. Find and click the Zoom option to start the connection process.",
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.003L12 5.003L14.406 3.003C15.485 2.158 17.065 2.85 17.065 4.133v15.734c0 1.283-1.58 1.975-2.659 1.13L12 18.997l-2.406 2.006c-1.079.845-2.659.153-2.659-1.13V4.133c0-1.283 1.58-1.975 2.659-1.13z" /></svg>`,
+    description: "Once logged in, navigate to the Integrations page from your dashboard sidebar. Find and click the Zoom option to start the connection process.",
     image: "/1.png",
   },
   {
     number: "03",
     title: "Grant Zoom Permissions",
-    description:
-      "You'll be redirected to Zoom's authorization page. Click Allow to grant Calendhub permission to access your Zoom account. This is necessary to automatically generate Zoom links for your appointments.",
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15L15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>`,
+    description: "You'll be redirected to Zoom's authorization page. Click Allow to grant Calendhub permission to access your Zoom account. This is necessary to automatically generate Zoom links for your appointments.",
     image: "/2.png",
   },
   {
     number: "04",
     title: "Create an Appointment with Zoom",
-    description:
-      "Go to your Calendhub Calendar, click Create Appointment, then press More Options. From the Meeting Provider dropdown, select Zoom. Fill in your appointment details and click Save.If you dont have other providers other than zoom than we will automaticlly use Zoom for creating meetings",
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5l-3.75 3.75M12 12l-3.75-3.75M12 6.375l-7.5 7.5a1.5 1.5 0 00-2.121 0l-1.879 1.879M21 12.75v-2.25a3.75 3.75 0 00-3.75-3.75H9.75a3.75 3.75 0 00-3.75 3.75v2.25M15.75 10.5v-3m0 0a3.75 3.75 0 00-3.75-3.75H9.75a3.75 3.75 0 00-3.75 3.75v3m0 0a3.75 3.75 0 00-3.75-3.75H3.75m0 0a3.75 3.75 0 00-3.75 3.75v2.25" /></svg>`,
+    description: "Go to your Calendhub Calendar, click Create Appointment, then press More Options. From the Meeting Provider dropdown, select Zoom. Fill in your appointment details and click Save.If you dont have other providers other than zoom than we will automaticlly use Zoom for creating meetings",
     image: "/4.png",
   },
   {
     number: "05",
     title: "Join the Zoom Meeting from Your Appointment",
-    description:
-      "After saving, reopen the appointment. You will now see a Join Zoom Meeting button. Clicking this button will take you directly to your Zoom meeting link.",
-    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a3 3 0 01-4.243 0l-4.5-4.5a4.5 4.5 0 017.243-5.242l.52-.52z" /><path stroke-linecap="round" stroke-linejoin="round" d="M17.808 11.25a4.5 4.5 0 01-1.242-7.244l4.5-4.5a3 3 0 014.243 0l4.5 4.5a4.5 4.5 0 01-7.243 5.242l-.52.52z" /></svg>`,
+    description: "After saving, reopen the appointment. You will now see a Join Zoom Meeting button. Clicking this button will take you directly to your Zoom meeting link.",
     image: "/3.png",
   },
+  {
+    number: "06",
+    title: "Remove Zoom Connection",
+    description: "To disconnect your Zoom account from our application, navigate to the Plugins section in your dashboard sidebar. Locate the Zoom Meetings card and find the connected account listing. Click the trash can icon next to the account you wish to remove, and confirm the removal in the pop-up window.",
+    image: "/5.png"
+}
 ];
 
 const problems = [
