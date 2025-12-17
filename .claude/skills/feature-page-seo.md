@@ -290,7 +290,7 @@ Include TWO schema types at end of page:
     "@type": "Offer",
     "price": "0",
     "priceCurrency": "USD",
-    "description": "14-day free trial, no credit card required"
+    "description": "7-day free trial, no credit card required"
   },
   "featureList": [/* 8-10 key features */]
 }

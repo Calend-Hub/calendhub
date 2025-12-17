@@ -1,277 +1,365 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { SITE_CONFIG } from '../data/site-config';
 ---
 
 <BaseLayout
-  title="About CalendHub - Unified Calendar Management Platform"
-  description="Learn about CalendHub - the intelligent platform that unifies all your calendars, streamlines scheduling, and eliminates meeting chaos with AI-powered automation."
+  title="About CalendHub - Unified Calendar Management & Scheduling Software"
+  description="Learn about CalendHub, the scheduling software that unifies all your calendars, streamlines appointment booking, and eliminates meeting chaos. Built for professionals and teams."
   breadcrumb={[
     { name: 'Home', url: '/' },
     { name: 'About', url: '/about' }
   ]}
 >
-  <div class="container py-12">
-    <div class="max-w-4xl mx-auto">
-      <!-- Header -->
-      <div class="text-center mb-12">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">About CalendHub</h1>
-        <p class="text-xl text-text-muted max-w-2xl mx-auto">
-          One calendar to rule them all. Unify your scheduling, eliminate meeting chaos, and reclaim your time with intelligent calendar management.
-        </p>
-      </div>
-
-      <!-- Mission Section -->
-      <div class="mb-12">
-        <h2 class="text-3xl font-semibold mb-6 text-center">Our Mission</h2>
-        <p class="text-text-muted mb-4 text-lg leading-relaxed">
-          CalendHub exists to eliminate the calendar chaos that plagues modern professionals and distributed teams. We believe managing multiple calendars, coordinating across time zones, and scheduling meetings shouldn't consume hours of your week.
-        </p>
-        <p class="text-text-muted text-lg leading-relaxed">
-          Our platform unifies all your calendars into a single, intelligent system that handles the complexity of scheduling automatically, so you can focus on meaningful work instead of calendar management.
-        </p>
-      </div>
-
-      <!-- Problem We Solve -->
-      <div class="mb-12">
-        <h2 class="text-3xl font-semibold mb-8 text-center">The Problem We Solve</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="border border-border rounded-lg p-6">
-            <h3 class="text-xl font-semibold mb-4 text-red-500">Before CalendHub</h3>
-            <div class="space-y-3 text-text-muted">
-              <div class="flex items-start gap-3">
-                <span class="text-red-500 mt-1">✗</span>
-                <span>Checking 3+ different calendars every morning</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="text-red-500 mt-1">✗</span>
-                <span>8+ messages to schedule a single meeting</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="text-red-500 mt-1">✗</span>
-                <span>Double-bookings and missed meetings</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="text-red-500 mt-1">✗</span>
-                <span>Manual time zone calculations</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="text-red-500 mt-1">✗</span>
-                <span>Back-to-back meeting marathons</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="text-red-500 mt-1">✗</span>
-                <span>Lost meeting notes and action items</span>
-              </div>
-            </div>
+  <div class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="py-20 relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-b from-orange-500/5 to-transparent pointer-events-none"></div>
+      <div class="container relative z-10">
+        <div class="text-center max-w-4xl mx-auto">
+          <div class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 text-sm font-medium text-orange-600 dark:text-orange-400 mb-6">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+            </svg>
+            <span>Our Story</span>
           </div>
-
-          <div class="border border-border rounded-lg p-6 bg-surface">
-            <h3 class="text-xl font-semibold mb-4 text-green-500">With CalendHub</h3>
-            <div class="space-y-3 text-text-muted">
-              <div class="flex items-start gap-3">
-                <span class="text-green-500 mt-1">✓</span>
-                <span>All calendars unified in one view</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="text-green-500 mt-1">✓</span>
-                <span>Zero-message scheduling with smart links</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="text-green-500 mt-1">✓</span>
-                <span>Conflict prevention and sync reliability</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="text-green-500 mt-1">✓</span>
-                <span>Automatic time zone translation</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="text-green-500 mt-1">✓</span>
-                <span>Built-in meeting buffers</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="text-green-500 mt-1">✓</span>
-                <span>AI-powered meeting notes and summaries</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Platform Features -->
-      <div class="mb-12">
-        <h2 class="text-3xl font-semibold mb-8 text-center">What CalendHub Offers</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-          <div>
-            <h3 class="text-xl font-semibold mb-4">Core Features</h3>
-            <div class="space-y-3">
-              <div class="flex items-center gap-3">
-                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
-                <span>Unified calendar view across all platforms</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
-                <span>Smart scheduling links with availability</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
-                <span>Automatic time zone management</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
-                <span>Round-robin team scheduling</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
-                <span>Meeting buffer automation</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
-                <span>Video conferencing integration</span>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h3 class="text-xl font-semibold mb-4">Advanced Capabilities</h3>
-            <div class="space-y-3">
-              <div class="flex items-center gap-3">
-                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
-                <span>AI-powered meeting notes and transcription</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
-                <span>Automatic action item extraction</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
-                <span>Calendar analytics and insights</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
-                <span>Project management integration</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
-                <span>Focus time protection</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <span class="w-2 h-2 bg-text rounded-full flex-shrink-0 mt-2"></span>
-                <span>Smart meeting rescheduling</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Our Vision -->
-      <div class="mb-12">
-        <h2 class="text-3xl font-semibold mb-6 text-center">Our Vision</h2>
-        <p class="text-text-muted text-lg leading-relaxed mb-6">
-          We envision a world where calendar management is invisible. Where scheduling happens automatically, meetings are always productive, and no one wastes time coordinating availability or taking notes.
-        </p>
-        <p class="text-text-muted text-lg leading-relaxed">
-          CalendHub is building intelligent calendar infrastructure that anticipates your needs, optimizes your schedule, and ensures you never miss important commitments while protecting time for deep work.
-        </p>
-      </div>
-
-      <!-- Stats Section -->
-      <div class="mb-12 bg-surface border border-border rounded-lg p-8">
-        <h2 class="text-3xl font-semibold mb-8 text-center">Impact by the Numbers</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="text-center">
-            <div class="text-4xl font-bold mb-2">10+ hours</div>
-            <div class="text-text-muted">saved per person monthly</div>
-          </div>
-          <div class="text-center">
-            <div class="text-4xl font-bold mb-2">47%</div>
-            <div class="text-text-muted">increase in action item completion</div>
-          </div>
-          <div class="text-center">
-            <div class="text-4xl font-bold mb-2">34%</div>
-            <div class="text-text-muted">reduction in meeting no-shows</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Why CalendHub Blog -->
-      <div class="mb-12">
-        <div class="text-center">
-          <h2 class="text-3xl font-semibold mb-6">Why This Blog Exists</h2>
-          <p class="text-text-muted mb-8 max-w-2xl mx-auto text-lg leading-relaxed">
-            Beyond building CalendHub, we're passionate about helping professionals and teams master calendar management, productivity, and remote work. This blog shares practical strategies, best practices, and insights for getting the most out of your calendar.
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-text mb-6">
+            One Calendar to
+            <span class="bg-gradient-to-r from-orange-600 to-orange-500 bg-clip-text text-transparent"> Rule Them All</span>
+          </h1>
+          <p class="text-xl text-text-muted max-w-2xl mx-auto">
+            CalendHub exists to eliminate calendar chaos. We unify your schedules, streamline your bookings, and give you back hours every week.
           </p>
-          <div class="grid md:grid-cols-3 gap-6 text-left">
-            <div class="border border-border rounded-lg p-6">
-              <h3 class="text-lg font-semibold mb-3">Practical Guides</h3>
-              <p class="text-sm text-text-muted">
-                Step-by-step tutorials on calendar integration, meeting scheduling, and productivity optimization.
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-16">
+      <div class="container">
+        <div class="max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 class="text-3xl font-display font-bold text-text mb-4">Our Mission</h2>
+              <p class="text-text-muted mb-4 leading-relaxed">
+                We believe managing multiple calendars, coordinating across time zones, and scheduling meetings shouldn't consume hours of your week.
+              </p>
+              <p class="text-text-muted leading-relaxed">
+                CalendHub unifies all your calendars into a single, intelligent system that handles the complexity automatically, so you can focus on meaningful work.
               </p>
             </div>
-            <div class="border border-border rounded-lg p-6">
-              <h3 class="text-lg font-semibold mb-3">Best Practices</h3>
-              <p class="text-sm text-text-muted">
-                Research-backed strategies for distributed teams, time zone management, and meeting effectiveness.
-              </p>
-            </div>
-            <div class="border border-border rounded-lg p-6">
-              <h3 class="text-lg font-semibold mb-3">Product Updates</h3>
-              <p class="text-sm text-text-muted">
-                Latest features, AI capabilities, and innovations in calendar management technology.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Community & Contact -->
-      <div class="grid md:grid-cols-2 gap-8">
-        <div>
-          <h2 class="text-2xl font-semibold mb-4">Try CalendHub</h2>
-          <p class="text-text-muted mb-4">
-            Ready to eliminate calendar chaos and reclaim 10+ hours per month? See how CalendHub transforms scheduling for professionals and distributed teams.
-          </p>
-          <div class="space-y-3">
-            <a
-              href="https://app.calendhub.com/sign-up"
-              target="_blank"
-              class="inline-flex items-center gap-2 px-6 py-3 bg-text text-background rounded-full hover:opacity-80 transition-opacity font-medium"
-            >
-              Start Free Trial
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </a>
-            <p class="text-sm text-text-muted">No credit card required • 14-day free trial</p>
-          </div>
-        </div>
-
-        <div>
-          <h2 class="text-2xl font-semibold mb-4">Get In Touch</h2>
-          <p class="text-text-muted mb-4">
-            Questions about CalendHub? Want to suggest a blog topic? Interested in partnerships? We'd love to hear from you.
-          </p>
-          <div class="space-y-3">
-            <div class="flex items-center gap-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-text-muted">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22 6 12 13 2 6"></polyline>
-              </svg>
-              <span>contact@calendhub.com</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-text-muted">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-              </svg>
-              <span>https://calendhub.com</span>
+            <div class="group relative">
+              <div class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-8 transition-all duration-300">
+                <div class="grid grid-cols-2 gap-6 text-center">
+                  <div>
+                    <div class="text-3xl font-display font-bold text-orange-500 mb-1">10+</div>
+                    <div class="text-sm text-text-muted">Hours saved monthly</div>
+                  </div>
+                  <div>
+                    <div class="text-3xl font-display font-bold text-orange-500 mb-1">500+</div>
+                    <div class="text-sm text-text-muted">Professionals</div>
+                  </div>
+                  <div>
+                    <div class="text-3xl font-display font-bold text-orange-500 mb-1">34%</div>
+                    <div class="text-sm text-text-muted">Fewer no-shows</div>
+                  </div>
+                  <div>
+                    <div class="text-3xl font-display font-bold text-orange-500 mb-1">99.9%</div>
+                    <div class="text-sm text-text-muted">Uptime SLA</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Problem We Solve -->
+    <section class="py-16 bg-surface/30">
+      <div class="container">
+        <div class="max-w-5xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-text mb-4">
+              The Problem We Solve
+            </h2>
+            <p class="text-text-muted text-lg">
+              Before and after CalendHub
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Before -->
+            <div class="group relative">
+              <div class="absolute inset-0 bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-red-500/50 rounded-2xl p-6 transition-all duration-300 h-full">
+                <h3 class="text-xl font-display font-bold text-red-500 mb-4 flex items-center gap-2">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                  </svg>
+                  Before CalendHub
+                </h3>
+                <div class="space-y-3">
+                  <div class="flex items-start gap-3 text-text-muted">
+                    <span class="text-red-500 mt-1 flex-shrink-0">-</span>
+                    <span>Checking 3+ different calendars every morning</span>
+                  </div>
+                  <div class="flex items-start gap-3 text-text-muted">
+                    <span class="text-red-500 mt-1 flex-shrink-0">-</span>
+                    <span>8+ emails to schedule a single meeting</span>
+                  </div>
+                  <div class="flex items-start gap-3 text-text-muted">
+                    <span class="text-red-500 mt-1 flex-shrink-0">-</span>
+                    <span>Double-bookings and missed meetings</span>
+                  </div>
+                  <div class="flex items-start gap-3 text-text-muted">
+                    <span class="text-red-500 mt-1 flex-shrink-0">-</span>
+                    <span>Manual time zone calculations</span>
+                  </div>
+                  <div class="flex items-start gap-3 text-text-muted">
+                    <span class="text-red-500 mt-1 flex-shrink-0">-</span>
+                    <span>Back-to-back meeting marathons</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- After -->
+            <div class="group relative">
+              <div class="absolute inset-0 bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-green-500/50 rounded-2xl p-6 transition-all duration-300 h-full">
+                <h3 class="text-xl font-display font-bold text-green-500 mb-4 flex items-center gap-2">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  With CalendHub
+                </h3>
+                <div class="space-y-3">
+                  <div class="flex items-start gap-3 text-text-muted">
+                    <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>All calendars unified in one view</span>
+                  </div>
+                  <div class="flex items-start gap-3 text-text-muted">
+                    <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Zero-email scheduling with smart links</span>
+                  </div>
+                  <div class="flex items-start gap-3 text-text-muted">
+                    <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Automatic conflict prevention</span>
+                  </div>
+                  <div class="flex items-start gap-3 text-text-muted">
+                    <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Smart time zone translation</span>
+                  </div>
+                  <div class="flex items-start gap-3 text-text-muted">
+                    <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Built-in meeting buffers</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Offer -->
+    <section class="py-16">
+      <div class="container">
+        <div class="max-w-5xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-text mb-4">
+              What CalendHub Offers
+            </h2>
+            <p class="text-text-muted text-lg">
+              Everything you need for seamless scheduling
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <!-- Feature 1 -->
+            <div class="group relative">
+              <div class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full">
+                <div class="w-12 h-12 bg-orange-500/10 rounded-xl flex items-center justify-center mb-4">
+                  <svg class="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <h3 class="text-lg font-display font-bold text-text mb-2">Multi-Calendar Sync</h3>
+                <p class="text-text-muted text-sm">Connect unlimited Google, Outlook, Apple, and other calendars with real-time two-way sync.</p>
+              </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="group relative">
+              <div class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full">
+                <div class="w-12 h-12 bg-orange-500/10 rounded-xl flex items-center justify-center mb-4">
+                  <svg class="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+                  </svg>
+                </div>
+                <h3 class="text-lg font-display font-bold text-text mb-2">Smart Booking Links</h3>
+                <p class="text-text-muted text-sm">Create beautiful booking pages that show your real availability and let others self-schedule.</p>
+              </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="group relative">
+              <div class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full">
+                <div class="w-12 h-12 bg-orange-500/10 rounded-xl flex items-center justify-center mb-4">
+                  <svg class="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <h3 class="text-lg font-display font-bold text-text mb-2">Video Conferencing</h3>
+                <p class="text-text-muted text-sm">Auto-generate Zoom, Google Meet, or Microsoft Teams links for every meeting.</p>
+              </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="group relative">
+              <div class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full">
+                <div class="w-12 h-12 bg-orange-500/10 rounded-xl flex items-center justify-center mb-4">
+                  <svg class="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                  </svg>
+                </div>
+                <h3 class="text-lg font-display font-bold text-text mb-2">Team Scheduling</h3>
+                <p class="text-text-muted text-sm">Round-robin scheduling, collective availability, and team management tools.</p>
+              </div>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="group relative">
+              <div class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full">
+                <div class="w-12 h-12 bg-orange-500/10 rounded-xl flex items-center justify-center mb-4">
+                  <svg class="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <h3 class="text-lg font-display font-bold text-text mb-2">Email Reminders</h3>
+                <p class="text-text-muted text-sm">Customizable email reminders to reduce no-shows and keep everyone prepared.</p>
+              </div>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="group relative">
+              <div class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-border hover:border-orange-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 h-full">
+                <div class="w-12 h-12 bg-orange-500/10 rounded-xl flex items-center justify-center mb-4">
+                  <svg class="w-6 h-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                  </svg>
+                </div>
+                <h3 class="text-lg font-display font-bold text-text mb-2">Analytics</h3>
+                <p class="text-text-muted text-sm">Track your meeting patterns, booking rates, and time allocation with detailed insights.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16">
+      <div class="container">
+        <div class="max-w-4xl mx-auto">
+          <div class="group relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-100"></div>
+            <div class="relative bg-surface/80 dark:bg-surface/50 backdrop-blur-sm border border-orange-500/30 rounded-3xl p-12 text-center">
+              <h2 class="text-3xl md:text-4xl font-display font-bold text-text mb-4">
+                Ready to unify your calendars?
+              </h2>
+              <p class="text-xl text-text-muted mb-8 max-w-xl mx-auto">
+                Join 500+ professionals who've eliminated calendar chaos with CalendHub.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="https://app.calendhub.com/sign-up"
+                  class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/25"
+                >
+                  Start Your 7-Day Free Trial
+                  <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                  </svg>
+                </a>
+                <a
+                  href="/pricing"
+                  class="inline-flex items-center justify-center gap-2 text-orange-600 hover:text-orange-700 font-semibold transition-colors px-6 py-3"
+                >
+                  View Pricing
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                  </svg>
+                </a>
+              </div>
+              <p class="text-sm text-text-muted mt-4">No credit card required</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 border-t border-border">
+      <div class="container">
+        <div class="max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h2 class="text-2xl font-display font-bold text-text mb-4">Get In Touch</h2>
+              <p class="text-text-muted mb-6">
+                Questions about CalendHub? Want to suggest a feature? Interested in partnerships? We'd love to hear from you.
+              </p>
+              <div class="space-y-3">
+                <div class="flex items-center gap-3 text-text-muted">
+                  <svg class="w-5 h-5 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                  <span>contact@calendhub.com</span>
+                </div>
+                <div class="flex items-center gap-3 text-text-muted">
+                  <svg class="w-5 h-5 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                  </svg>
+                  <span>calendhub.com</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h2 class="text-2xl font-display font-bold text-text mb-4">Our Blog</h2>
+              <p class="text-text-muted mb-6">
+                We share practical strategies, best practices, and insights for calendar management, productivity, and remote work.
+              </p>
+              <a
+                href="/blog"
+                class="inline-flex items-center gap-2 text-orange-600 hover:text-orange-700 font-semibold transition-colors"
+              >
+                Visit our blog
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 
   <!-- Organization Schema -->
@@ -282,7 +370,7 @@ import { SITE_CONFIG } from '../data/site-config';
       "name": "CalendHub",
       "url": "https://calendhub.com",
       "logo": "https://calendhub.com/favicon.svg",
-      "description": "Unified calendar management platform that eliminates scheduling chaos with AI-powered automation, smart scheduling, and intelligent meeting management.",
+      "description": "Unified calendar management and scheduling software that eliminates scheduling chaos. Connect unlimited calendars, create smart booking links, and streamline your meetings.",
       "sameAs": [
         "https://twitter.com/CalendHub",
         "https://www.linkedin.com/company/calendhub/"

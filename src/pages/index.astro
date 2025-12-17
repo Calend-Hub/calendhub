@@ -1,22 +1,30 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/landing/HeroSection.astro';
+import SocialProofSection from '../components/landing/SocialProofSection.astro';
 import FeaturesSection from '../components/landing/FeaturesSection.astro';
+import PricingPreviewSection from '../components/landing/PricingPreviewSection.astro';
+import ComparisonSection from '../components/landing/ComparisonSection.astro';
 import CTASection from '../components/landing/CTASection.astro';
+import TrustSignalsSection from '../components/landing/TrustSignalsSection.astro';
 import BlogSection from '../components/landing/BlogSection.astro';
 import FAQSection from '../components/landing/FAQSection.astro';
 ---
 
 <BaseLayout
   title="CalendHub - Unified Calendar Management & Smart Scheduling Software"
-  description="Sync all your calendars in one place. CalendHub combines Google Calendar, Outlook, and iCloud with smart booking links and AI meeting notes. Free 14-day trial."
+  description="Sync all your calendars in one place. CalendHub combines Google Calendar, Outlook, and iCloud with smart booking links and video conferencing. Start your free 7-day trial today."
   hideSearch={true}
   hideThemeToggle={true}
   siteName="CalendHub"
 >
   <HeroSection />
+  <SocialProofSection />
   <FeaturesSection />
+  <PricingPreviewSection />
+  <ComparisonSection />
   <CTASection />
+  <TrustSignalsSection />
   <BlogSection />
   <FAQSection />
 
@@ -28,7 +36,7 @@ import FAQSection from '../components/landing/FAQSection.astro';
       "name": "CalendHub",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
-      "description": "Unified calendar management platform with multi-calendar sync, smart meeting booking links, and AI-powered meeting notes. Replaces multiple calendars with one intelligent solution.",
+      "description": "Unified calendar management platform with multi-calendar sync, smart meeting booking links, and video conferencing integration. Replaces multiple calendars with one intelligent solution.",
       "url": "https://calendhub.com",
       "author": {
         "@type": "Organization",
@@ -39,16 +47,16 @@ import FAQSection from '../components/landing/FAQSection.astro';
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD",
-        "description": "14-day free trial, no credit card required"
+        "description": "7-day free trial, no credit card required"
       },
       "featureList": [
         "Multi-Calendar Sync",
         "Smart Meeting Booking Links",
-        "AI Meeting Notes & Transcription",
+        "Video Conferencing Integration",
         "Privacy Mode",
         "Team Collaboration",
-        "CRM Integration",
-        "Social Media Management",
+        "Email Reminders",
+        "Buffer Time Management",
         "Automated Scheduling"
       ],
       "aggregateRating": {

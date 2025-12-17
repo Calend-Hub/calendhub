@@ -12,15 +12,15 @@ const { showSearch = false } = Astro.props;
 const features = [
   { name: 'Multi-Calendar Sync', href: '/features/multi-calendar-sync', description: 'Connect unlimited calendars' },
   { name: 'Smart Booking Links', href: '/features/smart-booking-links', description: 'Beautiful booking pages' },
-  { name: 'AI Meeting Notes', href: '/features/ai-meeting-notes', description: 'Automated transcription & summaries' },
+  { name: 'Video Conferencing', href: '/features/video-conferencing', description: 'Zoom, Meet & Teams integration' },
   { name: 'Team Management', href: '/features/team-management', description: 'Multi-tenant workspace' },
-  { name: 'CRM Integration', href: '/features/crm-integration', description: 'Track customers & services' },
-  { name: 'Social Management', href: '/features/social-management', description: 'Schedule social posts' },
+  { name: 'Email Reminders', href: '/features/email-reminders', description: 'Reduce no-shows automatically' },
+  { name: 'Buffer Time', href: '/features/buffer-time', description: 'Prevent back-to-back meetings' },
   { name: 'Analytics', href: '/features/analytics', description: 'Time tracking & insights' },
 ];
 ---
 
-<header class="sticky top-0 z-50 w-full border-b border-border bg-background backdrop-blur supports-[backdrop-filter]:bg-background/95">
+<header class="sticky top-0 z-50 w-full border-b border-white/10 dark:border-white/5 bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl backdrop-saturate-150 supports-[backdrop-filter]:bg-white/70 dark:supports-[backdrop-filter]:bg-gray-900/70">
   <div class="container mx-auto">
     <!-- Everything on one line, centered -->
     <div class="flex justify-center items-center gap-12 h-16">
@@ -76,6 +76,10 @@ const features = [
           </div>
         </div>
 
+        <a href="/pricing" class="text-sm font-medium text-text-muted hover:text-text transition-colors">
+          Pricing
+        </a>
+
         <a href="/about" class="text-sm font-medium text-text-muted hover:text-text transition-colors">
           About
         </a>
@@ -86,7 +90,7 @@ const features = [
 
         <a href="/support" class="text-sm font-medium text-text-muted hover:text-text transition-colors">
           Support
-        </a>        
+        </a>
       </nav>
 
       <!-- Search & Theme Toggle -->
@@ -108,23 +112,8 @@ const features = [
       </div>
     </div>
 
-    <!-- Mobile Menu Button, Search & Theme Toggle -->
-    <div class="md:hidden absolute right-4 top-4 flex items-center gap-3">
-      {showSearch && (
-        <button
-          id="search-trigger-mobile"
-          class="p-2 text-text-muted hover:text-text transition-colors"
-          aria-label="Open search (Ctrl+K)"
-          title="Search (Ctrl+K)"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"></circle>
-            <path d="M21 21l-4.35-4.35"></path>
-          </svg>
-        </button>
-      )}
-      {SITE_CONFIG.features.darkMode && <ThemeToggle />}
-
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden absolute right-4 top-4">
       <button
         id="mobile-menu-button"
         class="p-2 text-text-muted hover:text-text transition-colors"
@@ -172,6 +161,10 @@ const features = [
         </div>
       </div>
 
+      <a href="/pricing" class="block px-4 py-2 text-sm font-medium text-text-muted hover:text-text hover:bg-surface rounded-lg transition-colors">
+        Pricing
+      </a>
+
       <a href="/about" class="block px-4 py-2 text-sm font-medium text-text-muted hover:text-text hover:bg-surface rounded-lg transition-colors">
         About
       </a>
@@ -183,7 +176,7 @@ const features = [
       <a href="/support" class="block px-4 py-2 text-sm font-medium text-text-muted hover:text-text hover:bg-surface rounded-lg transition-colors">
         Support
       </a>
-      
+
     </div>
   </div>
 </header>
@@ -207,12 +200,4 @@ const features = [
     mobileFeaturesIcon?.classList.toggle('rotate-180');
   });
 
-  // Search trigger for mobile
-  const searchTriggerMobile = document.getElementById('search-trigger-mobile');
-  if (searchTriggerMobile) {
-    searchTriggerMobile.addEventListener('click', () => {
-      const event = new CustomEvent('open-search');
-      window.dispatchEvent(event);
-    });
-  }
 </script>
