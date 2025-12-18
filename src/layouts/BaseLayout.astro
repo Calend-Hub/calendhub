@@ -1,5 +1,5 @@
 ---
-import { SITE_CONFIG } from '../data/site-config';
+import { SITE_CONFIG, GA_MEASUREMENT_ID } from '../data/site-config';
 import Footer from '../components/common/Footer.astro';
 import Header from '../components/common/Header.astro';
 import SEOHead from '../components/seo/SEOHead.astro';
@@ -104,6 +104,19 @@ const isBlogPage = Astro.url.pathname.includes('/blog') || Astro.url.pathname.st
       image={ogImage}
       url={Astro.url.toString()}
     />
+
+    <!-- Google Analytics (GA4) -->
+    {GA_MEASUREMENT_ID && (
+      <>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}></script>
+        <script is:inline define:vars={{ gaId: GA_MEASUREMENT_ID }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', gaId);
+        </script>
+      </>
+    )}
 
     <!-- Dark mode script -->
     <script is:inline>
